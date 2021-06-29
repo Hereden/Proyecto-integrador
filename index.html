@@ -14,6 +14,50 @@
     <div id="nav-placeholder">
 
     </div>
+
+
+    <!-- Slider -->
+    <div class="container-slider">
+        <div class="slider" id="slider">
+            <div class="slider__section">
+                <img src="./images/03.jpeg" alt="" class="slider__img">
+            <div class="slider__content">
+                <h2 class="slider__title">After Effects</h2>
+                <p class="slider__txt">De Zero a Master</p>
+                <a href="./precios.html" class="slider__link">COMPRAR AHORA!</a>
+            </div>
+        </div>
+
+            <div class="slider__section"><img src="./images/05.jpeg" alt="" class="slider__img">
+            <div class="slider__content">
+                <h2 class="slider__title">Photoshop para novatos</h2>
+                <p class="slider__txt">Desde cero hasta experto</p>
+                <a href="./precios.html" class="slider__link">COMPRAR AHORA!</a>
+            </div>
+        </div>
+
+            <div class="slider__section"><img src="./images/06.jpeg" alt="" class="slider__img">
+            <div class="slider__content">
+                <h2 class="slider__title">Adobe Illustrator CC</h2>
+                <p class="slider__txt">Print Design for Beginners</p>
+                <a href="./precios.html" class="slider__link">COMPRAR AHORA!</a>
+            </div>
+        </div>
+
+            <div class="slider__section"><img src="./images/10.jpeg" alt="" class="slider__img">
+            <div class="slider__content">
+                <h2 class="slider__title">MASTER INTENSIVO</h2>
+                <p class="slider__txt">Aprende a logotipar con Photoshop 2021</p>
+                <a href="./precios.html" class="slider__link">COMPRAR AHORA!</a>
+            </div>
+        </div>
+
+        </div>
+        <div class="slider__btn slider__btn--right" id="btn-right">&#62;</div>
+        <div class="slider__btn slider__btn--left" id="btn-left">&#60;</div>
+    </div>
+
+    <!-- Fin slider -->
     <br>
     <div id="tienda" class="container">
         <div class="row">
@@ -146,8 +190,9 @@
         jQuery.get("./navbar.html", function (data) {
             $("#nav-placeholder").replaceWith(data);
         });
-
+    
     </script>
+    <script src="assets/js/slider.js"></script>
 
 </body>
 

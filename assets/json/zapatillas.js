@@ -1,4 +1,4 @@
-Guantes = [
+Zapatillas = [
   {
     "nombre": "Delta Cleats Peloton Zapatos De Los Hombres De Bicicleta De Carretera",
     "descripcion": "Zapatos De Ciclismo De Interior Ciclo Spinning Zapatos De Bicicleta 3 Pernos SPD-SL Zapatos De Ciclismo, 002_Verde, 10",

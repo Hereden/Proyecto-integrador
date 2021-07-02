@@ -4,6 +4,7 @@ montana.addEventListener("click", ()=>{
     window.open("../montana.html", "_blank");
 });
 
+let carrito={};
 /* const fs = require('fs') */
 
 /* fs.readFile(filePath, function (error, content) {

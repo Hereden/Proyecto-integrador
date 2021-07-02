@@ -67,7 +67,7 @@
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="assets/json/zapatillas.js"></script>
+    <script src="assets/json/gafas.js"></script>
     <script>
         jQuery.get("./navbar.html", function (data) {
             $("#nav-placeholder").replaceWith(data);
@@ -78,7 +78,7 @@
         row1.className+="row";
         let row2= document.createElement("div");
         row2.className+= "row row-cols-3 row-cols-md-3 m-2";
-        Zapatillas.forEach(element => {
+        Gafas.forEach(element => {
             console.log(element.nombre);
             let marcoCard= document.createElement("div");
             marcoCard.className+="col mb-4";
@@ -94,19 +94,15 @@
             precioCard.className+="card-text font-weight-bold text-danger";
             let botonCard= document.createElement("button");
             botonCard.setAttribute("style","background-color: #693535; color: white;border: 1px;");
-
             imagenCard.src=element.url;
             imagenCard.alt=element.nombre;
             tituloCard.appendChild(document.createTextNode(element.nombre));
             descCard.appendChild(document.createTextNode(element.descripcion));
             precioCard.appendChild(document.createTextNode(`$ ${element.precio}` ));
-            botonCard.appendChild(document.createTextNode(`$Comprar$` ));
+            botonCard.appendChild(document.createTextNode(`Comprar` ));
             botonCard.addEventListener("click",function(){
                 
             });
-            if(typeoff(element.especificaciones)!=undefined){
-                
-            }
             card.appendChild(tituloCard);
             card.appendChild(imagenCard);
             card.appendChild(descCard);

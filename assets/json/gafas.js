@@ -1,4 +1,4 @@
-Cascos = [
+Gafas = [
        
     {
         "nombre": "Gafas de cilismo",

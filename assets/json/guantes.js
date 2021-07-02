@@ -5,7 +5,7 @@ Guantes = [
     "marca": "INBIKE",
     "precio": 529.99,
     "url": "assets/images/Guantes/g001_001.PNG",
-    "talla": "",
+    "talla": "S,M,L,XL",
     "especificaciones": [
       {
         "Cálidos y cómodos": "los guantes están hechos de algodón cálido, forro polar y tela compuesta en el exterior y la membrana interior de TPU impermeable para aislar eficazmente el viento frío y bloquear la temperatura interior. Los guantes térmicos son ideales para hombres y mujeres en invierno, adecuados para las actividades como ciclismo de invierno, correr, motociclismo, senderismo y desplazamiento.",
@@ -24,7 +24,7 @@ Guantes = [
     "marca": "IDLS",
     "precio": 299.99,
     "url": "assets/images/Guantes/g002_001.PNG",
-    "talla": "",
+    "talla": "S,M",
     "especificaciones": [
       {
         "Descripcion": "Tejido Transpirable y Ajuste Cómodo: Hecho de LYCRA de alta elasticidad y tejido de malla de punto, con gamuza antideslizante en la parte de la palma, puede hacer que sus manos estén completamente relajadas y cómodas en el deporte de la bicicleta.",
@@ -42,7 +42,7 @@ Guantes = [
     "marca": "ESD",
     "precio": 200.00,
     "url": "assets/images/Guantes/g003_001.PNG",
-    "talla": "",
+    "talla": "M,L",
     "especificaciones": [
       {
         "Descripcion": "Proteja electrónicos sensibles durante ensamble e inspección.Nylon sin costura y tejido de carbono conductivo.",

@@ -5,6 +5,19 @@ button{
     border-color: #d0d0d0;
 }
 
+.botonesTallas{
+    color: black;border: 1px;
+}
+
+.botonesTallas:hover{
+    background-color: #693535;color:white;
+}
+
+.active{
+    background-color: #693535;color:white;
+}
+
+
 /* ESTILOS SLIDER */
 
 .container-slider {

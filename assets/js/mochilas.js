@@ -1,4 +1,4 @@
-BiciInfantiles = [
+Mochilas = [
   {
     "nombre": "Zefal Mochila hidratacion Z Hydro 3L + 2L Roja",
     "descripcion": "Con su bolsa de agua de 2L, su unos compartimentos, sus correas ventrales y pectorales, la Z Hydro L es una bolsa ligero gracias a su elegante diseño y los materiales utilizados. Un bolsillo de terciopelo con cremallera permite colocar objetos fragiles (teléfono, gafas). Inserciones de espuma proporcionan comodidad y los tirantes ajustables permiten adaptar la bolsa con la morfología del ciclista. Construida en PEVA, garantizada sin BPA, la bolsa de agua es fácil de limpiar y transportar",

@@ -35,7 +35,7 @@
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" <!-- disabled -->>
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" disabled>
                         <label class="form-check-label" for="defaultCheck2">
                             Disabled checkbox
                         </label>
@@ -49,8 +49,6 @@
                 <!-- Cards -->
                 <!-- <div class="row">
                     <div class="row row-cols-3 row-cols-md-3 m-2">
-
-
 
                     </div>
                 </div> -->
@@ -67,7 +65,7 @@
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="assets/json/cascos.js"></script>
+    <script src="assets/json/mochilas.js"></script>
     <script>
         jQuery.get("./navbar.html", function (data) {
             $("#nav-placeholder").replaceWith(data);
@@ -78,7 +76,7 @@
         row1.className+="row";
         let row2= document.createElement("div");
         row2.className+= "row row-cols-3 row-cols-md-3 m-2";
-        Cascos.forEach(element => {
+        Mochilas.forEach(element => {
             let marcoCard= document.createElement("div");
             marcoCard.className+="col mb-4";
             let card= document.createElement("div");

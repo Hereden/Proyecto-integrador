@@ -243,7 +243,7 @@ BicisPista = [
         "descripcion": "La Lavaredo68 es una bicicleta de carreras de carbono que combina un gran confort con un alto nivel de rigidez. Esta versátil máquina de carreras es la combinación ideal de alto rendimiento y resistencia",
         "marca": "Eddy Merckx",
         "precio": 87800,
-        "url": "assets/images/BicisPista/BP9.jpg",
+        "url": "assets/images/BicisPista/BP9.png",
         "talla": "48,51,54",
         "especificaciones": [
             {

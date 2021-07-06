@@ -20,7 +20,7 @@
     <div class="container-slider">
         <div class="slider" id="slider">
             <div class="slider__section">
-                <img src="./images/03.jpeg" alt="" class="slider__img">
+                <img src="assets/images/index001.PNG" alt="" class="slider__img">
                 <div class="slider__content">
                     <h2 class="slider__title">After Effects</h2>
                     <p class="slider__txt">De Zero a Master</p>
@@ -28,7 +28,7 @@
                 </div>
             </div>
 
-            <div class="slider__section"><img src="./images/05.jpeg" alt="" class="slider__img">
+            <div class="slider__section"><img src="assets/images/index001.PNG" alt="" class="slider__img">
                 <div class="slider__content">
                     <h2 class="slider__title">Photoshop para novatos</h2>
                     <p class="slider__txt">Desde cero hasta experto</p>
@@ -36,7 +36,7 @@
                 </div>
             </div>
 
-            <div class="slider__section"><img src="./images/06.jpeg" alt="" class="slider__img">
+            <div class="slider__section"><img src="assets/images/index001.PNG" alt="" class="slider__img">
                 <div class="slider__content">
                     <h2 class="slider__title">Adobe Illustrator CC</h2>
                     <p class="slider__txt">Print Design for Beginners</p>
@@ -44,7 +44,7 @@
                 </div>
             </div>
 
-            <div class="slider__section"><img src="./images/10.jpeg" alt="" class="slider__img">
+            <div class="slider__section"><img src="assets/images/index001.PNG" alt="" class="slider__img">
                 <div class="slider__content">
                     <h2 class="slider__title">MASTER INTENSIVO</h2>
                     <p class="slider__txt">Aprende a logotipar con Photoshop 2021</p>
@@ -70,6 +70,10 @@
         </a>
     </div> -->
     <br>
+    Holi
+    <div id="demo"></div>
+    Holi2
+    <br>
     <div class="">
 
         <div class="row row-cols-3 no-gutters">
@@ -80,7 +84,8 @@
                         <img src="assets/images/PPP.jpg" id="montana" class="card-img" alt="ciudad"
                             style="height: 500px;opacity: 0.5;">
                         <div class="card-img-overlay align-text-bottom align-middle">
-                            <h5 class="card-title font-weight-bold text-center " style="vertical-align:text-bottom ;color:#d0d0d0;font-size: 40px;">
+                            <h5 class="card-title font-weight-bold text-center "
+                                style="vertical-align:text-bottom ;color:#d0d0d0;font-size: 40px;">
                                 Biclicletas de Ciudad</h5>
                         </div>
                     </a>
@@ -114,6 +119,22 @@
             </div>
         </div>
     </div>
+
+
+    <script src="assets/texto/formato2.js"></script>
+    <script>
+        console.log(data[0].Guantes[0]);
+        document.write(`<div class="card">
+            <img src="assets/images/Guantes/g001_001.PNG" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">${data[0].Guantes[1].nombre}</h5>
+                                        <p class="card-text">${data[0].Guantes[1].descripcion}</p>
+                                        <p class="card-text font-weight-bold text-danger">$ ${data[0].Guantes[1].precio}</p>
+                                        <button
+                                            style="background-color: #693535; color: white;border: 1px;">Comprar</button>
+                                    </div>
+                                </div>`);
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

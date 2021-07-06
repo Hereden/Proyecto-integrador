@@ -67,7 +67,7 @@
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="assets/json/guantes.js"></script>
+    <script src="assets/json/cascos.js"></script>
     <script>
         jQuery.get("./navbar.html", function (data) {
             $("#nav-placeholder").replaceWith(data);
@@ -78,7 +78,7 @@
         row1.className+="row";
         let row2= document.createElement("div");
         row2.className+= "row row-cols-3 row-cols-md-3 m-2";
-        Guantes.forEach(element => {
+        Cascos.forEach(element => {
             let marcoCard= document.createElement("div");
             marcoCard.className+="col mb-4";
             let card= document.createElement("div");
@@ -93,6 +93,7 @@
             precioCard.className+="card-text font-weight-bold text-danger";
             let botonCard= document.createElement("button");
             botonCard.setAttribute("style","background-color: #693535; color: white;border: 1px;");
+
             imagenCard.src=element.url;
             imagenCard.alt=element.nombre;
             tituloCard.appendChild(document.createTextNode(element.nombre));
@@ -103,38 +104,12 @@
                 
             });
             if(typeof(element.especificaciones)!=typeof(undefined)){
-                console.log(element.especificaciones[0] +"1");
-                let especificaciones1= document.createElement("ul");
-                element.especificaciones.forEach(especificacion =>{
-                    let especifi= document.createElement("li");
-                    especifi.appendChild(document.createTextNode(especificacion));
-                    especificaciones1.appendChild(especifi);
-                });
-                descCard.appendChild(especificaciones1);
+                console.log(element.especificaciones +"1");
             }else{
                 console.log("No especificaciones")
             }
             if(typeof(element.talla)!=typeof(undefined)){
-                //console.log(element.talla+"2");
-                let tallas1=document.createElement("div");
-                //S,M,L,XL
-                let tallas3 = element.talla.split(",");
-                //["S","M","L","XL"]
-                tallas3.forEach(talla2 =>{
-                    let botonTalla=document.createElement("button");
-                    botonTalla.className+= "botonesTallas";
-                    botonTalla.appendChild(document.createTextNode(talla2));7
-                    botonTalla.addEventListener("click",()=>{
-                        var current = document.querySelector(".active");
-                        if(current!=null){
-                            current.className= "botonesTallas";
-                        }
-                        botonTalla.className="active";
-                        console.log(talla2);
-                    });
-                    tallas1.appendChild(botonTalla);
-                });
-                descCard.appendChild(tallas1);
+                console.log(element.talla+"2");
             }else{
                 console.log("Sin talla");
             }

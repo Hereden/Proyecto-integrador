@@ -1,6 +1,12 @@
 a{
     color: #d0d0d0 ;
 }
+
+body{
+    background-color: #d0d0d0;
+}
+
+
 button{
     border-color: #d0d0d0;
 }

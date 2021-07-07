@@ -5,7 +5,9 @@ a{
 body{
     background-color: #d0d0d0;
 }
-
+.clase-algo{
+    margin-top: 5 !important;
+}
 
 button{
     border-color: #d0d0d0;

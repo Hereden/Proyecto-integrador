@@ -1,0 +1,22 @@
+CREATE TABLE usuarios (
+ id_usuario INT PRIMARY KEY, //PRIMARY KEY= unico, importante, sirve para relacionarse con otras tablas
+ nombre VARCHAR(60), //60 significa 60 caracteres ""
+ apellido1 VARCHAR(60),
+ apellido2 VARCHAR(60),
+ email VARCHAR(100), 
+ contra VARCHAR(20), // "#%&a4-" <-Validar 
+ edad INT,
+ genero ,  //VARCHAR "Hombre,Mujer,No Definido " INT 0=Mujer, 1=Hombre, 2=No Definido, 3...
+ fecha_nacimiento,
+ nickname
+ 
+
+);
+
+
+json web token -> peticiones, validacion de usuario, mientras sesion este abierta
+
+
+
+
+

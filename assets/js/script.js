@@ -5,6 +5,23 @@ montana.addEventListener("click", ()=>{
 });
 
 let carrito={};
+
+
+function registrarme() {
+    localStorage.setItem('email', document.querySelector("#correo").value);
+    localStorage.setItem('password', document.querySelector("#pass").value);
+    localStorage.setItem('siniciada', 'FALSE');
+}
+
+function comprobarSesion() {
+    if (localStorage.getItem("siniciada") == "TRUE") {
+        document.querySelector(".Login").setAttribute("style", "visibility:hidden;");
+    } else {
+        document.querySelector(".Login").setAttribute("style", "visibility:block;");
+    }
+}
+
+
 /* const fs = require('fs') */
 
 /* fs.readFile(filePath, function (error, content) {

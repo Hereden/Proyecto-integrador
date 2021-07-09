@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-dark" >
-        <a class="navbar-brand" href="#" style="color: #d0d0d0;">TlacuaRiders</a>
+        <a class="navbar-brand" href="index.html" style="color: #d0d0d0;">TlacuaRiders</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -8,13 +8,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item ">
-                    <a class="nav-link" href="#" style="color: #d0d0d0;">Renta</a>
+                    <a class="nav-link" href="https://forms.gle/Jq7XAbUvceAfyz1A6" style="color: #d0d0d0;">Comunidad</a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link" href="#" style="color: #d0d0d0;">Comunidad</a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="#" style="color: #d0d0d0;">Blog</a>
+                    <a class="nav-link" href="noticias.html" style="color: #d0d0d0;">Noticias</a>
                 </li>
                 <li class="nav-item ">
                     <a class="nav-link" href="#" style="color: #d0d0d0;">Sobre nosotros</a>
@@ -24,8 +21,41 @@
                 <input class="form-control mr-sm-2" type="search" placeholder="Buscar en la pagina" aria-label="Search">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="background-color: #693535;border-color: #693535; color: white;">Buscar</button>
             </form>
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="background-color: #693535;border-color: #693535; color: white;">Registrate</button>
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="background-color: #693535;border-color: #693535; color: white;">Logeate</button>
+            <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="background-color: #693535;border-color: #693535; color: white;">Registrate</button> -->
+            <div class="collapse navbar-collapse Login" id="exCollapsingNavbar">
+                <ul class="nav navbar-nav flex-row justify-content-between ml-auto"  id="loginMenu">
+                    <li class="nav-item order-2 order-md-1"><a href="#" class="nav-link" title="settings"><i
+                                class="fa fa-cog fa-fw fa-lg"></i></a></li>
+                    <li class="dropdown order-1">
+                        <button type="button" id="dropdownMenu1" data-toggle="dropdown"
+                            class="btn btn-outline-secondary dropdown-toggle">Login <span class="caret"></span></button>
+                        <ul class="dropdown-menu dropdown-menu-right mt-2">
+                            <li class="px-3 py-2">
+                                <!-- <form class="form" role="form"> -->
+                                    <div class="form-group">
+                                        <input id="emailInput" placeholder="Correo" class="form-control form-control-sm"
+                                            type="text" required="">
+                                    </div>
+                                    <div class="form-group">
+                                        <input id="passwordInput" placeholder="Contraseña"
+                                            class="form-control form-control-sm" type="password" required="">
+                                    </div>
+                                    <div class="form-group">
+                                        <button onclick="comprobar()"
+                                            class="btn btn-primary btn-block" type="submit" style="background-color: #693535;border-color: #693535; color: white;">Ingresar</button>
+                                    </div>
+                                    <div class="form-group text-center">
+                                        <small><a href="registro.html" data-toggle="modal" data-target="#modalPassword">
+                                            ¿Aun sin cuenta? ¡Registrate!
+                                        </a></small>
+                                    </div> 
+                                <!-- </form> -->
+                            </li>
+                        </ul>
+
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
@@ -42,9 +72,9 @@
                         Bicicletas
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Infantiles</a>
-                        <a class="dropdown-item" href="#">Pista</a>
-                        <a class="dropdown-item" href="#">Montañas</a>
+                        <a class="dropdown-item" href="bicisinfantiles.html">Infantiles</a>
+                        <a class="dropdown-item" href="BicisPista.html">Pista</a>
+                        <a class="dropdown-item" href="montanas.html">Montañas</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -53,11 +83,11 @@
                         Accesorios
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Cascos</a>
-                        <a class="dropdown-item" href="#">Mochilas</a>
-                        <a class="dropdown-item" href="#">Guantes</a>
-                        <a class="dropdown-item" href="#">Zapatillas</a>
-                        <a class="dropdown-item" href="#">Lentes</a>
+                        <a class="dropdown-item" href="cascos.html">Cascos</a>
+                        <a class="dropdown-item" href="mochilas.html">Mochilas</a>
+                        <a class="dropdown-item" href="guantes.hmtl">Guantes</a>
+                        <a class="dropdown-item" href="zapatillas.html">Zapatillas</a>
+                        <a class="dropdown-item" href="gafas.html">Lentes</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">

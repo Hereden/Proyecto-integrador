@@ -9,7 +9,25 @@ body{
 .texto_cards{
     color:black;
 }
+.bg_black{
+    background-color: black;
+}
+.texto_white{
+    color:white;
+}
 
+.texto_amarillo::placeholder {
+    color: #FFD103;
+    opacity: 1; /* Firefox */
+  }
+  
+.texto_amarillo:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: #FFD103;
+ }
+  
+.texto_amarillo::-ms-input-placeholder { /* Microsoft Edge */
+   color:#FFD103;
+  }
 .clase-algo{
     margin-top: 5 !important;
 }

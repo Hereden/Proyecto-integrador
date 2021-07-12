@@ -3,8 +3,13 @@ a{
 }
 
 body{
-    background-color: #d0d0d0;
+    background-color: black;
+    color: white;
 }
+.texto_cards{
+    color:black;
+}
+
 .clase-algo{
     margin-top: 5 !important;
 }

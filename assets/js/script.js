@@ -22,6 +22,8 @@ function comprobarSesion() {
 }
 
 
+
+
 /* const fs = require('fs') */
 
 /* fs.readFile(filePath, function (error, content) {

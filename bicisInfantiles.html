@@ -56,6 +56,15 @@
         </div>
     </div>
 
+    <div class="card bg-dark text-dark">
+        <img src="assets/images/bicisNinos/bici01.jpg" class="card-img" alt="...">
+        <div class="card-img-overlay align-self-center">
+            <h5 class="card-title align-content-end overflow-auto">Bicicleta Next Cross Rodada 20 Blanca</h5>
+            <p class="card-text">Bicicleta para niña tipo Cross.</p>
+            <p class="card-text">Last updated 3 mins ago</p>
+        </div>
+    </div>
+
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -71,51 +80,59 @@
             $("#nav-placeholder").replaceWith(data);
         });
 
-        var columnaDerecha= document.querySelector("#columnaDerecha");
-        let row1=document.createElement("div");
-        row1.className+="row";
-        let row2= document.createElement("div");
-        row2.className+= "row row-cols-3 row-cols-md-3 m-2";
+        var columnaDerecha = document.querySelector("#columnaDerecha");
+        let row1 = document.createElement("div");
+        row1.className += "row";
+        let row2 = document.createElement("div");
+        row2.className += "row row-cols-3 row-cols-md-3 m-2";
         BiciInfantiles.forEach(element => {
-            let marcoCard= document.createElement("div");
-            marcoCard.className+="col mb-4";
-            let card= document.createElement("div");
-            card.className+="card";
-            let imagenCard= document.createElement("img");
-            imagenCard.className+="card-img-top";
-            let tituloCard= document.createElement("h5");
-            tituloCard.className+="card-title";
-            let descCard=document.createElement("p");
-            descCard.className+="card-text";
-            let precioCard=document.createElement("p");
-            precioCard.className+="card-text font-weight-bold text-danger";
-            let botonCard= document.createElement("button");
-            botonCard.setAttribute("style","background-color: #693535; color: white;border: 1px;");
+            let marcoCard = document.createElement("div");
+            marcoCard.className += "col mb-4";
+            let card = document.createElement("div");
+            card.className += "card bg-dark text-dark";
+            let cardLayout= document.createElement("div");
+            cardLayout.className +="card-img-overlay";
+            let imagenCard = document.createElement("img");
+            imagenCard.className += "card-img-top";
+            let tituloCard = document.createElement("h5");
+            tituloCard.className += "card-title";
+            let descCard = document.createElement("p");
+            descCard.className += "card-text text-overflow-cards";
+            let precioCard = document.createElement("p");
+            precioCard.className += "card-text font-weight-bold text-danger align-self-center";
+            let botonCard = document.createElement("button");
+            botonCard.setAttribute("style", "border-color: #FFD103;background-color: black;color: #FFD103;border: 1px;");
 
-            imagenCard.src=element.url;
-            imagenCard.alt=element.nombre;
+            imagenCard.src = element.url;
+            imagenCard.alt = element.nombre;
             tituloCard.appendChild(document.createTextNode(element.nombre));
             descCard.appendChild(document.createTextNode(element.descripcion));
-            precioCard.appendChild(document.createTextNode(`$ ${element.precio}` ));
-            botonCard.appendChild(document.createTextNode(`$Comprar$` ));
-            botonCard.addEventListener("click",function(){
-                
+            precioCard.appendChild(document.createTextNode(`$ ${element.precio}`));
+            botonCard.appendChild(document.createTextNode(`$Comprar$`));
+            botonCard.addEventListener("click", function () {
+
             });
-            if(typeof(element.especificaciones)!=typeof(undefined)){
-                console.log(element.especificaciones +"1");
-            }else{
+            if (typeof (element.especificaciones) != typeof (undefined)) {
+                console.log(element.especificaciones + "1");
+            } else {
                 console.log("No especificaciones")
             }
-            if(typeof(element.talla)!=typeof(undefined)){
-                console.log(element.talla+"2");
-            }else{
+            if (typeof (element.talla) != typeof (undefined)) {
+                console.log(element.talla + "2");
+            } else {
                 console.log("Sin talla");
             }
-            card.appendChild(tituloCard);
+            cardLayout.appendChild(botonCard);
+            cardLayout.appendChild(tituloCard);
+            cardLayout.appendChild(descCard);
+            //cardLayout.appendChild(precioCard);
+            
+            //card.appendChild(tituloCard);
             card.appendChild(imagenCard);
-            card.appendChild(descCard);
+            card.appendChild(cardLayout);
+            //card.appendChild(descCard);
             card.appendChild(precioCard);
-            card.appendChild(botonCard);
+            //card.appendChild(botonCard);
             marcoCard.appendChild(card);
             row2.appendChild(marcoCard);
         });

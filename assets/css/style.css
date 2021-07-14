@@ -191,6 +191,7 @@ button{
 }
 .slider__btn:hover {
     /* background: #fff; */
+    opacity: 1;
 }
 .slider__btn--left {
     left: 10px;

@@ -78,7 +78,7 @@
                     <a href="BicisPista.html">
 
                         <img src="assets/images/PPP.jpg" id="montana" class="card-img" alt="ciudad"
-                            style="height: 500px;opacity: 0.5;">
+                            style="height: 700px;opacity: 0.5;">
                         <div class="card-img-overlay align-middle " style="align-items: center;">
                             <p class=" clase-algo card-title font-weight-bold text-center text-md-center texto_150 ">
                                 Ciudad</p>
@@ -91,7 +91,7 @@
                     <a href="montanas.html">
 
                         <img src="assets/images/PM.jpg" id="montana" class="card-img" alt="ciudad"
-                            style="height: 500px;opacity: 0.5;">
+                            style="height: 700px;opacity: 0.5;">
                         <div class="card-img-overlay">
                             <h5 class="card-title font-weight-bold text-center texto_150" >
                                 Montaña</h5>
@@ -104,10 +104,10 @@
                     <a href="bicisInfantiles.html">
 
                         <img src="assets/images/pn2.jpg" id="montana" class="card-img" alt="ciudad"
-                            style="height: 500px;opacity: 0.5;">
+                            style="height: 700px;opacity: 0.5;">
                         <div class="card-img-overlay">
                             <h5 class="card-title font-weight-bold text-center texto_150" >
-                                Infantiles</h5>
+                                I n f a n t i l e s</h5>
                         </div>
                     </a>
                 </div>
@@ -115,7 +115,9 @@
         </div>
     </div>
 
+    <div id="footer">
 
+    </div>
     <script src="assets/texto/formato2.js"></script>
     <script>
         console.log(data[0].Guantes[0]);
@@ -144,6 +146,9 @@
             $("#nav-placeholder").replaceWith(data);
         });
 
+        jQuery.get("./footer.html", function (data) {
+            $("#footer").replaceWith(data);
+        });
     </script>
     <script src="assets/js/slider.js"></script>
 

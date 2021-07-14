@@ -1,6 +1,57 @@
+@font-face {
+    font-family: 'bird_houseregular';
+    src: url('bird_house-webfont.woff2') format('woff2'),
+         url('bird_house-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.divider-text {
+    position: relative;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.divider-text span {
+    padding: 7px;
+    position: relative;   
+    z-index: 2;
+}
+.divider-text:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    top: 55%;
+    left: 0;
+    z-index: 1;
+}
+.texto_150{
+    font-size: 150px;
+}
+.texto_70{
+    font-size: 70px;
+}
+.texto_50{
+    font-size: 50px;
+}
+
 a{
+    
+    /*font-size: 50px;*/
     color: #d0d0d0 ;
 }
+a:hover{
+    color:#FFD103;
+}
+.nav{
+    font-family: 'bird_houseregular', Arial, sans-serif;
+    font-weight:normal;
+    font-style:bold;
+    font-size: 50px;
+}
+
 .text-overflow-cards {
     overflow: hidden;
     text-overflow: ellipsis;
@@ -10,8 +61,22 @@ a{
 }
 
 body{
+    font-family: 'bird_houseregular', Arial, sans-serif;
+    font-weight:normal;
+    font-style:bold;
     background-color: black;
     color: white;
+    font-size: 30px;
+}
+
+.dropdown-menu {
+    width: 300px !important;
+    height: 400px !important;
+}
+.boton_amarillo{
+    border-color: #FFD103;
+    background-color: black;
+    color: #FFD103;
 }
 .texto_cards{
     color:black;
@@ -22,7 +87,9 @@ body{
 .texto_white{
     color:white;
 }
-
+.opacidad_imagen{
+    opacity: 0.5;
+}
 .texto_amarillo::placeholder {
     color: #FFD103;
     opacity: 1; /* Firefox */
@@ -42,17 +109,28 @@ body{
 button{
     border-color: #d0d0d0;
 }
+.cosas_hidden{
+    opacity: 0;
+}
+.cosas_hidden:hover{
+    opacity: 1;
+
+}
 
 .botonesTallas{
-    color: black;border: 1px;
+    border: 1px;
+    border-color: #FFD103;
+    background-color: black;
+    color: #FFD103;
 }
 
 .botonesTallas:hover{
-    background-color: #693535;color:white;
+    background-color: white;
+    color:black;
 }
 
 .active{
-    background-color: #693535;color:white;
+    background-color: #FFD103;color:white;
 }
 
 
@@ -92,21 +170,21 @@ button{
 }
 .slider__btn {
     position: absolute;
-    width: 40px;
-    height: 40px;
-    background: rgb(255, 255, 255, 0.7);
-    top: 50%;
+    width: 90px;
+    height: 90px;
+    /* background: rgb(255, 255, 255, 0.7); */
+    top: 60%;
     transform: translateY(-50%);
-    font-size: 30px;
+    font-size: 80px;
     font-weight: bold;
     font-family: monospace;
     text-align: center;
-    border-radius: 50%;
+    border-radius: 80%;
     cursor: pointer;
     z-index: 999;
 }
 .slider__btn:hover {
-    background: #fff;
+    /* background: #fff; */
 }
 .slider__btn--left {
     left: 10px;
@@ -125,11 +203,12 @@ button{
     z-index: 999;
 }
 .slider__title {
-    font-size: 2.2em;
+    font-size: 150px;
     margin: 0;
     
 }
 .slider__txt {
+    font-size: 70px;
     margin: 5px 0;
 }
 .slider__link{

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="utf-8">
@@ -14,17 +14,34 @@
     <div id="nav-placeholder">
 
     </div>
+    <div class="container texto_70">
+        <p class="text-center">Crea una cuenta</p>
+        <p>
+            <a href="" class="btn btn-block btn-twitter texto_70 boton_amarillo"> <i class="fab fa-twitter"></i>  
+                Accede con Twitter</a>
+            <a href="" class="btn btn-block btn-facebook texto_70 boton_amarillo"> <i class="fab fa-facebook-f"></i>  
+                Accede con facebook</a>
+        </p>
+        <p class="divider-text">
+            <span class="align-self-center texto_150">O</span>
+        </p>
+        <form class="texto_70">
+            <input id="nombreR" class="form-control texto_70 boton_amarillo bg_black texto_white" placeholder="Como quieres que te llamemos" type="text">
+            <input id="correoR" class="form-control texto_70 boton_amarillo bg_black texto_white" placeholder="Correo electronico" type="email">
+            <input id="passR" class="form-control texto_70 boton_amarillo bg_black texto_white" placeholder="Contraseña" type="password">
+            <select class="form-control texto_70 boton_amarillo bg_black texto_white" id="generoR">
+                <option class="boton_amarillo bg_black texto_white" >Hombre</option>
+                <option class="boton_amarillo bg_black texto_white" >Mujer</option>
+                <option class="boton_amarillo bg_black texto_white" selected>Otro</option>
+            </select>
+            <input id="edadR" class="form-control texto_70 boton_amarillo bg_black texto_white" placeholder="Edad" type="number">
+            <button type="submit" class="btn btn-primary btn-block texto_70 boton_amarillo"> Registrarte </button>
+           
+        </form>
+    </div>
 
-    <h1>Favor de Registrarte:</h1>
 
-    <label>Correo electronico:</label>
-    <input type="text" id="correo" placeholder="algo@example.com" />
-    <br>
-    <label>Contraseña:</label>
-    <input type="password" id="pass" placeholder="Por favor no 12345" />
-    <br>
-    <button onclick="registrarme()">Registrarme</button>
-    <br>
+
 
 
     <script src="assets/texto/formato2.js"></script>

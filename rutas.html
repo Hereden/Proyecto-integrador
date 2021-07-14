@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>TlacuaRiders</title>
+</head>
+
+<body>
+    <div id="nav-placeholder">
+
+    </div>
+    <!-- Columnas -->
+    <div class="">
+        <div class="row">
+            <!-- Columna de la izquierda -->
+            <div class="col-3">
+
+                <br>
+                <label class="form-check-label texto_70" for="defaultCheck1">
+                    Acondicionamiento
+                </label>
+                <div class="btn-group texto_70" role="group" aria-label="...">
+                    <button class="btn btn-primary btn-block texto_70 boton_amarillo"> Principiante </button>
+                    <button class="btn btn-primary btn-block texto_70 boton_amarillo"> Intermedio </button>
+                    <button class="btn btn-primary btn-block texto_70 boton_amarillo"> Avanzado </button>
+                </div>
+                <p class="divider-text"></p>
+                <label class="form-check-label texto_70" for="defaultCheck1">
+                    Tipos de Bicicleta
+                </label>
+                <select class="form-control texto_70 boton_amarillo bg_black texto_white">
+                    <option class="boton_amarillo bg_black texto_white">Montaña</option>
+                    <option class="boton_amarillo bg_black texto_white">Ciudad</option>
+                    <option class="boton_amarillo bg_black texto_white" selected>Todos</option>
+                </select>
+                <p class="divider-text"></p>
+                <label class="form-check-label texto_70" for="defaultCheck1">
+                    Horario
+                </label>
+                <select class="form-control texto_70 boton_amarillo bg_black texto_white">
+                    <option class="boton_amarillo bg_black texto_white">Matutino</option>
+                    <option class="boton_amarillo bg_black texto_white">Vespertino</option>
+                    <option class="boton_amarillo bg_black texto_white" selected>Nocturno</option>
+                </select>
+                <p class="divider-text"></p>
+                <label class="form-check-label texto_70" for="defaultCheck1">
+                    Personas
+                </label>
+                <select class="form-control texto_70 boton_amarillo bg_black texto_white">
+                    <option class="boton_amarillo bg_black texto_white">Solo Mujeres</option>
+                    <option class="boton_amarillo bg_black texto_white">Familiares</option>
+                    <option class="boton_amarillo bg_black texto_white" selected>Mixto</option>
+                </select>
+                <p class="divider-text"></p>
+
+                <!--   <div class="input-group">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">
+                        <input type="radio" aria-label="Radio button for following text input" value="holi" placeholder="holi1">
+                        <input type="radio" aria-label="Radio button for following text input">
+                        <input type="radio" aria-label="Radio button for following text input">
+                      </div>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Text input with radio button">
+                  </div>
+ -->
+                <!-- Checkbox -->
+                <h6 class=" pl-4 texto_50"> Cosas extra </h6>
+                <div class="pl-3">
+                    <div class="form-check p-3 texto_50">
+                        <!-- p-3 es pading -->
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Extra 1
+                        </label>
+                        <br>
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck2">
+                            Extra 2
+                        </label>
+                        <br>
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                        <label class="form-check-label" for="defaultCheck3">
+                            Extra 3
+                        </label>
+                    </div>
+                </div>
+
+                <button class="btn btn-primary btn-block texto_70 boton_amarillo"> Limpiar datos </button>
+                <a href="addRuta.html">
+                    <button class="btn btn-primary btn-block texto_70 boton_amarillo"> Agregar Ruta </button>
+                </a>
+
+            </div>
+            <!-- Columna der -->
+            <div class="col-9 " id="columnaDerecha">
+                <div class="row">
+                    <div class="row row-cols-3 row-cols-md-3 m-2">
+                        <div class="col mb-4">
+                            <div class="card bg-dark text-dark">
+                                <img src="assets/images/mapa.jpg" class="card-img-top" alt="...">
+                                <div class="card-body ">
+                                    <h5 class="card-title texto_white texto_70">Nombre de la Rodada</h5>
+                                    <p class="card-text texto_white texto_50">Breve descripcion, si es familiar o mixto, tipos de bicis 
+                                        duracion.</p>
+                                    <button class="texto_70"
+                                        style="background-color: green; color: white;border: 1px;">Principiante</button>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card bg-dark text-dark">
+                                <img src="assets/images/mapa.jpg" class="card-img-top" alt="...">
+                                <div class="card-body ">
+                                    <h5 class="card-title texto_white texto_70">Nombre de la Rodada</h5>
+                                    <p class="card-text texto_white texto_50">Breve descripcion, si es familiar o mixto, tipos de bicis 
+                                        duracion.</p>
+                                    <button class="texto_70"
+                                        style="background-color: #FFD103; color: black;border: 1px;">Intermedio</button>
+
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col mb-4">
+                            <div class="card bg-dark text-dark">
+                                <img src="assets/images/mapa.jpg" class="card-img-top" alt="...">
+                                <div class="card-body ">
+                                    <h5 class="card-title texto_white texto_70">Nombre de la Rodada</h5>
+                                    <p class="card-text texto_white texto_50">Breve descripcion, si es familiar o mixto, tipos de bicis 
+                                        duracion.</p>
+                                    <button class="texto_70"
+                                        style="background-color: red; color: black;border: 1px;">Avanzado</button>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card bg-dark text-dark">
+                                <img src="assets/images/mapa.jpg" class="card-img-top" alt="...">
+                                <div class="card-body ">
+                                    <h5 class="card-title texto_white texto_70">Nombre de la Rodada</h5>
+                                    <p class="card-text texto_white texto_50">Breve descripcion, si es familiar o mixto, tipos de bicis 
+                                        duracion.</p>
+                                    <button class="texto_70"
+                                        style="background-color: green; color: white;border: 1px;">Principiante</button>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card bg-dark text-dark">
+                                <img src="assets/images/mapa.jpg" class="card-img-top" alt="...">
+                                <div class="card-body ">
+                                    <h5 class="card-title texto_white texto_70">Nombre de la Rodada</h5>
+                                    <p class="card-text texto_white texto_50">Breve descripcion, si es familiar o mixto, tipos de bicis 
+                                        duracion.</p>
+                                    <button class="texto_70"
+                                        style="background-color: #FFD103; color: black;border: 1px;">Intermedio</button>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card bg-dark text-dark">
+                                <img src="assets/images/mapa.jpg" class="card-img-top" alt="...">
+                                <div class="card-body ">
+                                    <h5 class="card-title texto_white texto_70">Nombre de la Rodada</h5>
+                                    <p class="card-text texto_white texto_50">Breve descripcion, si es familiar o mixto, tipos de bicis 
+                                        duracion.</p>
+                                    <button class="texto_70"
+                                        style="background-color: green; color: white;border: 1px;">Principiante</button>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card bg-dark text-dark">
+                                <img src="assets/images/mapa.jpg" class="card-img-top" alt="...">
+                                <div class="card-body ">
+                                    <h5 class="card-title texto_white texto_70">Nombre de la Rodada</h5>
+                                    <p class="card-text texto_white texto_50">Breve descripcion, si es familiar o mixto, tipos de bicis 
+                                        duracion.</p>
+                                    <button class="texto_70"
+                                        style="background-color: #FFD103; color: black;border: 1px;">Intermedio</button>
+
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="assets/json/guantes.js"></script>
+    <script>
+        jQuery.get("./navbar.html", function (data) {
+            $("#nav-placeholder").replaceWith(data);
+        });
+    </script>
+</body>
+
+</html>

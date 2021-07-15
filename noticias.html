@@ -22,7 +22,7 @@
         <div class="row no-gutters">
             <div class="col-md-4">
                 <img src="https://cdn.shoplightspeed.com/shops/620181/files/22190216/image.jpg" alt="El ciclismo y el Coronovirus, lo que debes saber"
-                style="width: 650px;height: 400px;">
+                style="width: 100%;height: 400px;">
             </div>
             <div class="col-md-8">
                 <div class="card-body">
@@ -52,7 +52,7 @@
             </div>
             <div class="col-md-4">
                 <img src="https://cdn.shoplightspeed.com/shops/620181/files/22084603/image.jpg" alt="¿Por qué la seguridad en la bici es prioridad?"
-                style="width: 650px;height: 400px;">
+                style="width: 100%;height: 400px;">
             </div>
             
         </div>
@@ -63,7 +63,7 @@
         <div class="row no-gutters">
             <div class="col-md-4">
                 <img src="https://cdn.shoplightspeed.com/shops/620181/files/18398433/image.jpg" alt="Cómo usar pedales de contacto"
-                style="width: 650px;height: 400px;">
+                style="width: 100%;height: 400px;">
             </div>
             <div class="col-md-8">
                 <div class="card-body">
@@ -99,7 +99,7 @@
             </div>
             <div class="col-md-4">
                 <img src="https://cdn.shoplightspeed.com/shops/620181/themes/13663/assets/lazy-preload.jpg?20210621151658" alt="Gravel, la nueva bici en la colonia"
-                style="width: 650px;height: 400px;">
+                style="width: 100%;height: 400px;">
             </div>
             
         </div>
@@ -111,7 +111,7 @@
         <div class="row no-gutters">
             <div class="col-md-4">
                 <img src="https://cdn.shoplightspeed.com/shops/620181/themes/13663/assets/lazy-preload.jpg?20210621151658" alt="Guia para comprar tu primer bicicleta"
-                style="width: 650px;height: 400px;">
+                style="width: 100%;height: 400px;">
             </div>
             <div class="col-md-8">
                 <div class="card-body">
@@ -127,7 +127,9 @@
         </div>
     </div>
 
+    <div id="footer">
 
+    </div>
 
 
   
@@ -148,11 +150,9 @@
         jQuery.get("./navbar.html", function (data) {
             $("#nav-placeholder").replaceWith(data);
         });
-        fetch('https://www.werbikes.mx/blogs/werbikes-blog/')
-            .then(response => response.json())
-            .then(data => console.log(data));
-
-
+        jQuery.get("./footer.html", function (data) {
+            $("#footer").replaceWith(data);
+        });
     </script>
 
 </body>

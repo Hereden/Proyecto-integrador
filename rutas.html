@@ -24,16 +24,16 @@
                 <label class="form-check-label texto_70" for="defaultCheck1">
                     Acondicionamiento
                 </label>
-                <div class="btn-group texto_70" role="group" aria-label="...">
-                    <button class="btn btn-primary btn-block texto_70 boton_amarillo"> Principiante </button>
-                    <button class="btn btn-primary btn-block texto_70 boton_amarillo"> Intermedio </button>
-                    <button class="btn btn-primary btn-block texto_70 boton_amarillo"> Avanzado </button>
+                <div class="btn-group texto_70" role="group" aria-label="..." style="width: 100%;">
+                    <button class="btn btn-primary btn-block texto_70 boton_amarillo" style="width: 33%;"> Principiante </button>
+                    <button class="btn btn-primary btn-block texto_70 boton_amarillo" style="width: 33%;"> Intermedio </button>
+                    <button class="btn btn-primary btn-block texto_70 boton_amarillo" style="width: 33%;"> Avanzado </button>
                 </div>
                 <p class="divider-text"></p>
                 <label class="form-check-label texto_70" for="defaultCheck1">
                     Tipos de Bicicleta
                 </label>
-                <select class="form-control texto_70 boton_amarillo bg_black texto_white">
+                <select class="form-control texto_70 boton_amarillo bg_black texto_white"  style="width: 100%;">
                     <option class="boton_amarillo bg_black texto_white">Montaña</option>
                     <option class="boton_amarillo bg_black texto_white">Ciudad</option>
                     <option class="boton_amarillo bg_black texto_white" selected>Todos</option>
@@ -42,7 +42,7 @@
                 <label class="form-check-label texto_70" for="defaultCheck1">
                     Horario
                 </label>
-                <select class="form-control texto_70 boton_amarillo bg_black texto_white">
+                <select class="form-control texto_70 boton_amarillo bg_black texto_white"  style="width: 100%;">
                     <option class="boton_amarillo bg_black texto_white">Matutino</option>
                     <option class="boton_amarillo bg_black texto_white">Vespertino</option>
                     <option class="boton_amarillo bg_black texto_white" selected>Nocturno</option>
@@ -51,7 +51,7 @@
                 <label class="form-check-label texto_70" for="defaultCheck1">
                     Personas
                 </label>
-                <select class="form-control texto_70 boton_amarillo bg_black texto_white">
+                <select class="form-control texto_70 boton_amarillo bg_black texto_white"  style="width: 100%;">
                     <option class="boton_amarillo bg_black texto_white">Solo Mujeres</option>
                     <option class="boton_amarillo bg_black texto_white">Familiares</option>
                     <option class="boton_amarillo bg_black texto_white" selected>Mixto</option>
@@ -91,14 +91,14 @@
                     </div>
                 </div>
 
-                <button class="btn btn-primary btn-block texto_70 boton_amarillo"> Limpiar datos </button>
+                <button class="btn btn-primary btn-block texto_70 boton_amarillo"  style="width: 100%;"> Limpiar datos </button>
                 <a href="addRuta.html">
-                    <button class="btn btn-primary btn-block texto_70 boton_amarillo"> Agregar Ruta </button>
+                    <button class="btn btn-primary btn-block texto_70 boton_amarillo"  style="width: 100%;"> Agregar Ruta </button>
                 </a>
 
             </div>
             <!-- Columna der -->
-            <div class="col-9 " id="columnaDerecha">
+            <div class="col-9 " id="columnaDerecha" style="width: auto;">
                 <div class="row">
                     <div class="row row-cols-3 row-cols-md-3 m-2">
                         <div class="col mb-4">
@@ -217,7 +217,7 @@
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="assets/json/guantes.js"></script>
     <script>
-        jQuery.get("./navbar.html", function (data) {
+        jQuery.get("./navbarComunidad.html", function (data) {
             $("#nav-placeholder").replaceWith(data);
         });
         jQuery.get("./footer.html", function (data) {

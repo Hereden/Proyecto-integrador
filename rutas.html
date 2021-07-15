@@ -203,6 +203,9 @@
         </div>
     </div>
 
+    <div id="footer">
+
+    </div>
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -216,6 +219,9 @@
     <script>
         jQuery.get("./navbar.html", function (data) {
             $("#nav-placeholder").replaceWith(data);
+        });
+        jQuery.get("./footer.html", function (data) {
+            $("#footer").replaceWith(data);
         });
     </script>
 </body>

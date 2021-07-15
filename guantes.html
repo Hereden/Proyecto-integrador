@@ -70,6 +70,9 @@
             </div>
         </div>
     </div>
+    <div id="footer">
+        
+    </div>
 
 
 
@@ -84,6 +87,9 @@
     <script>
         jQuery.get("./navbar.html", function (data) {
             $("#nav-placeholder").replaceWith(data);
+        });
+        jQuery.get("./footer.html", function (data) {
+            $("#footer").replaceWith(data);
         });
 
         var columnaDerecha= document.querySelector("#columnaDerecha");

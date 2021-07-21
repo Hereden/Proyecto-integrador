@@ -22,7 +22,8 @@
                 <h5 class="ml-4 texto_50">Buscar por nombre</h5>
                 <!-- Finder -->
                 <form class="form-inline my-2 my-lg-0 pl-3">
-                    <input class="form-control mr-sm-2 texto_50 bg_black texto_amarillo" type="search" placeholder="Buscar articulo" aria-label="Search">
+                    <input class="form-control mr-sm-2 texto_50 bg_black texto_amarillo" type="search"
+                        placeholder="Buscar articulo" aria-label="Search">
                 </form>
                 <!-- Checkbox -->
                 <h6 class=" pl-4 texto_50"> Tallas </h6>
@@ -41,7 +42,7 @@
                         <br>
                         <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
                         <label class="form-check-label" for="defaultCheck3">
-                            Larger
+                            Large
                         </label>
                         <br>
                         <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
@@ -50,10 +51,11 @@
                         </label>
                     </div>
                 </div>
-                <h5 class="ml-4 texto_50">Buscar por Precio</h5>
+                <h5 class="ml-4 texto_50">Buscar por precio</h5>
                 <!-- Finder -->
                 <form class="form-inline my-2 my-lg-0 pl-3">
-                    <input class="form-control mr-sm-2 texto_50 bg_black texto_amarillo" type="search" placeholder="buscar precio $$$" aria-label="Search">
+                    <input class="form-control mr-sm-2 texto_50 bg_black texto_amarillo" type="search"
+                        placeholder="buscar precio $$$" aria-label="Search">
                 </form>
                 <!-- Fin de Checkbox -->
             </div>
@@ -71,7 +73,7 @@
         </div>
     </div>
     <div id="footer">
-        
+
     </div>
 
 
@@ -91,18 +93,18 @@
             $("#footer").replaceWith(data);
         });
 
-        var columnaDerecha= document.querySelector("#columnaDerecha");
-        let row1=document.createElement("div");
-        row1.className+="row";
-        let row2= document.createElement("div");
-        row2.className+= "row row-cols-3 row-cols-md-3 m-2";
+        var columnaDerecha = document.querySelector("#columnaDerecha");
+        let row1 = document.createElement("div");
+        row1.className += "row";
+        let row2 = document.createElement("div");
+        row2.className += "row row-cols-3 row-cols-md-3 m-2";
         BiciInfantiles.forEach(element => {
             let marcoCard = document.createElement("div");
             marcoCard.className += "col mb-4";
             let card = document.createElement("div");
             card.className += "card bg-dark text-dark";
-            let cardLayout= document.createElement("div");
-            cardLayout.className +="card-img-overlay cosas_hidden";
+            let cardLayout = document.createElement("div");
+            cardLayout.className += "card-img-overlay cosas_hidden";
             let imagenCard = document.createElement("img");
             imagenCard.className += "card-img-top opacidad_imagen";
             let tituloCard = document.createElement("h5");
@@ -113,8 +115,8 @@
             precioCard.className += "card-text texto_white texto_70 align-self-center";
             let botonCard = document.createElement("button");
             botonCard.setAttribute("style", "border-color: #FFD103;background-color: black;color: #FFD103;border: 1px;");
-            let tallas1=document.createElement("div");
-            tallas1.className+="";
+            let tallas1 = document.createElement("div");
+            tallas1.className += "";
 
             imagenCard.src = element.url;
             imagenCard.alt = element.nombre;
@@ -137,41 +139,41 @@
             }else{
                 console.log("No especificaciones")
             } */
-            if(typeof(element.talla)!=typeof(undefined)){
+            if (typeof (element.talla) != typeof (undefined)) {
                 //console.log(element.talla+"2");
                 //S,M,L,XL
                 let tallas3 = element.talla.split(",");
                 //["S","M","L","XL"]
-                tallas3.forEach(talla2 =>{
-                    let botonTalla=document.createElement("button");
-                    botonTalla.className+= "botonesTallas";
-                    botonTalla.appendChild(document.createTextNode(talla2));7
-                    botonTalla.addEventListener("click",()=>{
+                tallas3.forEach(talla2 => {
+                    let botonTalla = document.createElement("button");
+                    botonTalla.className += "botonesTallas";
+                    botonTalla.appendChild(document.createTextNode(talla2)); 7
+                    botonTalla.addEventListener("click", () => {
                         var current = document.querySelector(".active");
-                        if(current!=null){
-                            current.className= "botonesTallas";
+                        if (current != null) {
+                            current.className = "botonesTallas";
                         }
-                        botonTalla.className="active";
+                        botonTalla.className = "active";
                         console.log(talla2);
                     });
                     console.log(botonTalla.innerHTML)
-                    if(botonTalla.innerHTML!=""){
+                    if (botonTalla.innerHTML != "") {
                         tallas1.appendChild(botonTalla);
                     }
-                    
+
                 });
                 //descCard.appendChild(tallas1);
                 //card.appendChild(tallas1);
-            }else{
+            } else {
                 console.log("Sin talla");
             }
-            
+
             cardLayout.appendChild(tallas1);
             cardLayout.appendChild(botonCard);
             cardLayout.appendChild(tituloCard);
             cardLayout.appendChild(descCard);
             //cardLayout.appendChild(precioCard);
-            
+
             //card.appendChild(tituloCard);
             card.appendChild(imagenCard);
             card.appendChild(cardLayout);

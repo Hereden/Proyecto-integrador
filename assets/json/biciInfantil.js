@@ -5,7 +5,7 @@ BiciInfantiles = [
       "marca": "",
       "precio": 1490.00,
       "url": "assets/images/bicisNinos/bici01.jpg",
-      "especificaciones": [
+      "especificaciones": 
         {
           "Edad recomendada": "9 más Años",
           "Género": "Niña",
@@ -19,7 +19,6 @@ BiciInfantiles = [
           "Rodada": "20",
           "gama_color": "Blanco"
         }
-      ]
     },
     {
       "nombre": "Bicicleta Ghost Revenge R29 Verde",
@@ -27,7 +26,7 @@ BiciInfantiles = [
           "marca": "",
       "precio": 6499.00,
       "url": "assets/images/bicisNinos/bici02.jpg",
-      "especificaciones": [
+      "especificaciones": 
         {
           "Edad recomendada": "Adolescentes y adultos",
           "Género": "Unisex",
@@ -43,7 +42,6 @@ BiciInfantiles = [
           "País de Origen": "México",
           "gama_color": "Verde"
         }
-      ]
     },
     {
       "nombre": "Bicicleta Infantil Unibike R12 con llanta de EVA Rojo",
@@ -51,7 +49,7 @@ BiciInfantiles = [
           "marca": "",
       "precio": 1609.99,
       "url": "assets/images/bicisNinos/bici03.jpeg",
-      "especificaciones": [
+      "especificaciones": 
         {
           "Edad recomendada": "2-4 años",
           "Género": "niños, niñas",
@@ -70,7 +68,6 @@ BiciInfantiles = [
           "Tipo de Bicicleta": "De Montaña",
           "gama_color": "Rojo"
         }
-      ]
     },
     {
       "nombre": "Bicicleta Infantil Unibike R14 con llantas de aire Azul",
@@ -78,7 +75,7 @@ BiciInfantiles = [
           "marca": "",
       "precio": 2390.00,
       "url": "assets/images/bicisNinos/bici04.jpeg",
-      "especificaciones": [
+      "especificaciones": 
         {
           "Edad recomendada": "3-6 años",
           "Género": "Niñas",
@@ -96,7 +93,6 @@ BiciInfantiles = [
           "Tipo de Bicicleta": "Urbana",
           "gama_color": "Azul"
         }
-      ]
     },
     {
       //05
@@ -104,7 +100,7 @@ BiciInfantiles = [
       "descripcion": "Bicicleta infantil con cuadro de acero. Cuenta con freno contrapedal fácil de usar. Bicicleta infantil con 1 velocidad.",
       "precio": 3827.00,
       "url": "assets/images/bicisNinos/bici05.jpg",
-      "especificaciones": [
+      "especificaciones": 
         {
           "Edad recomendada": "Adolescentes y adultos",
           "Género": "Niña",
@@ -121,7 +117,6 @@ BiciInfantiles = [
           "País de Origen": "China",
           "gama_color": "Rosa"
         }
-      ]
     },
     {
       //06
@@ -130,7 +125,7 @@ BiciInfantiles = [
           "marca": "",
       "precio": 2455.00,
       "url": "assets/images/bicisNinos/bici06.jpeg",
-      "especificaciones": [
+      "especificaciones": 
         {
           "Edad recomendada": "10-12 años",
           "Género": "Niña",
@@ -148,7 +143,6 @@ BiciInfantiles = [
           "País de Origen": "China",
           "gama_color": "Azul"
         }
-      ]
     },
     ///////////////////////////////////////////// aqui me quede sigue bici07
     {
@@ -156,7 +150,7 @@ BiciInfantiles = [
       "descripcion": "1 velocidad. Canastilla en Acero. Frenos V Brake. Rodada 20, 1 velocidad. Cuadro de acero con porta bulto integrado (acolchonado). Canastilla en Acero. Cubrecadena de seguridad. Pompones de colores y Timbre. Frenos V Brake. Asiento en Charol",
       "precio": 4209.00,
       "url": "assets/images/bicisNinos/bici07.jpg",
-      "especificaciones": [
+      "especificaciones": 
         {
           "Edad recomendada": "6 - 10 años",
           "Género": "",
@@ -171,14 +165,13 @@ BiciInfantiles = [
           "País de Origen": "México",
           "gama_color": "Azul"
         }
-      ]
     },
     {
       "nombre": "Bicicleta AEIOU Moto Cross R20 Verde",
       "descripcion": "Con sonido de moto. Corneta en el manubrio y cilindro de agua. Con llantas laterales entrenadoras. Bicicleta con diseño tipo motocross con sonido y corneta ene el manubrio, con llantas entrenadoras para los más pequeños, cuadro de acero y cilindro para agua. PRODUCTO REQUIERE ENSAMBLE.",
       "precio": 3975.00,
       "url": "assets/images/bicisNinos/bici08.jpeg",
-      "especificaciones": [
+      "especificaciones": 
         {
           "Edad recomendada": "8 - 12 años",
           "Género": "Unisex",
@@ -191,7 +184,6 @@ BiciInfantiles = [
           "País de Origen": "China",
           "gama_color": "Verde"
         }
-      ]
     },
     {
       "nombre": "Bicicleta Distroller Distroller Rodada 16 Rosa",
@@ -199,7 +191,7 @@ BiciInfantiles = [
         "marca": "",
       "precio": 3699.00,
       "url": "assets/images/bicisNinos/bici09.jpg",
-      "especificaciones": [
+      "especificaciones": 
         {
           "Edad recomendada": "5 años o más",
           "Género": "Niña",
@@ -213,7 +205,6 @@ BiciInfantiles = [
           "Garantía": "1 Año en cuadro y tijera directo con proveedor, llantas y cámaras sin garantía",
           "gama_color": "Rosa"
         }
-      ]
     },
     {
       "nombre": "Bicicleta Veloci Max Steel R16 Azul",
@@ -221,7 +212,7 @@ BiciInfantiles = [
       "marca": "",
       "precio": 3099.00,
       "url": "assets/images/bicisNinos/bici10.jpg",
-      "especificaciones": [
+      "especificaciones": 
         {
           "Edad recomendada": "4 años o más",
           "Género": "Niño",
@@ -235,6 +226,5 @@ BiciInfantiles = [
           "País de Origen": "México",
           "gama_color": "Azul"
         }
-      ]
     },
   ];

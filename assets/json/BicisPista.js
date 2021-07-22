@@ -6,7 +6,7 @@ BicisPista = [
         "precio": 159900,
         "url": "assets/images/BicisPista/BP1.jpg",
         "talla": "",
-        "especificaciones": [
+        "especificaciones": 
             {
                 "Cuadro": "Noah Fast Disc, 60T-40T-30T High Modulus Unidirectional Carbon, In-Mould F-Surface Technology, TA 12x142mm",
                 "Tijera": "Noah Fast Disc, 60T-40T-30T High Modulus Unidirectional Carbon, In-Mould F-Surface Technology, TA 12x100mm",
@@ -19,9 +19,7 @@ BicisPista = [
                 "Poste Manubrio": "Ridley Fast Integrated Cockpit",
                 "Asiento": "Selle Italia SLR"
 
-
             }
-        ]
 
     },
 
@@ -34,7 +32,7 @@ BicisPista = [
         "precio": 62499,
         "url": "assets/images/BicisPista/BP2.jpg",
         "talla": "51,54",
-        "especificaciones": [
+        "especificaciones": 
             {
 
                 "Cuadro": "SmartForm C1 Premium Alloy, 12x142 Speed Release thru-axle, flat-mount disc, integrated cable routing w/ Switchplate, SAVE, BB30a, Di2 ready",
@@ -50,7 +48,6 @@ BicisPista = [
                 "Asiento": "Prologo Nago RS STN"
 
             }
-        ]
     },
 
 
@@ -63,7 +60,7 @@ BicisPista = [
         "precio": 137990,
         "url": "assets/images/BicisPista/BP3.jpg",
         "talla": "48,51,54,57,60",
-        "especificaciones": [
+        "especificaciones": 
             {
 
 
@@ -80,7 +77,6 @@ BicisPista = [
                 "Asiento": "Forza Cirrus Pro",
 
             }
-        ]
     },
 
 
@@ -92,7 +88,7 @@ BicisPista = [
         "precio": 36990,
         "url": "assets/images/BicisPista/BP4.jpg",
         "talla": "48,51,54,56,58",
-        "especificaciones": [
+        "especificaciones": 
             {
 
                 "Cuadro": "SmartForm C2 Alloy, SAVE, BB30, internal cable routing, flat mount, 130x9mm QR",
@@ -109,9 +105,7 @@ BicisPista = [
                 "Poste Manubrio": "Cannondale 4, 6061 Alloy, 31.8, 7°",
                 "Asiento": "Cannondale Stage Ergo",
 
-
             }
-        ]
     },
 
 
@@ -123,7 +117,7 @@ BicisPista = [
         "precio": 27990,
         "url": "assets/images/BicisPista/BP5.jpg",
         "talla": "48,51,54,56",
-        "especificaciones": [
+        "especificaciones": 
             {
 
 
@@ -140,7 +134,6 @@ BicisPista = [
                 "Asiento": "Cannondale Stage CX",
 
             }
-        ]
     },
 
 
@@ -152,7 +145,7 @@ BicisPista = [
         "precio": 123900,
         "url": "assets/images/BicisPista/BP6.jpg",
         "talla": "51,54,56",
-        "especificaciones": [
+        "especificaciones": 
             {
 
                 "Cuadro": "BallisTec Carbon, integrated cable routing w/ Switchplate, SAVE, PF30a, flat mount disc, 12x142 Speed Release thru-axle",
@@ -167,10 +160,7 @@ BicisPista = [
                 "Poste Manubrio": "HollowGram KNØT, Alloy w/ cable cover, -17°",
                 "Asiento": "Prologo Dimension STN NDR, steel rails",
 
-
-
             }
-        ]
     },
 
 
@@ -183,7 +173,7 @@ BicisPista = [
         "precio": 30990,
         "url": "assets/images/BicisPista/BP7.jpg",
         "talla": "48,51,54,58",
-        "especificaciones": [
+        "especificaciones": 
             {
 
                 "Cuadro": "All-New SmartForm C2 Alloy, SAVE, tapered headtube, fender mounts, 130x9mm QR",
@@ -198,9 +188,7 @@ BicisPista = [
                 "Poste Manubrio": "6061 Alloy, 31.8, 7°",
                 "Asiento": "Cannondale Stage CX",
 
-
             }
-        ]
     },
 
 
@@ -213,7 +201,7 @@ BicisPista = [
         "precio": 92324,
         "url": "assets/images/BicisPista/BP8.jpg",
         "talla": "48,54,58,",
-        "especificaciones": [
+        "especificaciones": 
             {
 
                 "Cuadro": "Look 785 Disc Carbon 990g 50% High Modulus y 50% High Resistance",
@@ -228,11 +216,7 @@ BicisPista = [
                 "Poste Manubrio": "Deda Zero 100 Alloy 90/100/110 mm",
                 "Asiento": "Selle Italia",
 
-
-
-
             }
-        ]
     },
 
 
@@ -245,7 +229,7 @@ BicisPista = [
         "precio": 87800,
         "url": "assets/images/BicisPista/BP9.png",
         "talla": "48,51,54",
-        "especificaciones": [
+        "especificaciones": 
             {
 
                 "Cuadro": "LV68 Unidirectional HM Carbon, 12x142 TA",
@@ -254,9 +238,7 @@ BicisPista = [
                 "Multiplicacion": "FSA Gossamer Pro 50-34",
                 "Rines": "Fulcrum Racing 700 DB",
 
-
             }
-        ]
     },
 
 
@@ -268,7 +250,7 @@ BicisPista = [
         "precio": 131745,
         "url": "assets/images/BicisPista/BP10.jpg",
         "talla": "48,54,58",
-        "especificaciones": [
+        "especificaciones": 
             {
 
                 "Cuadro": "Look 785 Carbon 990g 50% High Modulus y 50% High Resistance",
@@ -283,10 +265,7 @@ BicisPista = [
                 "Poste Manubrio": "Deda Zero 100 Alloy 90/100/110 mm",
                 "Asiento": "Selle Italia",
 
-
-
             }
-        ]
     }
 ]
 

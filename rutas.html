@@ -25,11 +25,14 @@
                     Acondicionamiento
                 </label>
                 <div class="btn-group texto_70" role="group" aria-label="..." style="width: 100%;">
-                    <button class="btn btn-primary btn-block texto_70 boton_amarillo" style="width: 33%;"> Principiante
+                    <button class="btn btn-primary btn-block texto_70 boton_amarillo" style="width: 33%;" 
+                    onclick="princi()"> Principiante
                     </button>
-                    <button class="btn btn-primary btn-block texto_70 boton_amarillo" style="width: 33%;"> Intermedio
+                    <button class="btn btn-primary btn-block texto_70 boton_amarillo" style="width: 33%;" 
+                    onclick="inter()"> Intermedio
                     </button>
-                    <button class="btn btn-primary btn-block texto_70 boton_amarillo" style="width: 33%;"> Avanzado
+                    <button class="btn btn-primary btn-block texto_70 boton_amarillo" style="width: 33%;" 
+                    onclick="avanzado()"> Avanzado
                     </button>
                 </div>
                 <p class="divider-text"></p>
@@ -231,6 +234,28 @@
         jQuery.get("./footer.html", function (data) {
             $("#footer").replaceWith(data);
         });
+
+        function princi(){
+            jQuery.get("./principiante.html", function (data) {
+                //$("#columnaDerecha").replaceWith(data);
+                let columDerecha=document.querySelector("#columnaDerecha");
+                columDerecha.innerHTML=data;
+            })
+        }
+        function inter(){
+            jQuery.get("./inter.html", function (data) {
+                //$("#columnaDerecha").replaceWith(data);
+                let columDerecha=document.querySelector("#columnaDerecha");
+                columDerecha.innerHTML=data;
+            });
+        }
+        function avanzado(){
+            jQuery.get("./avanzado.html", function (data) {
+                //$("#columnaDerecha").replaceWith(data);
+                let columDerecha=document.querySelector("#columnaDerecha");
+                columDerecha.innerHTML=data;
+            })
+        }
     </script>
 </body>
 

@@ -25,15 +25,21 @@
                     Acondicionamiento
                 </label>
                 <div class="btn-group texto_70" role="group" aria-label="..." style="width: 100%;">
-                    <button class="btn btn-primary btn-block texto_70 boton_amarillo" style="width: 33%;"> Principiante </button>
-                    <button class="btn btn-primary btn-block texto_70 boton_amarillo" style="width: 33%;"> Intermedio </button>
-                    <button class="btn btn-primary btn-block texto_70 boton_amarillo" style="width: 33%;"> Avanzado </button>
+                    <button class="btn btn-primary btn-block texto_70 boton_amarillo" style="width: 33%;" 
+                    onclick="princi()"> Principiante
+                    </button>
+                    <button class="btn btn-primary btn-block texto_70 boton_amarillo" style="width: 33%;" 
+                    onclick="inter()"> Intermedio
+                    </button>
+                    <button class="btn btn-primary btn-block texto_70 boton_amarillo" style="width: 33%;" 
+                    onclick="avanzado()"> Avanzado
+                    </button>
                 </div>
                 <p class="divider-text"></p>
                 <label class="form-check-label texto_70" for="defaultCheck1">
                     Tipos de Bicicleta
                 </label>
-                <select class="form-control texto_70 boton_amarillo bg_black texto_white"  style="width: 100%;">
+                <select class="form-control texto_70 boton_amarillo bg_black texto_white" style="width: 100%;">
                     <option class="boton_amarillo bg_black texto_white">Montaña</option>
                     <option class="boton_amarillo bg_black texto_white">Ciudad</option>
                     <option class="boton_amarillo bg_black texto_white" selected>Todos</option>
@@ -42,7 +48,7 @@
                 <label class="form-check-label texto_70" for="defaultCheck1">
                     Horario
                 </label>
-                <select class="form-control texto_70 boton_amarillo bg_black texto_white"  style="width: 100%;">
+                <select class="form-control texto_70 boton_amarillo bg_black texto_white" style="width: 100%;">
                     <option class="boton_amarillo bg_black texto_white">Matutino</option>
                     <option class="boton_amarillo bg_black texto_white">Vespertino</option>
                     <option class="boton_amarillo bg_black texto_white" selected>Nocturno</option>
@@ -51,8 +57,8 @@
                 <label class="form-check-label texto_70" for="defaultCheck1">
                     Personas
                 </label>
-                <select class="form-control texto_70 boton_amarillo bg_black texto_white"  style="width: 100%;">
-                    <option class="boton_amarillo bg_black texto_white">Solo Mujeres</option>
+                <select class="form-control texto_70 boton_amarillo bg_black texto_white" style="width: 100%;">
+                    <option class="boton_amarillo bg_black texto_white">Sólo mujeres</option>
                     <option class="boton_amarillo bg_black texto_white">Familiares</option>
                     <option class="boton_amarillo bg_black texto_white" selected>Mixto</option>
                 </select>
@@ -91,9 +97,11 @@
                     </div>
                 </div>
 
-                <button class="btn btn-primary btn-block texto_70 boton_amarillo"  style="width: 100%;"> Limpiar datos </button>
+                <button class="btn btn-primary btn-block texto_70 boton_amarillo" style="width: 100%;"> Limpiar datos
+                </button>
                 <a href="addRuta.html">
-                    <button class="btn btn-primary btn-block texto_70 boton_amarillo"  style="width: 100%;"> Agregar Ruta </button>
+                    <button class="btn btn-primary btn-block texto_70 boton_amarillo" style="width: 100%;"> Agregar Ruta
+                    </button>
                 </a>
 
             </div>
@@ -106,8 +114,7 @@
                                 <img src="assets/images/mapa.jpg" class="card-img-top" alt="...">
                                 <div class="card-body ">
                                     <h5 class="card-title texto_white texto_70">Nombre de la Rodada</h5>
-                                    <p class="card-text texto_white texto_50">Breve descripcion, si es familiar o mixto, tipos de bicis 
-                                        duracion.</p>
+                                    <p class="card-text texto_white texto_50">Breve descripción, si es familiar o mixto, tipos de bicis duracion.</p>
                                     <button class="texto_70"
                                         style="background-color: green; color: white;border: 1px;">Principiante</button>
 
@@ -119,21 +126,21 @@
                                 <img src="assets/images/mapa.jpg" class="card-img-top" alt="...">
                                 <div class="card-body ">
                                     <h5 class="card-title texto_white texto_70">Nombre de la Rodada</h5>
-                                    <p class="card-text texto_white texto_50">Breve descripcion, si es familiar o mixto, tipos de bicis 
-                                        duracion.</p>
+                                    <p class="card-text texto_white texto_50">Breve descripcin, si es familiar o mixto, tipos de bicis duracion.</p>
                                     <button class="texto_70"
                                         style="background-color: #FFD103; color: black;border: 1px;">Intermedio</button>
 
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="col mb-4">
                             <div class="card bg-dark text-dark">
                                 <img src="assets/images/mapa.jpg" class="card-img-top" alt="...">
                                 <div class="card-body ">
                                     <h5 class="card-title texto_white texto_70">Nombre de la Rodada</h5>
-                                    <p class="card-text texto_white texto_50">Breve descripcion, si es familiar o mixto, tipos de bicis 
+                                    <p class="card-text texto_white texto_50">Breve descripcion, si es familiar o mixto,
+                                        tipos de bicis
                                         duracion.</p>
                                     <button class="texto_70"
                                         style="background-color: red; color: black;border: 1px;">Avanzado</button>
@@ -146,7 +153,8 @@
                                 <img src="assets/images/mapa.jpg" class="card-img-top" alt="...">
                                 <div class="card-body ">
                                     <h5 class="card-title texto_white texto_70">Nombre de la Rodada</h5>
-                                    <p class="card-text texto_white texto_50">Breve descripcion, si es familiar o mixto, tipos de bicis 
+                                    <p class="card-text texto_white texto_50">Breve descripcion, si es familiar o mixto,
+                                        tipos de bicis
                                         duracion.</p>
                                     <button class="texto_70"
                                         style="background-color: green; color: white;border: 1px;">Principiante</button>
@@ -159,7 +167,8 @@
                                 <img src="assets/images/mapa.jpg" class="card-img-top" alt="...">
                                 <div class="card-body ">
                                     <h5 class="card-title texto_white texto_70">Nombre de la Rodada</h5>
-                                    <p class="card-text texto_white texto_50">Breve descripcion, si es familiar o mixto, tipos de bicis 
+                                    <p class="card-text texto_white texto_50">Breve descripcion, si es familiar o mixto,
+                                        tipos de bicis
                                         duracion.</p>
                                     <button class="texto_70"
                                         style="background-color: #FFD103; color: black;border: 1px;">Intermedio</button>
@@ -172,7 +181,8 @@
                                 <img src="assets/images/mapa.jpg" class="card-img-top" alt="...">
                                 <div class="card-body ">
                                     <h5 class="card-title texto_white texto_70">Nombre de la Rodada</h5>
-                                    <p class="card-text texto_white texto_50">Breve descripcion, si es familiar o mixto, tipos de bicis 
+                                    <p class="card-text texto_white texto_50">Breve descripcion, si es familiar o mixto,
+                                        tipos de bicis
                                         duracion.</p>
                                     <button class="texto_70"
                                         style="background-color: green; color: white;border: 1px;">Principiante</button>
@@ -185,7 +195,8 @@
                                 <img src="assets/images/mapa.jpg" class="card-img-top" alt="...">
                                 <div class="card-body ">
                                     <h5 class="card-title texto_white texto_70">Nombre de la Rodada</h5>
-                                    <p class="card-text texto_white texto_50">Breve descripcion, si es familiar o mixto, tipos de bicis 
+                                    <p class="card-text texto_white texto_50">Breve descripcion, si es familiar o mixto,
+                                        tipos de bicis
                                         duracion.</p>
                                     <button class="texto_70"
                                         style="background-color: #FFD103; color: black;border: 1px;">Intermedio</button>
@@ -193,14 +204,14 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
-            </div>
-        </div>
+    </div>
+    </div>
     </div>
 
     <div id="footer">
@@ -223,6 +234,28 @@
         jQuery.get("./footer.html", function (data) {
             $("#footer").replaceWith(data);
         });
+
+        function princi(){
+            jQuery.get("./principiante.html", function (data) {
+                //$("#columnaDerecha").replaceWith(data);
+                let columDerecha=document.querySelector("#columnaDerecha");
+                columDerecha.innerHTML=data;
+            })
+        }
+        function inter(){
+            jQuery.get("./inter.html", function (data) {
+                //$("#columnaDerecha").replaceWith(data);
+                let columDerecha=document.querySelector("#columnaDerecha");
+                columDerecha.innerHTML=data;
+            });
+        }
+        function avanzado(){
+            jQuery.get("./avanzado.html", function (data) {
+                //$("#columnaDerecha").replaceWith(data);
+                let columDerecha=document.querySelector("#columnaDerecha");
+                columDerecha.innerHTML=data;
+            })
+        }
     </script>
 </body>
 

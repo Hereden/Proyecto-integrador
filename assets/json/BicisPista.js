@@ -6,7 +6,7 @@ BicisPista = [
         "precio": 159900,
         "url": "assets/images/BicisPista/BP1.jpg",
         "talla": "",
-        "especificaciones": [
+        "especificaciones": 
             {
                 "Cuadro": "Noah Fast Disc, 60T-40T-30T High Modulus Unidirectional Carbon, In-Mould F-Surface Technology, TA 12x142mm",
                 "Tijera": "Noah Fast Disc, 60T-40T-30T High Modulus Unidirectional Carbon, In-Mould F-Surface Technology, TA 12x100mm",
@@ -21,7 +21,7 @@ BicisPista = [
 
 
             }
-        ]
+        
 
     },
 
@@ -34,7 +34,7 @@ BicisPista = [
         "precio": 62499,
         "url": "assets/images/BicisPista/BP2.jpg",
         "talla": "51,54",
-        "especificaciones": [
+        "especificaciones": 
             {
 
                 "Cuadro": "SmartForm C1 Premium Alloy, 12x142 Speed Release thru-axle, flat-mount disc, integrated cable routing w/ Switchplate, SAVE, BB30a, Di2 ready",
@@ -50,7 +50,7 @@ BicisPista = [
                 "Asiento": "Prologo Nago RS STN"
 
             }
-        ]
+        
     },
 
 

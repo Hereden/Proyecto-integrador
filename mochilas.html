@@ -1,194 +1,350 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>TlacuaRiders</title>
+  <!--Dejamos el chartset en 8 para que nos acepte acentos-->
+  <meta charset="utf-8" />
+  <!--Cargamos estilos de bootstrap-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <!--titulo de la pagina es del producto "TlacuaRiders"-->
+  <title>TlacuaRiders</title>
 </head>
 
 <body>
-    <div id="nav-placeholder">
+  <!--Creamos un div para jalar el navbar dinamicamente-->
+  <div id="nav-placeholder">
 
-    </div>
-    <!-- Columnas -->
-    <div class="">
-        <div class="row">
-            <!-- Columna de la izquierda -->
-            <div class="col-3">
-                <h5 class="ml-4 texto_50">Buscar por nombre</h5>
-                <!-- Finder -->
-                <form class="form-inline my-2 my-lg-0 pl-3">
-                    <input class="form-control mr-sm-2 texto_50 bg_black texto_amarillo" type="search"
-                        placeholder="Buscar articulo" aria-label="Search">
-                </form>
-                <!-- Checkbox -->
-                <h6 class=" pl-4 texto_50"> Tallas </h6>
-                <div class="pl-3">
-                    <div class="form-check p-3 texto_50">
-                        <!-- p-3 es pading -->
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                        <label class="form-check-label" for="defaultCheck1">
-                            Small
-                        </label>
-                        <br>
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                        <label class="form-check-label" for="defaultCheck2">
-                            Medium
-                        </label>
-                        <br>
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
-                        <label class="form-check-label" for="defaultCheck3">
-                            Large
-                        </label>
-                        <br>
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
-                        <label class="form-check-label" for="defaultCheck4">
-                            Extra Large
-                        </label>
-                    </div>
-                </div>
-                <h5 class="ml-4 texto_50">Buscar por precio</h5>
-                <!-- Finder -->
-                <form class="form-inline my-2 my-lg-0 pl-3">
-                    <input class="form-control mr-sm-2 texto_50 bg_black texto_amarillo" type="search"
-                        placeholder="$300.00" aria-label="Search">
-                </form>
-                <!-- Fin de Checkbox -->
-            </div>
-            <!-- Columna der -->
-            <div class="col-9 " id="columnaDerecha">
-                <!-- Cards -->
-                <!-- <div class="row">
-                    <div class="row row-cols-3 row-cols-md-3 m-2">
+  </div>
 
-
-
-                    </div>
-                </div> -->
-            </div>
+  <!-- Columnas -->
+  <div class="">
+    <div class="row">
+      <!-- Columna de la izquierda -->
+      <div class="col-3">
+        <h5 class="ml-4 texto_50">Buscar por nombre</h5>
+        <!-- Buscador -->
+        <form class="form-inline my-2 my-lg-0 pl-3">
+          <input class="form-control mr-sm-2 texto_50 bg_black texto_amarillo" type="search"
+            placeholder="Buscar articulo" aria-label="Search" id="searchNombre" />
+        </form>
+        <!-- Tallas -->
+        <h6 class="pl-4 texto_50">Tallas</h6>
+        <div class="pl-3">
+          <div class="form-check p-3 texto_50">
+            <!-- p-3 es pading -->
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
+            <label class="form-check-label" for="defaultCheck1">
+              Small
+            </label>
+            <br />
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
+            <label class="form-check-label" for="defaultCheck2">
+              Medium
+            </label>
+            <br />
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" />
+            <label class="form-check-label" for="defaultCheck3">
+              Large
+            </label>
+            <br />
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck4" />
+            <label class="form-check-label" for="defaultCheck4">
+              Extra Large
+            </label>
+          </div>
         </div>
-    </div>
-    <div id="footer">
+        <h5 class="ml-4 texto_50">Buscar por precio</h5>
+        <!-- Buscador por precio -->
+        <form class="form-inline my-2 my-lg-0 pl-3">
+          <input class="form-control mr-sm-2 texto_50 bg_black texto_amarillo" type="search" placeholder="$300.00"
+            aria-label="Search" />
+        </form>
+      </div>
+
+
+      <!-- Columna derecha para rellenarla dinamicamente -->
+      <div class="col-9" id="columnaDerecha">
+      </div>
 
     </div>
+  </div>
 
+  <!--Creamos etiqueta div footer para rellenar dinamicamente-->
+  <div id="footer">
 
+  </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-        crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="assets/json/mochilas.js"></script>
-    <script>
-        jQuery.get("./navbar.html", function (data) {
-            $("#nav-placeholder").replaceWith(data);
-        });
-        jQuery.get("./footer.html", function (data) {
-            $("#footer").replaceWith(data);
-        });
+  <!--Cargamos lo de JavaScript-->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="assets/json/mochilas.js"></script>
 
-        var columnaDerecha = document.querySelector("#columnaDerecha");
-        let row1 = document.createElement("div");
-        row1.className += "row";
-        let row2 = document.createElement("div");
-        row2.className += "row row-cols-3 row-cols-md-3 m-2";
-        Mochilas.forEach(element => {
-            let marcoCard = document.createElement("div");
-            marcoCard.className += "col mb-4";
-            let card = document.createElement("div");
-            card.className += "card bg-dark text-dark";
-            let cardLayout = document.createElement("div");
-            cardLayout.className += "card-img-overlay cosas_hidden";
-            let imagenCard = document.createElement("img");
-            imagenCard.className += "card-img-top opacidad_imagen";
-            let tituloCard = document.createElement("h5");
-            tituloCard.className += "card-title texto_white texto_70";
-            let descCard = document.createElement("p");
-            descCard.className += "card-text text-overflow-cards texto_white texto_50";
-            let precioCard = document.createElement("p");
-            precioCard.className += "card-text texto_white texto_70 align-self-center";
-            let botonCard = document.createElement("button");
-            botonCard.setAttribute("style", "border-color: #FFD103;background-color: black;color: #FFD103;border: 1px;");
-            let tallas1 = document.createElement("div");
-            tallas1.className += "";
+  <!--Script de la pagina-->
+  <script>
+    /*Obtenemos el div del nav y lo cambiamos por el contenido del navbar.html*/
+    jQuery.get("./navbar.html", function (data) {
+      $("#nav-placeholder").replaceWith(data);
+    });
 
-            imagenCard.src = element.url;
-            imagenCard.alt = element.nombre;
-            tituloCard.appendChild(document.createTextNode(element.nombre));
-            descCard.appendChild(document.createTextNode(element.descripcion));
-            precioCard.appendChild(document.createTextNode(`$ ${element.precio}`));
-            botonCard.appendChild(document.createTextNode(`$Comprar$`));
-            botonCard.addEventListener("click", function () {
+    /*Obtenemos el div del footer y lo cambiamos por el contenido del footer.html*/
+    jQuery.get("./footer.html", function (data) {
+      $("#footer").replaceWith(data);
+    });
 
+    function generarCardsDinamicamente(array1) {
+      /*Obtenemos div de columna derecha*/
+      var columnaDerecha = document.querySelector("#columnaDerecha");
+      /*Generamos la fila donde iran todos los articulos de la página*/
+      let row1 = document.createElement("div");
+      row1.className += "row";
+      /*Generamos otra fila donde separamos en 3 articulos por fila*/
+      let row2 = document.createElement("div");
+      row2.className += "row row-cols-3 row-cols-md-3 m-2";
+      /*Agarramos nuestro Array con lista de json*/
+      /*Por cada elemento vamos a*/
+      array1.forEach((element) => {
+        /*Generar el marco de la card*/
+        let marcoCard = document.createElement("div");
+        marcoCard.className += "col mb-4";
+        /*Generamos la card con fondo negro*/
+        let card = document.createElement("div");
+        card.className += "card bg-dark text-dark";
+        /*Generamos la forma de la card*/
+        let cardLayout = document.createElement("div");
+        cardLayout.className += "card-img-overlay cosas_hidden";
+        /*Generamos en donde va a ponerse la imagen*/
+        let imagenCard = document.createElement("img");
+        imagenCard.className += "card-img-top opacidad_imagen";
+        /*Generamos donde se va a poner el titulo del articulo*/
+        let tituloCard = document.createElement("h5");
+        tituloCard.className += "card-title texto_white texto_70 font_footer";
+        /*Generamos donde se va poner la descripcion del articulo*/
+        let descCard = document.createElement("p");
+        descCard.className +=
+          "card-text text-overflow-cards texto_white texto_50 font_footer";
+        /*Generamos donde se va a poner el precio*/
+        let precioCard = document.createElement("p");
+        precioCard.className +=
+          "card-text texto_white texto_70 align-self-center";
+        /*Generamos el boton de compra*/
+        let botonCard = document.createElement("button");
+        botonCard.setAttribute(
+          "style",
+          "border-color: #FFD103;background-color: black;color: #FFD103;border: 1px;"
+        );
+        /*Generamos el div donde se pondrian las tallas*/
+        let tallas1 = document.createElement("div");
+        tallas1.className += "";
+
+        /*Obtenemos el url del json para la imagen*/
+        imagenCard.src = element.url;
+        /*Obtenemos el titulo para el texto alternativo*/
+        imagenCard.alt = element.nombre;
+        /*Obtenemos el titulo del json*/
+        tituloCard.appendChild(document.createTextNode(element.nombre));
+        /*Obtenemos la descripcion del json*/
+        descCard.appendChild(document.createTextNode(element.descripcion));
+        /*Obtenemos el precio del json*/
+        precioCard.appendChild(document.createTextNode(`$ ${element.precio}`));
+        /*Terminamos de generar el texto del boton para comprar*/
+        botonCard.appendChild(document.createTextNode(`Comprar`));
+        /*Aqui agregaremos funcionalidad del boton comprar*/
+        botonCard.addEventListener("click", function () { });
+        /*Checamos si hay tallas definidas en el json*/
+        if (typeof element.talla != typeof undefined) {
+          /*Obtenemos las tallas y las separamos: S,M,L,XL*/
+          let tallas3 = element.talla.split(",");
+          /*["S","M","L","XL"]*/
+          /*Por cada talla generamos*/
+          tallas3.forEach((talla2) => {
+            /*Boton de la talla*/
+            let botonTalla = document.createElement("button");
+            botonTalla.className += "botonesTallas";
+            /*Lo agregamos a la lista*/
+            botonTalla.appendChild(document.createTextNode(talla2));
+            /*Agregamos un poco de funcionalidad para saber cual esta activo*/
+            botonTalla.addEventListener("click", () => {
+              var current = document.querySelector(".active");
+              if (current != null) {
+                current.className = "botonesTallas";
+              }
+              botonTalla.className = "active";
+              /* Aqui haremos lo pertinente para saber la talla del articulo definido
+              *console.log(talla2);*/
             });
-            /* if(typeof(element.especificaciones)!=typeof(undefined)){
-                console.log(element.especificaciones[0] +"1");
-                let especificaciones1= document.createElement("ul");
-                element.especificaciones.forEach(especificacion =>{
-                    let especifi= document.createElement("li");
-                    especifi.appendChild(document.createTextNode(especificacion));
-                    especificaciones1.appendChild(especifi);
-                });
-                descCard.appendChild(especificaciones1);
-            }else{
-                console.log("No especificaciones")
-            } */
-            if (typeof (element.talla) != typeof (undefined)) {
-                //console.log(element.talla+"2");
-                //S,M,L,XL
-                let tallas3 = element.talla.split(",");
-                //["S","M","L","XL"]
-                tallas3.forEach(talla2 => {
-                    let botonTalla = document.createElement("button");
-                    botonTalla.className += "botonesTallas";
-                    botonTalla.appendChild(document.createTextNode(talla2)); 7
-                    botonTalla.addEventListener("click", () => {
-                        var current = document.querySelector(".active");
-                        if (current != null) {
-                            current.className = "botonesTallas";
-                        }
-                        botonTalla.className = "active";
-                        console.log(talla2);
-                    });
-                    console.log(botonTalla.innerHTML)
-                    if (botonTalla.innerHTML != "") {
-                        tallas1.appendChild(botonTalla);
-                    }
-
-                });
-                //descCard.appendChild(tallas1);
-                //card.appendChild(tallas1);
-            } else {
-                console.log("Sin talla");
+            /*Si no hubo tallas no se agrega a la card*/
+            if (botonTalla.innerHTML != "") {
+              tallas1.appendChild(botonTalla);
             }
+          });
+        }
+        /*Agregamos las tallas, el boton de compra, titulo y descripcion 
+        * al layout que es la parte que veremos cuando nos posicionemos 
+        * encima de la card*/
+        cardLayout.appendChild(tallas1);
+        cardLayout.appendChild(botonCard);
+        cardLayout.appendChild(tituloCard);
+        cardLayout.appendChild(descCard);
 
-            cardLayout.appendChild(tallas1);
-            cardLayout.appendChild(botonCard);
-            cardLayout.appendChild(tituloCard);
-            cardLayout.appendChild(descCard);
-            //cardLayout.appendChild(precioCard);
+        /*Agregamos a la card la imagen, el precio y la parte de encima de la card*/
+        card.appendChild(imagenCard);
+        card.appendChild(cardLayout);
+        card.appendChild(precioCard);
 
-            //card.appendChild(tituloCard);
-            card.appendChild(imagenCard);
-            card.appendChild(cardLayout);
-            //card.appendChild(descCard);
-            card.appendChild(precioCard);
-            //card.appendChild(tallas1);
-            //card.appendChild(botonCard);
-            marcoCard.appendChild(card);
-            row2.appendChild(marcoCard);
-        });
-        row1.appendChild(row2);
-        columnaDerecha.appendChild(row1);
-    </script>
+        /*Agregar la card al marco*/
+        marcoCard.appendChild(card);
+        /*Agregar el marco a nuestra filas de cards*/
+        row2.appendChild(marcoCard);
+      });
+      /*Agregamos nuestra segunda fila a la primera*/
+      row1.appendChild(row2);
+      /*Agregamos la primer fila a nuestra columna derecha*/
+      columnaDerecha.appendChild(row1);
+    }
+    array1 = Mochilas;
+    generarCardsDinamicamente(array1);
 
+
+    let buscarNombre = document.querySelector("#searchNombre");
+    $('#searchNombre').keyup(function () {
+      var searchField = $(this).val();
+      if (searchField === '') {
+        $('#columnaDerecha').html('');
+        return;
+      }
+
+      var regex = new RegExp(searchField, "i");
+      var output = "";
+      var count = 1;
+      var columnaDerecha = document.querySelector("#columnaDerecha");
+      columnaDerecha.innerHTML="";
+      /*Generamos la fila donde iran todos los articulos de la página*/
+      let row1 = document.createElement("div");
+      row1.className += "row";
+      /*Generamos otra fila donde separamos en 3 articulos por fila*/
+      let row2 = document.createElement("div");
+      row2.className += "row row-cols-3 row-cols-md-3 m-2";
+      /*Agarramos nuestro Array con lista de json*/
+      /*Por cada elemento vamos a*/
+      $.each(Mochilas, function (key, val) {
+        if ((val.nombre.search(regex) != -1) || (val.nombre.search(regex) != -1)) {
+
+
+          let marcoCard = document.createElement("div");
+          marcoCard.className += "col mb-4";
+          /*Generamos la card con fondo negro*/
+          let card = document.createElement("div");
+          card.className += "card bg-dark text-dark";
+          /*Generamos la forma de la card*/
+          let cardLayout = document.createElement("div");
+          cardLayout.className += "card-img-overlay cosas_hidden";
+          /*Generamos en donde va a ponerse la imagen*/
+          let imagenCard = document.createElement("img");
+          imagenCard.className += "card-img-top opacidad_imagen";
+          /*Generamos donde se va a poner el titulo del articulo*/
+          let tituloCard = document.createElement("h5");
+          tituloCard.className += "card-title texto_white texto_70 font_footer";
+          /*Generamos donde se va poner la descripcion del articulo*/
+          let descCard = document.createElement("p");
+          descCard.className +=
+            "card-text text-overflow-cards texto_white texto_50 font_footer";
+          /*Generamos donde se va a poner el precio*/
+          let precioCard = document.createElement("p");
+          precioCard.className +=
+            "card-text texto_white texto_70 align-self-center";
+          /*Generamos el boton de compra*/
+          let botonCard = document.createElement("button");
+          botonCard.setAttribute(
+            "style",
+            "border-color: #FFD103;background-color: black;color: #FFD103;border: 1px;"
+          );
+          /*Generamos el div donde se pondrian las tallas*/
+          let tallas1 = document.createElement("div");
+          tallas1.className += "";
+
+          /*Obtenemos el url del json para la imagen*/
+          imagenCard.src = val.url;
+          /*Obtenemos el titulo para el texto alternativo*/
+          imagenCard.alt = val.nombre;
+          /*Obtenemos el titulo del json*/
+          tituloCard.appendChild(document.createTextNode(val.nombre));
+          /*Obtenemos la descripcion del json*/
+          descCard.appendChild(document.createTextNode(val.descripcion));
+          /*Obtenemos el precio del json*/
+          precioCard.appendChild(document.createTextNode(`$ ${val.precio}`));
+          /*Terminamos de generar el texto del boton para comprar*/
+          botonCard.appendChild(document.createTextNode(`Comprar`));
+          /*Aqui agregaremos funcionalidad del boton comprar*/
+          botonCard.addEventListener("click", function () { });
+          /*Checamos si hay tallas definidas en el json*/
+          if (typeof val.talla != typeof undefined) {
+            /*Obtenemos las tallas y las separamos: S,M,L,XL*/
+            let tallas3 = val.talla.split(",");
+            /*["S","M","L","XL"]*/
+            /*Por cada talla generamos*/
+            tallas3.forEach((talla2) => {
+              /*Boton de la talla*/
+              let botonTalla = document.createElement("button");
+              botonTalla.className += "botonesTallas";
+              /*Lo agregamos a la lista*/
+              botonTalla.appendChild(document.createTextNode(talla2));
+              /*Agregamos un poco de funcionalidad para saber cual esta activo*/
+              botonTalla.addEventListener("click", () => {
+                var current = document.querySelector(".active");
+                if (current != null) {
+                  current.className = "botonesTallas";
+                }
+                botonTalla.className = "active";
+                /* Aqui haremos lo pertinente para saber la talla del articulo definido
+                *console.log(talla2);*/
+              });
+              /*Si no hubo tallas no se agrega a la card*/
+              if (botonTalla.innerHTML != "") {
+                tallas1.appendChild(botonTalla);
+              }
+            });
+          }
+          /*Agregamos las tallas, el boton de compra, titulo y descripcion 
+          * al layout que es la parte que veremos cuando nos posicionemos 
+          * encima de la card*/
+          cardLayout.appendChild(tallas1);
+          cardLayout.appendChild(botonCard);
+          cardLayout.appendChild(tituloCard);
+          cardLayout.appendChild(descCard);
+
+          /*Agregamos a la card la imagen, el precio y la parte de encima de la card*/
+          card.appendChild(imagenCard);
+          card.appendChild(cardLayout);
+          card.appendChild(precioCard);
+
+          /*Agregar la card al marco*/
+          marcoCard.appendChild(card);
+          /*Agregar el marco a nuestra filas de cards*/
+          row2.appendChild(marcoCard);
+
+
+          count++;
+        }
+      });
+      /*Agregamos nuestra segunda fila a la primera*/
+      row1.appendChild(row2);
+      /*Agregamos la primer fila a nuestra columna derecha*/
+      columnaDerecha.appendChild(row1);
+      //output += '</div>';
+      //$('#columnaDerecha').html(output);
+      //generarCardsDinamicamente(output);
+    });
+
+
+  </script>
 </body>
 
 </html>

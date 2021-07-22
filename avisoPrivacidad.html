@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>TlacuaRiders</title>
+</head>
+
+<body>
+    <div id="nav-placeholder">
+
+    </div>
+    <div class="container">
+        <p class="texto_150">Aviso de Privacidad</p>
+        <p class="font-weight-light">
+        <ul class="font_footer " style="font-size: 70%;">
+            TlacuaRiders con domicilio en la Ciudad de México conforme a lo establecido en la Ley Federal de
+            Protección de Datos en Posesión de Particulares, pone a disposición de nuestros clientes, proveedores,
+            empleados y público en general, nuestro Aviso de Privacidad.
+            <br>
+            Los datos personales que nos proporciona son utilizados estrictamente en la realización de funciones
+            propias de nuestra empresa y <strong>por ningún motivo serán transferidos a terceros.</strong>
+            <br>
+            <br>
+            <ul>
+                A nuestros <strong>clientes</strong> les solicitamos los siguientes datos personales:
+                <br>
+                <ol type="I">
+                    <li>
+                        Nombre, teléfono, correo electrónico y domicilio para facilitar el proceso de contratación de
+                        nuestro servicio y/o compra de nuestros productos.
+                    </li>
+                    <li>
+                        Datos financieros como número de tarjeta de débito o crédito, nombre del titular, nombre de la
+                        institución bancaria, fecha de vencimiento y código de seguridad para efectuar los pagos de
+                        contratación y/o compra correspondientes.
+                    </li>
+                    <li>
+                        RFC para completar los datos de facturación y realizar el proceso en cuestión.
+                    </li>
+                </ol>
+            </ul>
+            
+            <br />
+            <ul>
+                A nuestros <strong>proveedores</strong> solicitamos los siguientes datos personales:
+                <ol type="I">
+                    <li>
+                        Nombre, teléfono, correo electrónico y domicilio para facilitar el proceso de contratación de
+                        servicio y/o compra de productos.
+                    </li>
+                </ol>
+            </ul>
+            <br />
+            <ul>
+                A nuestros <strong>empleados</strong> solicitamos los siguientes datos personales:
+                <ol type="I">
+                    <li>
+                        Nombre, teléfono, correo electrónico, domicilio, fecha y lugar de nacimiento.
+                    </li>
+                    <li>
+                        Antecedentes laborales, puesto, sueldo y motivo de terminación laboral en los últimos cinco
+                        empleos.
+                    </li>
+                </ol>
+            </ul>
+            <br />
+            <ul>
+                En caso de realizar modificaciones al presente Aviso de Privacidad, le informaremos mediante correo
+                electrónico, nuestro sitio web oficial, medios impresos y nuestros operadores telefónicos.
+            </ul>
+        </ul>
+        </p>
+        <br />
+
+    </div>
+
+    <div id="footer">
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script>
+        jQuery.get("./navbar.html", function (data) {
+            $("#nav-placeholder").replaceWith(data);
+        });
+        jQuery.get("./footer.html", function (data) {
+            $("#footer").replaceWith(data);
+        });
+    </script>
+    <script src="assets/js/slider.js"></script>
+
+</body>
+
+</html>

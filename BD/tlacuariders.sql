@@ -56,16 +56,17 @@ usuario_id int not null,
 nombre varchar(255) not null,
 descripcion varchar(255) not null, 
 condicion int not null,
-punto_A varchar(255) not null, 
-punto_B varchar(255) not null, 
-direccion varchar(255) not null, 
+direccion_inicio varchar(255) not null, 
+direccion_fin varchar(255) not null, 
 hora_encuentro time not null,
 bicis int not null,
 compania int not null,
 usuarios_confirmados int null,
+usuarios_interesados int null,
 turno int not null,
 constraint pk_rodadas primary key(id)
 );
+
 alter table usuarios add FOREIGN key(codigo_postal) references codigo_postal(id);
 alter table rodadas add FOREIGN key(usuario_id) references usuarios(id);
 alter table ventas add FOREIGN key(usuario_id) references usuarios(id);

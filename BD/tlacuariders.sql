@@ -72,3 +72,5 @@ alter table rodadas add FOREIGN key(usuario_id) references usuarios(id);
 alter table ventas add FOREIGN key(usuario_id) references usuarios(id);
 alter table pedidos add FOREIGN key(articulo_id) references articulos(id);
 alter table pedidos add FOREIGN key(num_pedido) references ventas(id);
+alter table articulos modify precio float not null;
+alter table usuarios modify email varchar(255) unique not null;

@@ -74,6 +74,6 @@ alter table ventas add FOREIGN key(usuario_id) references usuarios(id);
 alter table pedidos add FOREIGN key(articulo_id) references articulos(id);
 alter table pedidos add FOREIGN key(num_pedido) references ventas(id);
 
-
 insert into codigo_postal values(4620,"Ciudad de México","Coyoacan", "Ciudad de México");
 insert into usuarios values(null,"Santiago","Santi","santiago@gmail.com","ilovebadbunny","iztapalapa","5546901578",1,4620)
+

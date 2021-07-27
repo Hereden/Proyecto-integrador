@@ -153,7 +153,9 @@
         /*Obtenemos la descripcion del json*/
         descCard.appendChild(document.createTextNode(element.descripcion));
         /*Obtenemos el precio del json*/
-        precioCard.appendChild(document.createTextNode(`$ ${element.precio}`));
+        precioCard.appendChild(document.createTextNode(`$ ${Intl.NumberFormat().format(element.precio)}`));
+        /*Obtenemos el precio del json*/
+        /* precioCard.appendChild(document.createTextNode(`$ ${element.precio}`)); */
         /*Terminamos de generar el texto del boton para comprar*/
         botonCard.appendChild(document.createTextNode(`Comprar`));
         /*Aqui agregaremos funcionalidad del boton comprar*/
@@ -279,7 +281,9 @@
           /*Obtenemos la descripcion del json*/
           descCard.appendChild(document.createTextNode(val.descripcion));
           /*Obtenemos el precio del json*/
-          precioCard.appendChild(document.createTextNode(`$ ${val.precio}`));
+          precioCard.appendChild(document.createTextNode(`$ ${Intl.NumberFormat().format(element.precio)}`));
+          /*Obtenemos el precio del json*/
+          /* precioCard.appendChild(document.createTextNode(`$ ${val.precio}`)); */
           /*Terminamos de generar el texto del boton para comprar*/
           botonCard.appendChild(document.createTextNode(`Comprar`));
           /*Aqui agregaremos funcionalidad del boton comprar*/

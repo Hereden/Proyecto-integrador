@@ -1,4 +1,14 @@
 @font-face {
+  
+  font-family: "bird_houseregular";
+  src: url("bird_house-webfont.woff2") format("woff2"),
+    url("bird_house-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-Nav {
+  
   font-family: "bird_houseregular";
   src: url("bird_house-webfont.woff2") format("woff2"),
     url("bird_house-webfont.woff") format("woff");

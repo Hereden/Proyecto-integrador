@@ -117,16 +117,16 @@
         marcoCard.className += "col mb-4";
         /*Generamos la card con fondo negro*/
         let card = document.createElement("div");
-        card.className += "card bg-dark text-dark";
+        card.className += "card bg-dark";
         /*Generamos la forma de la card*/
         let cardLayout = document.createElement("div");
-        cardLayout.className += "card-img-overlay cosas_hidden";
+        cardLayout.className += "card-body";
         /*Generamos en donde va a ponerse la imagen*/
         let imagenCard = document.createElement("img");
-        imagenCard.className += "card-img-top opacidad_imagen";
+        imagenCard.className += "card-img-top";
         /*Generamos donde se va a poner el titulo del articulo*/
         let tituloCard = document.createElement("h5");
-        tituloCard.className += "card-title texto_white texto_70 font_footer";
+        tituloCard.className += "card-title texto_white font_footer_text text-overflow-cards-1";
         /*Generamos donde se va poner la descripcion del articulo*/
         let descCard = document.createElement("p");
         descCard.className +=
@@ -134,12 +134,15 @@
         /*Generamos donde se va a poner el precio*/
         let precioCard = document.createElement("p");
         precioCard.className +=
-          "card-text texto_white texto_70 align-self-center";
+          "texto_white font_footer_text align-self-center";
+        precioCard.setAttribute("style",
+        "font-size:23px;text-align: center;");
         /*Generamos el boton de compra*/
         let botonCard = document.createElement("button");
+        botonCard.className+="font_footer_text"
         botonCard.setAttribute(
           "style",
-          "border-color: #FFD103;background-color: black;color: #FFD103;border: 1px;"
+          "border-color: #FFD103;background-color: black;color: #FFD103;border: 1px;width=100%;font-size:20px"
         );
         /*Generamos el div donde se pondrian las tallas*/
         let tallas1 = document.createElement("div");
@@ -190,15 +193,16 @@
         /*Agregamos las tallas, el boton de compra, titulo y descripcion 
         * al layout que es la parte que veremos cuando nos posicionemos 
         * encima de la card*/
-        cardLayout.appendChild(tallas1);
-        cardLayout.appendChild(botonCard);
+        
         cardLayout.appendChild(tituloCard);
-        cardLayout.appendChild(descCard);
+        
 
         /*Agregamos a la card la imagen, el precio y la parte de encima de la card*/
         card.appendChild(imagenCard);
         card.appendChild(cardLayout);
         card.appendChild(precioCard);
+        card.appendChild(tallas1);
+        card.appendChild(botonCard);
 
         /*Agregar la card al marco*/
         marcoCard.appendChild(card);
@@ -246,13 +250,13 @@
           card.className += "card bg-dark text-dark";
           /*Generamos la forma de la card*/
           let cardLayout = document.createElement("div");
-          cardLayout.className += "card-img-overlay cosas_hidden";
+          cardLayout.className += "card-body";
           /*Generamos en donde va a ponerse la imagen*/
           let imagenCard = document.createElement("img");
-          imagenCard.className += "card-img-top opacidad_imagen";
+          imagenCard.className += "card-img-top";
           /*Generamos donde se va a poner el titulo del articulo*/
           let tituloCard = document.createElement("h5");
-          tituloCard.className += "card-title texto_white texto_70 font_footer";
+          tituloCard.className += "card-title texto_white font_footer_text text-overflow-cards-1";
           /*Generamos donde se va poner la descripcion del articulo*/
           let descCard = document.createElement("p");
           descCard.className +=
@@ -260,12 +264,14 @@
           /*Generamos donde se va a poner el precio*/
           let precioCard = document.createElement("p");
           precioCard.className +=
-            "card-text texto_white texto_70 align-self-center";
+            "texto_white font_footer_text align-self-center";
+            precioCard.setAttribute("style", "font-size:23px;text-align: center;");
           /*Generamos el boton de compra*/
           let botonCard = document.createElement("button");
+          botonCard.className+="font_footer_text";
           botonCard.setAttribute(
             "style",
-            "border-color: #FFD103;background-color: black;color: #FFD103;border: 1px;"
+            "border-color: #FFD103;background-color: black;color: #FFD103;border: 1px;width=100%;font-size:20px"
           );
           /*Generamos el div donde se pondrian las tallas*/
           let tallas1 = document.createElement("div");
@@ -316,15 +322,14 @@
           /*Agregamos las tallas, el boton de compra, titulo y descripcion 
           * al layout que es la parte que veremos cuando nos posicionemos 
           * encima de la card*/
-          cardLayout.appendChild(tallas1);
-          cardLayout.appendChild(botonCard);
           cardLayout.appendChild(tituloCard);
-          cardLayout.appendChild(descCard);
+          cardLayout.appendChild(precioCard);
 
           /*Agregamos a la card la imagen, el precio y la parte de encima de la card*/
           card.appendChild(imagenCard);
           card.appendChild(cardLayout);
-          card.appendChild(precioCard);
+          card.appendChild(tallas1);
+          card.appendChild(botonCard);
 
           /*Agregar la card al marco*/
           marcoCard.appendChild(card);

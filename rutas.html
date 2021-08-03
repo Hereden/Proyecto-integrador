@@ -20,19 +20,26 @@
         <div class="row">
             <!-- Columna de la izquierda -->
             <div class="col-3">
-
+                <label class="form-check-label texto_70" for="defaultCheck1">
+                    Buscar por nombre de rodada 
+                </label>
+        <!-- Buscador -->
+        <form class="form-inline my-2 my-lg-0 pl-3">
+          <input class="form-control mr-sm-2 texto_50 bg_black texto_amarillo" type="search"
+            placeholder="Buscar rodada" aria-label="Search" id="searchNombre" />
+        </form>
                 <br>
                 <label class="form-check-label texto_70" for="defaultCheck1">
                     Acondicionamiento
                 </label>
                 <div class="btn-group texto_70" role="group" aria-label="..." style="width: 100%;">
-                    <button class="btn btn-primary btn-block texto_70 boton_amarillo" style="width: 33%;" 
+                    <button class="btn btn-primary btn-block texto_70 boton_amarillo" style="width: 33%;font-size: 3vw;" 
                     onclick="princi()"> Principiante
                     </button>
-                    <button class="btn btn-primary btn-block texto_70 boton_amarillo" style="width: 33%;" 
+                    <button class="btn btn-primary btn-block texto_70 boton_amarillo" style="width: 33%;font-size: 3vw;" 
                     onclick="inter()"> Intermedio
                     </button>
-                    <button class="btn btn-primary btn-block texto_70 boton_amarillo" style="width: 33%;" 
+                    <button class="btn btn-primary btn-block texto_70 boton_amarillo" style="width: 33%;font-size: 3vw;" 
                     onclick="avanzado()"> Avanzado
                     </button>
                 </div>
@@ -77,27 +84,6 @@
                   </div>
  -->
                 <!-- Checkbox -->
-                <h6 class=" pl-4 texto_50"> Cosas extra </h6>
-                <div class="pl-3">
-                    <div class="form-check p-3 texto_50">
-                        <!-- p-3 es pading -->
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                        <label class="form-check-label" for="defaultCheck1">
-                            Extra 1
-                        </label>
-                        <br>
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                        <label class="form-check-label" for="defaultCheck2">
-                            Extra 2
-                        </label>
-                        <br>
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
-                        <label class="form-check-label" for="defaultCheck3">
-                            Extra 3
-                        </label>
-                    </div>
-                </div>
-
                 <button class="btn btn-primary btn-block texto_70 boton_amarillo" style="width: 100%;"> Limpiar datos
                 </button>
                 <a href="addRuta.html">
@@ -108,7 +94,7 @@
             </div>
             <!-- Columna der -->
             <div class="col-9 " id="columnaDerecha" style="width: auto;">
-                <div class="row">
+                <!--<div class="row">
                     <div class="row row-cols-3 row-cols-md-3 m-2">
                         <div class="col mb-4">
                             <div class="card bg-dark text-dark">
@@ -207,7 +193,7 @@
                         </div>
 
                     </div>
-                </div>
+                </div>-->
             </div>
         </div>
     </div>
@@ -227,7 +213,7 @@
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="assets/json/guantes.js"></script>
+    <script src="assets/json/ruta.js"></script>
     <script>
         jQuery.get("./navbarComunidad.html", function (data) {
             $("#nav-placeholder").replaceWith(data);
@@ -235,28 +221,259 @@
         jQuery.get("./footer.html", function (data) {
             $("#footer").replaceWith(data);
         });
+        /*
+        jQuery.get("./principiante.html", function (data) {
+            $("#columnaDerecha").replaceWith(data);
+        });
+        jQuery.get("./inter.html", function (data) {
+            $("#columnaDerecha").replaceWith(data);
+        });
+        jQuery.get("./avanzado.html", function (data) {
+            $("#columnaDerecha").replaceWith(data);
+        });*/
+const HORA_ENCUENTRO=["MATUTINO","VESPERTINO","NOCTURNO"];
+const COMPANIA=["Mixto","Familiar","Mujeres","Hombres"];
 
-        function princi(){
-            jQuery.get("./principiante.html", function (data) {
-                //$("#columnaDerecha").replaceWith(data);
-                let columDerecha=document.querySelector("#columnaDerecha");
-                columDerecha.innerHTML=data;
-            })
+
+        function generarCardsDinamicamente(array1) {
+      /*Obtenemos div de columna derecha*/
+      var columnaDerecha = document.querySelector("#columnaDerecha");
+      /*Generamos la fila donde iran todos los articulos de la página*/
+      let row1 = document.createElement("div");
+      row1.className += "row";
+      /*Generamos otra fila donde separamos en 3 articulos por fila*/
+      let row2 = document.createElement("div");
+      row2.className += "row row-cols-3 row-cols-md-3 m-2";
+      /*Agarramos nuestro Array con lista de json*/
+      /*Por cada elemento vamos a*/
+      array1.forEach((element) => {
+        /*Generar el marco de la card*/
+        let marcoCard = document.createElement("div");
+        marcoCard.className += "col mb-4";
+        /*Generamos la card con fondo negro*/
+        let card = document.createElement("div");
+        card.className += "card bg-dark text-dark";
+        /*Generamos la forma de la card*/
+        let cardLayout = document.createElement("div");
+        cardLayout.className += "card-body";
+        /*Generamos en donde va a ponerse la imagen*/
+        let imagenCard = document.createElement("img");
+        imagenCard.className += "card-img-top";
+        /*Generamos donde se va a poner el Nombre de la rodada*/
+        let tituloCard = document.createElement("h5");
+        tituloCard.className += "card-title texto_white texto_70";
+        tituloCard.setAttribute(
+            "style",
+            "font-size: 4vw;"
+        );
+        /*Generamos donde se va poner la descripcion del rodada*/
+        let descCard = document.createElement("p");
+        descCard.className +=
+          "card-text texto_white texto_50 font_footer";
+        /*Generamos donde se va a poner el precio*/
+        let precioCard = document.createElement("p");
+        precioCard.className +=
+          "texto_white font_footer_text align-self-center";
+        precioCard.setAttribute("style",
+        "font-size:23px;text-align: center;");
+        /*Generamos el boton de compra*/
+        let botonCard = document.createElement("button");
+        //botonCard.className+="font_footer_text"
+        
+        /*Generamos el div donde se pondrian las tallas*/
+        let tallas1 = document.createElement("div");
+        tallas1.className += "";
+
+        /*Obtenemos el url del json para la imagen*/
+        imagenCard.src = element.img;
+        /*Obtenemos el titulo para el texto alternativo*/
+        imagenCard.alt = element.nombre;
+        /*Obtenemos el titulo del json*/
+        tituloCard.appendChild(document.createTextNode(element.nombre));
+        /*Obtenemos la descripcion del json*/
+
+        descCard.appendChild(document.createTextNode(`Requerimientos: ${element.requisitos}\nTurno:${HORA_ENCUENTRO[element.turno]}
+        \nPunto de salida:${element.direccion_inicio} \nPunto de llegada:${element.direccion_fin}`));
+        /*Obtenemos el precio del json*/
+        //precioCard.appendChild(document.createTextNode(`$ ${Intl.NumberFormat().format(element.precio)}`));
+        /*Terminamos de generar el texto del boton para comprar*/
+        if (element.condicion == 0) {
+            botonCard.setAttribute(
+                "style",
+                "background-color: green; color: white;border: 1px;font-size: 3vw;"
+            );
+            botonCard.appendChild(document.createTextNode(`Principiante`));
+        }else if(element.condicion == 1){
+            botonCard.setAttribute(
+                "style",
+                "background-color: #FFD103; color: black;border: 1px;font-size: 3vw;"
+            );
+            botonCard.appendChild(document.createTextNode(`Intermedio`));
+        }else{
+            botonCard.setAttribute(
+                "style",
+                "background-color: red; color: black;border: 1px;font-size: 3vw;"
+            );
+            botonCard.appendChild(document.createTextNode(`Avanzado`));
         }
-        function inter(){
-            jQuery.get("./inter.html", function (data) {
-                //$("#columnaDerecha").replaceWith(data);
-                let columDerecha=document.querySelector("#columnaDerecha");
-                columDerecha.innerHTML=data;
-            });
+        
+        /*Aqui agregaremos funcionalidad del boton comprar*/
+        botonCard.addEventListener("click", function () { });
+        /*Agregamos las tallas, el boton de compra, titulo y descripcion 
+        * al layout que es la parte que veremos cuando nos posicionemos 
+        * encima de la card*/
+        
+        cardLayout.appendChild(tituloCard);
+        
+
+        /*Agregamos a la card la imagen, el precio y la parte de encima de la card*/
+        card.appendChild(imagenCard);
+        card.appendChild(cardLayout);
+        card.appendChild(precioCard);
+        card.appendChild(descCard);
+        card.appendChild(botonCard);
+
+        /*Agregar la card al marco*/
+        marcoCard.appendChild(card);
+        /*Agregar el marco a nuestra filas de cards*/
+        row2.appendChild(marcoCard);
+      });
+      /*Agregamos nuestra segunda fila a la primera*/
+      row1.appendChild(row2);
+      /*Agregamos la primer fila a nuestra columna derecha*/
+      columnaDerecha.appendChild(row1);
+    }
+    array1 = Rutas;
+    generarCardsDinamicamente(array1);
+
+
+    let buscarNombre = document.querySelector("#searchNombre");
+    $('#searchNombre').keyup(function () {
+      var searchField = $(this).val();
+      if (searchField === '') {
+        $('#columnaDerecha').html('');
+        return;
+      }
+
+      var regex = new RegExp(searchField, "i");
+      var output = "";
+      var count = 1;
+      var columnaDerecha = document.querySelector("#columnaDerecha");
+      columnaDerecha.innerHTML="";
+      /*Generamos la fila donde iran todos los articulos de la página*/
+      let row1 = document.createElement("div");
+      row1.className += "row";
+      /*Generamos otra fila donde separamos en 3 articulos por fila*/
+      let row2 = document.createElement("div");
+      row2.className += "row row-cols-3 row-cols-md-3 m-2";
+      /*Agarramos nuestro Array con lista de json*/
+      /*Por cada elemento vamos a*/
+      $.each(Rutas, function (key, element) {
+        if ((element.nombre.search(regex) != -1) || (element.nombre.search(regex) != -1)) {
+
+
+            let marcoCard = document.createElement("div");
+        marcoCard.className += "col mb-4";
+        /*Generamos la card con fondo negro*/
+        let card = document.createElement("div");
+        card.className += "card bg-dark text-dark";
+        /*Generamos la forma de la card*/
+        let cardLayout = document.createElement("div");
+        cardLayout.className += "card-body";
+        /*Generamos en donde va a ponerse la imagen*/
+        let imagenCard = document.createElement("img");
+        imagenCard.className += "card-img-top";
+        /*Generamos donde se va a poner el Nombre de la rodada*/
+        let tituloCard = document.createElement("h5");
+        tituloCard.className += "card-title texto_white texto_70";
+        tituloCard.setAttribute(
+            "style",
+            "font-size: 4vw;"
+        );
+        /*Generamos donde se va poner la descripcion del rodada*/
+        let descCard = document.createElement("p");
+        descCard.className +=
+          "card-text texto_white texto_50 font_footer";
+        /*Generamos donde se va a poner el precio*/
+        let precioCard = document.createElement("p");
+        precioCard.className +=
+          "texto_white font_footer_text align-self-center";
+        precioCard.setAttribute("style",
+        "font-size:23px;text-align: center;");
+        /*Generamos el boton de compra*/
+        let botonCard = document.createElement("button");
+        //botonCard.className+="font_footer_text"
+        
+        /*Generamos el div donde se pondrian las tallas*/
+        let tallas1 = document.createElement("div");
+        tallas1.className += "";
+
+        /*Obtenemos el url del json para la imagen*/
+        imagenCard.src = element.img;
+        /*Obtenemos el titulo para el texto alternativo*/
+        imagenCard.alt = element.nombre;
+        /*Obtenemos el titulo del json*/
+        tituloCard.appendChild(document.createTextNode(element.nombre));
+        /*Obtenemos la descripcion del json*/
+
+        descCard.appendChild(document.createTextNode(`Requerimientos: ${element.requisitos}\nTurno:${HORA_ENCUENTRO[element.turno]}
+        \nPunto de salida:${element.direccion_inicio} \nPunto de llegada:${element.direccion_fin}`));
+        /*Obtenemos el precio del json*/
+        //precioCard.appendChild(document.createTextNode(`$ ${Intl.NumberFormat().format(element.precio)}`));
+        /*Terminamos de generar el texto del boton para comprar*/
+        if (element.condicion == 0) {
+            botonCard.setAttribute(
+                "style",
+                "background-color: green; color: white;border: 1px;font-size: 3vw;"
+            );
+            botonCard.appendChild(document.createTextNode(`Principiante`));
+        }else if(element.condicion == 1){
+            botonCard.setAttribute(
+                "style",
+                "background-color: #FFD103; color: black;border: 1px;font-size: 3vw;"
+            );
+            botonCard.appendChild(document.createTextNode(`Intermedio`));
+        }else{
+            botonCard.setAttribute(
+                "style",
+                "background-color: red; color: black;border: 1px;font-size: 3vw;"
+            );
+            botonCard.appendChild(document.createTextNode(`Avanzado`));
         }
-        function avanzado(){
-            jQuery.get("./avanzado.html", function (data) {
-                //$("#columnaDerecha").replaceWith(data);
-                let columDerecha=document.querySelector("#columnaDerecha");
-                columDerecha.innerHTML=data;
-            })
+        
+        /*Aqui agregaremos funcionalidad del boton comprar*/
+        botonCard.addEventListener("click", function () { });
+        /*Agregamos las tallas, el boton de compra, titulo y descripcion 
+        * al layout que es la parte que veremos cuando nos posicionemos 
+        * encima de la card*/
+        
+        cardLayout.appendChild(tituloCard);
+        
+
+        /*Agregamos a la card la imagen, el precio y la parte de encima de la card*/
+        card.appendChild(imagenCard);
+        card.appendChild(cardLayout);
+        card.appendChild(precioCard);
+        card.appendChild(descCard);
+        card.appendChild(botonCard);
+
+        /*Agregar la card al marco*/
+        marcoCard.appendChild(card);
+        /*Agregar el marco a nuestra filas de cards*/
+        row2.appendChild(marcoCard);
+
+
+          count++;
         }
+      });
+      /*Agregamos nuestra segunda fila a la primera*/
+      row1.appendChild(row2);
+      /*Agregamos la primer fila a nuestra columna derecha*/
+      columnaDerecha.appendChild(row1);
+      //output += '</div>';
+      //$('#columnaDerecha').html(output);
+      //generarCardsDinamicamente(output);
+    });
     </script>
 </body>
 

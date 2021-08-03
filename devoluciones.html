@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="/assets/images/TR L.ico">
+    <title>TlacuaRiders</title>
+</head>
+
+<body>
+    <div id="nav-placeholder">
+
+    </div>
+    <div class="container">
+        <p class="texto_150">Devoluciones</p>
+        <p class="font-weight-light">
+        <ul class="font_footer " style="font-size: 70%;">
+            Tienes hasta 15 días para decidir si quieres devolver el artículo, siempre que esté en perfecto estado y sin utilizar. Sin explicaciones, fácil y rápido.
+            <br>
+            <br>
+            <h3>Fácil</h3>
+            <ul>
+                Devolución local y sencilla:
+                <br>
+                <ol type="I">
+                    <li>
+                        Consigue el código de devolución
+                    </li>
+                    <li>
+                        Espera a que vayan a recoger el paquete a tu domicilio o llévalo a un punto de recogida;
+                    </li>
+                    <li>
+                        Espera a que el almacén local confirme que lo ha recibido
+                    </li>
+                </ol>
+            </ul>
+            <br>
+            <h3>Rápido</h3>
+            <ul>
+                Recibirás el reembolso cuando el almacén local confirme que ha recibido el paquete y compruebe que los artículos están en perfecto estado.
+            </ul>
+            <br />
+            <h3>¿Qué productos tienen este servicio?</h3>
+            <ul>
+                Nuestros proveedores pueden escoger ofrecer este servicio. Quienes lo ofrecen, lo indican con un icono de "devolución" en las páginas de descripción de sus productos.
+            </ul>
+            <br />            
+        </ul>
+        </p>
+        <br />
+
+    </div>
+
+    <div id="footer">
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script>
+        jQuery.get("./navbar.html", function (data) {
+            $("#nav-placeholder").replaceWith(data);
+        });
+        jQuery.get("./footer.html", function (data) {
+            $("#footer").replaceWith(data);
+        });
+    </script>
+    <script src="assets/js/slider.js"></script>
+
+</body>
+
+</html>

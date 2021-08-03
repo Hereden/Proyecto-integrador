@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="/assets/images/TR L.ico">
+    <title>TlacuaRiders</title>
+</head>
+
+<body>
+    <div id="nav-placeholder">
+
+    </div>
+    <div class="container">
+        <p class="texto_150">Garantía</p>
+        <p class="font-weight-light">
+        <ul class="font_footer " style="font-size: 70%;">
+            <h3>Tu satisfacción es lo más importante para nosotros.</h3>
+            Para agilizar el proceso de cambio o devolución, te recomendamos contar con tu comprobante de compra y empaque original del producto.
+            <br>
+            Si tu producto no coincide con las características publicadas (recibiste un producto diferente o con algún defecto) y no es lo que esperabas, podrás cambiarlo por otro producto similar.
+            <br>
+            <br>
+            Productos aplicables: Aceptamos el cambio o devolución de prácticamente cualquier producto. No obstante, por la naturaleza de algunos artículos, así como por cuestiones de higiene y salud, hay excepciones, es por el bien de todos.
+            <br>
+            <br>
+            El producto deberá estar en buenas condiciones de funcionamiento y sin daños evidentes por mal uso.
+            <br>
+            <br>
+            Cambios por talla y/o color: Hacemos cambios en ropa y zapatos por motivos de talla o color, incluso cuando es un regalo, así que no te preocupes.
+            <br>
+            <br>
+            <h3>Contacta con nosotros</h3>
+            <ul>
+                Ve al historial del pedido y selecciona el artículo. Explicanos tu situación para llegar a un acuerdo y barajar las posibles soluciones.
+            </ul>
+            <br>
+            <h3>Solicita el reembolso o reemplazo</h3>
+            <ul>
+                Si no llegas a un acuerdo con nosotros, tienes un plazo de 15 días (desde la entrega del pedido o el periodo de confirmación de recepción del pedido) para abrir una disputa.
+            </ul>
+            <br />
+            <h3>Recibe el dinero en 15 días o reemplazo (de acuerdo al stock disponible)</h3>
+            <ul>
+                Te devolvemos tu dinero en 15 días, en caso de retardo, contacta con nosotros en la página de descripción del pedido para escalar tu disputa y que podamos ayudarte.
+            </ul>
+            <br />            
+        </ul>
+        </p>
+        <br />
+
+    </div>
+
+    <div id="footer">
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script>
+        jQuery.get("./navbar.html", function (data) {
+            $("#nav-placeholder").replaceWith(data);
+        });
+        jQuery.get("./footer.html", function (data) {
+            $("#footer").replaceWith(data);
+        });
+    </script>
+    <script src="assets/js/slider.js"></script>
+
+</body>
+
+</html>

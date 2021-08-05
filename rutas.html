@@ -24,22 +24,21 @@
                     Buscar por nombre de rodada 
                 </label>
         <!-- Buscador -->
-        <form class="form-inline my-2 my-lg-0 pl-3">
+        <!--<form class="form-inline my-2 my-lg-0 pl-3">-->
           <input class="form-control mr-sm-2 texto_50 bg_black texto_amarillo" type="search"
             placeholder="Buscar rodada" aria-label="Search" id="searchNombre" />
-        </form>
-                <br>
+        <!--</form>-->
                 <label class="form-check-label texto_70" for="defaultCheck1">
                     Acondicionamiento
                 </label>
                 <div class="btn-group texto_70" role="group" aria-label="..." style="width: 100%;">
-                    <button class="btn btn-primary btn-block texto_70 boton_amarillo" style="width: 33%;font-size: 3vw;" 
+                    <button id="princi" class="btn btn-primary btn-block texto_70 boton_amarillo" style="width: 33%;font-size: 3vw;" 
                     onclick="princi()"> Principiante
                     </button>
-                    <button class="btn btn-primary btn-block texto_70 boton_amarillo" style="width: 33%;font-size: 3vw;" 
+                    <button id="inter" class="btn btn-primary btn-block texto_70 boton_amarillo" style="width: 33%;font-size: 3vw;" 
                     onclick="inter()"> Intermedio
                     </button>
-                    <button class="btn btn-primary btn-block texto_70 boton_amarillo" style="width: 33%;font-size: 3vw;" 
+                    <button id="avan" class="btn btn-primary btn-block texto_70 boton_amarillo" style="width: 33%;font-size: 3vw;" 
                     onclick="avanzado()"> Avanzado
                     </button>
                 </div>
@@ -474,6 +473,8 @@ const COMPANIA=["Mixto","Familiar","Mujeres","Hombres"];
       //$('#columnaDerecha').html(output);
       //generarCardsDinamicamente(output);
     });
+
+    console.log(HORA_ENCUENTRO[0]);
     </script>
 </body>
 

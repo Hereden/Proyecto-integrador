@@ -1,0 +1,67 @@
+POST: localhost:8080/codigo_postal
+{
+    "id": 4622,
+    "estado":"Ciudad de México",
+    "municipio":"Coyoacan",
+    "ciudad":"Ciudad de México"
+}
+
+POST: localhost:8080/usuarios/
+{
+    "name": "Santiago",
+    "apellidos":"Santiago",
+    "alias": "Santi",
+    "email": "santasadddia.ga@gmail.com",
+    "username": "santasadddia.ga@gmail.com",
+    "password": "ilovebadbunny",
+    "direccion":"iztapalapa",
+    "telefono":"5546901578",
+    "genero":1,
+    "codigo_postal":{
+        "id":4622
+    }
+}
+POST:localhost:8080/articulos
+
+{
+ "nombre": "Bici2",
+ "descripcion":"Electrica",
+ "talla": "S",
+ "colores":"gris",
+ "categoria":1,
+ "precio":1000.50
+}
+POST:localhost:8080/ventas
+{
+    "precio_total": 55582,
+    "usuario":{
+        "id":1
+    }
+}
+POST:localhost:8080/pedidos
+{
+ "id":1,
+ "cantidad":2,
+ "precio_total":4001,
+ "articulos":{
+    "id":1
+  },
+  "venta":{
+    "id":1
+  }
+}
+{
+ "id":2,
+ "cantidad":1,
+ "precio_total":2001,
+ "articulos":{
+    "id":1
+  },
+  "venta":{
+    "id":1
+  }
+}
+
+GET: localhost:8080/ventas
+
+Y recibiran algo asi:

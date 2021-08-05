@@ -16,6 +16,8 @@
   <br />
   <div class="row container">
     <br />
+    <button id="vercarrito">Console log</button>
+    <button id="limpiarcarrito">Limpiar log</button>
     <p class="texto_150">Total: $45,408.99</p>
     <a href="CheckBox.html">
       <button class="
@@ -165,6 +167,16 @@
   <script src="assets/json/zapatillas.js"></script>
   <script src="assets/json/guantes.js"></script>
   <script>
+    const vercarrito=document.querySelector("#vercarrito");
+    vercarrito.addEventListener("click",()=>{
+      console.log(localStorage.getItem("carrito"));
+    });
+
+    const limpiarcarrito=document.querySelector("#limpiarcarrito");
+    limpiarcarrito.addEventListener("click",()=>{
+      localStorage.clear();
+    });
+
     jQuery.get("./navbar.html", function (data) {
       $("#nav-placeholder").replaceWith(data);
     });

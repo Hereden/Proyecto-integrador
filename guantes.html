@@ -161,7 +161,17 @@
         /*Terminamos de generar el texto del boton para comprar*/
         botonCard.appendChild(document.createTextNode(`Comprar`));
         /*Aqui agregaremos funcionalidad del boton comprar*/
-        botonCard.addEventListener("click", function () { });
+        botonCard.addEventListener("click", function () {
+          let carrito=localStorage.getItem("carrito");
+          if(carrito){
+            let carrito2=[];
+            carrito2=JSON.parse(carrito);
+            localStorage.setItem("carrito",JSON.stringify(carrito2.push(element)));
+          }else{
+            localStorage.setItem("carrito",JSON.stringify(element));
+          }
+          
+        });
         /*Checamos si hay tallas definidas en el json*/
         if (typeof element.talla != typeof undefined) {
           /*Obtenemos las tallas y las separamos: S,M,L,XL*/

@@ -142,8 +142,10 @@
         botonCard.className+="font_footer_text"
         botonCard.setAttribute(
           "style",
-          "border-color: #FFD103;background-color: black;color: #FFD103;border: 1px;width=100%;font-size:20px"
-        );
+          "border-color: #FFD103;background-color: black;color: #FFD103;border: 1px;width=100%;font-size:20px",
+          "id",
+          "btnCar"
+          );
         /*Generamos el div donde se pondrian las tallas*/
         let tallas1 = document.createElement("div");
         tallas1.className += "";
@@ -162,16 +164,21 @@
         botonCard.appendChild(document.createTextNode(`Comprar`));
         /*Aqui agregaremos funcionalidad del boton comprar*/
         botonCard.addEventListener("click", function () {
+          console.log(element);
           let carrito=localStorage.getItem("carrito");
           if(carrito){
             let carrito2=[];
             carrito2=JSON.parse(carrito);
-            localStorage.setItem("carrito",JSON.stringify(carrito2.push(element)));
+            carrito2.push(element);
+            localStorage.setItem("carrito",JSON.stringify(carrito2));
           }else{
-            localStorage.setItem("carrito",JSON.stringify(element));
+            let carrito = [];
+            carrito.push(element);
+            localStorage.setItem("carrito",JSON.stringify(carrito));
           }
           
         });
+
         /*Checamos si hay tallas definidas en el json*/
         if (typeof element.talla != typeof undefined) {
           /*Obtenemos las tallas y las separamos: S,M,L,XL*/

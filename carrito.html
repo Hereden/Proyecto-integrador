@@ -13,11 +13,16 @@
 
 <body>
   <div id="nav-placeholder"></div>
+
+  <div id="tabla-carrito">
+
+  </div>
+
   <br />
   <div class="row container">
     <br />
-    <button id="vercarrito">Console log</button>
-    <button id="limpiarcarrito">Limpiar log</button>
+    <!--<button id="vercarrito">Console log</button>
+    <button id="limpiarcarrito">Limpiar log</button>-->
     <p class="texto_150">Total: $45,408.99</p>
     <a href="CheckBox.html">
       <button class="
@@ -42,7 +47,7 @@
           <h5 class="card-title texto_70">
             Bicicleta Ghost Revenge R29 Verde
           </h5>
-          <p class="card-text texto_30">
+          <p class="card-text texto_30 font_footer_text">
             Cuenta con palanca de cambios Shimano de 21 velocidades. Doble
             freno de disco. Rines de pared aerodinámico.
           </p>
@@ -71,7 +76,7 @@
       <div class="col-md-8">
         <div class="card-body">
           <h5 class="card-title texto_70">Cannondale Synapse Meteor Gray</h5>
-          <p class="card-text texto_30">
+          <p class="card-text texto_30 font_footer_text">
             La bicicleta Synapse Disc es ligera, rueda suave y te permite una
             posición deportiva pero cómoda para que tus salidas sean más
             largas, rápidas y frecuentes, es la opción más versátil para salir
@@ -167,17 +172,7 @@
   <script src="assets/json/zapatillas.js"></script>
   <script src="assets/json/guantes.js"></script>
   <script>
-    const vercarrito=document.querySelector("#vercarrito");
-    vercarrito.addEventListener("click",()=>{
-      console.log(localStorage.getItem("carrito"));
-    });
-
-    const limpiarcarrito=document.querySelector("#limpiarcarrito");
-    limpiarcarrito.addEventListener("click",()=>{
-      localStorage.clear();
-    });
-
-    jQuery.get("./navbar.html", function (data) {
+     jQuery.get("./navbar.html", function (data) {
       $("#nav-placeholder").replaceWith(data);
     });
 
@@ -185,114 +180,101 @@
       $("#footer").replaceWith(data);
     });
 
-    var columnaDerecha = document.querySelector("#lista");
-    let row1 = document.createElement("div");
-    row1.className += "row";
-    let row2 = document.createElement("div");
-    row2.className += "row no-gutters";
-
-    Guantes.forEach((element) => {
-      let colimg = document.createElement("div");
-      colimg.className += "col-md-4";
-      let coltext = document.createElement("div");
-      coltext.className += "col-md-8";
-      let marcoCard = document.createElement("div");
-      marcoCard.className += "";
-      let card = document.createElement("div");
-      card.className += "card mb-3 bg_black";
-      let cardLayout = document.createElement("div");
-      cardLayout.className += "";
-      let imagenCard = document.createElement("img");
-      imagenCard.className += "card-img-top opacidad_imagen";
-      let tituloCard = document.createElement("h5");
-      tituloCard.className += "card-title texto_white texto_70";
-      let descCard = document.createElement("p");
-      descCard.className +=
-        "card-text text-overflow-cards texto_white texto_50";
-      let precioCard = document.createElement("p");
-      precioCard.className +=
-        "card-text texto_white texto_70 align-self-center";
-      let botonCard = document.createElement("button");
-      botonCard.setAttribute(
-        "style",
-        "border-color: #FFD103;background-color: black;color: #FFD103;border: 1px;"
-      );
-      let tallas1 = document.createElement("div");
-      tallas1.className += "";
-
-      imagenCard.src = element.url;
-      imagenCard.alt = element.nombre;
-      tituloCard.appendChild(document.createTextNode(element.nombre));
-      descCard.appendChild(document.createTextNode(element.descripcion));
-      precioCard.appendChild(document.createTextNode(`$ ${element.precio}`));
-      botonCard.appendChild(document.createTextNode(`$Comprar$`));
-      botonCard.addEventListener("click", function () { });
-      /* if(typeof(element.especificaciones)!=typeof(undefined)){
-              console.log(element.especificaciones[0] +"1");
-              let especificaciones1= document.createElement("ul");
-              element.especificaciones.forEach(especificacion =>{
-                  let especifi= document.createElement("li");
-                  especifi.appendChild(document.createTextNode(especificacion));
-                  especificaciones1.appendChild(especifi);
-              });
-              descCard.appendChild(especificaciones1);
-          }else{
-              console.log("No especificaciones")
-          } */
-      if (typeof element.talla != typeof undefined) {
-        //console.log(element.talla+"2");
-        //S,M,L,XL
-        let tallas3 = element.talla.split(",");
-        //["S","M","L","XL"]
-        tallas3.forEach((talla2) => {
-          let botonTalla = document.createElement("button");
-          botonTalla.className += "botonesTallas";
-          botonTalla.appendChild(document.createTextNode(talla2));
-          7;
-          botonTalla.addEventListener("click", () => {
-            var current = document.querySelector(".active");
-            if (current != null) {
-              current.className = "botonesTallas";
-            }
-            botonTalla.className = "active";
-            console.log(talla2);
-          });
-          console.log(botonTalla.innerHTML);
-          if (botonTalla.innerHTML != "") {
-            tallas1.appendChild(botonTalla);
-          }
-        });
-        //descCard.appendChild(tallas1);
-        //card.appendChild(tallas1);
-      } else {
-        console.log("Sin talla");
-      }
-
-      //cardLayout.appendChild(tallas1);
-      //cardLayout.appendChild(botonCard);
-      //cardLayout.appendChild(tituloCard);
-      //cardLayout.appendChild(descCard);
-      //cardLayout.appendChild(precioCard);
-
-      //card.appendChild(tituloCard);
-      colimg.appendChild(imagenCard);
-      coltext.appendChild(tituloCard);
-      coltext.appendChild(descCard);
-      coltext.appendChild(precioCard);
-      coltext.appendChild(botonCard);
-
-      card.appendChild(colimg);
-      card.appendChild(coltext);
-      marcoCard.appendChild(card);
-      //card.appendChild(descCard);
-      //card.appendChild(precioCard);
-      //card.appendChild(tallas1);
-      //card.appendChild(botonCard);
-      //marcoCard.appendChild(card);
-      row2.appendChild(marcoCard);
+    const vercarrito = document.querySelector("#vercarrito");
+    vercarrito.addEventListener("click", () => {
+      let car= JSON.parse(localStorage.getItem("carrito"));
+      car.forEach((e)=>{
+        console.log(e.nombre);
+      });
+      generarTabla();
     });
-    row1.appendChild(row2);
-    columnaDerecha.appendChild(row1);
+
+    const limpiarcarrito = document.querySelector("#limpiarcarrito");
+    limpiarcarrito.addEventListener("click", () => {
+      localStorage.clear();
+    });
+
+    const tabla_carrito = document.querySelector("#tabla-carrito");
+    function generarTabla() {
+      tabla_carrito.textContent="";
+      let carrito = JSON.parse(localStorage.getItem("carrito"));
+      let tabla = document.createElement("table");
+      let thead= document.createElement("thead");
+      let producto= document.createElement("th");
+      producto.appendChild(document.createTextNode("Producto"));
+      producto.className+="texto_150 texto_amarillo"
+      let cantidad= document.createElement("th");
+      cantidad.appendChild(document.createTextNode("Cantidad"));
+      cantidad.className+="texto_150 texto_amarillo"
+      let precio= document.createElement("th");
+      precio.appendChild(document.createTextNode("Precio"));
+      precio.className+="texto_150 texto_amarillo"
+      let total= document.createElement("th");
+      total.appendChild(document.createTextNode("Total"));
+      total.className+="texto_150 texto_amarillo"
+      let filaEncabezado=document.createElement("tr");
+      filaEncabezado.appendChild(producto);
+      filaEncabezado.appendChild(cantidad);
+      filaEncabezado.appendChild(precio);
+      filaEncabezado.appendChild(total);
+      thead.appendChild(filaEncabezado);
+      tabla.appendChild(thead);
+      tabla_carrito.appendChild(tabla);
+      let tbody = document.createElement("tbody");
+      carrito.forEach((element) => {
+        let tr=document.createElement("tr");
+        let tdProducto=document.createElement("td");
+        tdProducto.appendChild(document.createTextNode(`${element.nombre}`));
+        let tdCantidad=document.createElement("td");
+        tdCantidad.appendChild(document.createTextNode(`1`));
+        let tdPrecio=document.createElement("td");
+        tdPrecio.appendChild(document.createTextNode(`${element.precio}`));
+        let tdTotal=document.createElement("td");
+        tdTotal.appendChild(document.createTextNode(`${element.precio* parseInt(tdCantidad.textContent)}`));
+        tr.appendChild(tdProducto);
+        tr.appendChild(tdCantidad);
+        tr.appendChild(tdPrecio);
+        tr.appendChild(tdTotal);
+        tbody.appendChild(tr);
+      });
+      tabla.appendChild(tbody);
+    }
+      
+  
+/*
+<tbody>
+  <tr>
+    <td class="tg-0lax">a</td>
+    <td class="tg-0lax">b</td>
+    <td class="tg-0lax">cc</td>
+    <td class="tg-0lax">d</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+</tbody>
+</table>
+*/
+    
+
+   
+
+    
   </script>
 </body>
 

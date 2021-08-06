@@ -169,7 +169,15 @@
           if(carrito){
             let carrito2=[];
             carrito2=JSON.parse(carrito);
-            carrito2.push(element);
+            let agregarCarrito=true;
+            carrito2.forEach(function (task) {
+              if(task.nombre==element.nombre){
+                agregarCarrito=false;
+              }
+            });
+            if(agregarCarrito){
+              carrito2.push(element);
+            }
             localStorage.setItem("carrito",JSON.stringify(carrito2));
           }else{
             let carrito = [];

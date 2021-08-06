@@ -13,16 +13,17 @@
 
 <body>
   <div id="nav-placeholder"></div>
-
+  <h1 class="texto_70 text-center" >C a r r i t o</h1>
   <div id="tabla-carrito">
 
   </div>
 
   <br />
+  
   <div class="row container">
     <br />
-    <!--<button id="vercarrito">Console log</button>
-    <button id="limpiarcarrito">Limpiar log</button>-->
+    <button id="vercarrito">Console log</button>
+    <button id="limpiarcarrito">Limpiar log</button>
     <p class="texto_150">Total: $45,408.99</p>
     <a href="CheckBox.html">
       <button class="
@@ -200,23 +201,33 @@
       let carrito = JSON.parse(localStorage.getItem("carrito"));
       let tabla = document.createElement("table");
       let thead= document.createElement("thead");
-      let producto= document.createElement("th");
+      //Producto
+      let producto= document.createElement("td");
       producto.appendChild(document.createTextNode("Producto"));
-      producto.className+="texto_150 texto_amarillo"
-      let cantidad= document.createElement("th");
+      producto.className+="texto_50 texto_amarillo pl-5 "
+      //Cantidad
+      let cantidad= document.createElement("td");
       cantidad.appendChild(document.createTextNode("Cantidad"));
-      cantidad.className+="texto_150 texto_amarillo"
-      let precio= document.createElement("th");
+      cantidad.className+="texto_50 texto_amarillo text-center"
+      //Precio
+      let precio= document.createElement("td");
       precio.appendChild(document.createTextNode("Precio"));
-      precio.className+="texto_150 texto_amarillo"
-      let total= document.createElement("th");
+      precio.className+="texto_50 texto_amarillo text-center"
+      //Total
+      let total= document.createElement("td");
       total.appendChild(document.createTextNode("Total"));
-      total.className+="texto_150 texto_amarillo"
+      total.className+="texto_50 texto_amarillo text-center";
+      //Eliminar
+      let eliminar = document.createElement("td");
+      eliminar.appendChild(document.createTextNode("Eliminar"));
+      eliminar.className+="texto_50 texto_amarillo text-center";
       let filaEncabezado=document.createElement("tr");
+
       filaEncabezado.appendChild(producto);
       filaEncabezado.appendChild(cantidad);
       filaEncabezado.appendChild(precio);
       filaEncabezado.appendChild(total);
+      filaEncabezado.appendChild(eliminar);
       thead.appendChild(filaEncabezado);
       tabla.appendChild(thead);
       tabla_carrito.appendChild(tabla);
@@ -224,17 +235,190 @@
       carrito.forEach((element) => {
         let tr=document.createElement("tr");
         let tdProducto=document.createElement("td");
+        tdProducto.className+=" font_footer_text"
+        tdProducto.setAttribute("style", "font-size:5vh;");
+        // Agregamos columna Producto
+        let imgProducto= document.createElement("img");
+        imgProducto.src = element.url;
+        imgProducto.alt = element.nombre;
+        imgProducto.setAttribute("style",
+        "width:200px;heigth:100px; padding:35px");
+        
+        tdProducto.appendChild(imgProducto);
         tdProducto.appendChild(document.createTextNode(`${element.nombre}`));
-        let tdCantidad=document.createElement("td");
-        tdCantidad.appendChild(document.createTextNode(`1`));
+        // Agregamos columna Cantidad
+        let tdCantidad=document.createElement("td")
+        let botonAgregar = document.createElement("button");
+        let botonMenos = document.createElement("button");
+        let cantidadProducto = 1;
+        //Botón de menos cantidad
+        botonMenos.appendChild(document.createTextNode(`-`));
+        tdCantidad.appendChild(botonMenos);
+        botonMenos.className +="boton_amarillo";
+        botonMenos.setAttribute("style", "width:38%");
+        tdCantidad.appendChild(document.createTextNode(`${cantidadProducto}`));
+        tdCantidad.appendChild(botonAgregar);
+        //Botón de más cantidad
+        botonAgregar.appendChild(document.createTextNode(`+`));
+        botonAgregar.className +="boton_amarillo text-center";
+        botonAgregar.setAttribute("style", "width:38%");
+        tdCantidad.className+="texto_30 font_footer_text text-center p-2";
+        
         let tdPrecio=document.createElement("td");
-        tdPrecio.appendChild(document.createTextNode(`${element.precio}`));
+        tdPrecio.className+="texto_30 font_footer_text p-5";
+        tdPrecio.appendChild(document.createTextNode(`${Intl.NumberFormat().format(element.precio)}`));
+
         let tdTotal=document.createElement("td");
-        tdTotal.appendChild(document.createTextNode(`${element.precio* parseInt(tdCantidad.textContent)}`));
+        tdTotal.s
+        tdTotal.className+="texto_30 font_footer_text";
+        tdTotal.appendChild(document.createTextNode(`${Intl.NumberFormat().format(element.precio * cantidadProducto)}`));
+        
+        let tdEliminar = document.createElement("td");
+        tdEliminar.className+="texto_30 font_footer_text p-5";
+        let buttonEliminar = document.createElement('button');
+        buttonEliminar.className+="boton_amarillo";
+        buttonEliminar.appendChild(document.createTextNode(`X`));
+        buttonEliminar.addEventListener('click', () => {
+            let carritoCompra=[];
+            let carritoFinal2=localStorage.getItem("carrito");
+            carritoCompra=JSON.parse(carritoFinal2);
+
+            let carritoFinal=[];
+            carritoCompra.forEach(function (task) {
+              console.log(task.nombre, element.nombre);
+              if(task.nombre!=element.nombre && task.descripcion!=element.descripcion){
+                carritoFinal.push(task);
+              }
+            });
+            localStorage.setItem("carrito",JSON.stringify(carritoFinal));
+            generarTabla();
+        });
+        //Mostrar los datos del producto en la tabla
+        tdEliminar.appendChild(buttonEliminar);
         tr.appendChild(tdProducto);
         tr.appendChild(tdCantidad);
         tr.appendChild(tdPrecio);
         tr.appendChild(tdTotal);
+        tr.appendChild(tdEliminar);
+        tbody.appendChild(tr);
+
+        //Funcion de boton Agregar
+        botonAgregar.addEventListener('click', ()  => {
+              cantidadProducto++;
+              tdCantidad.textContent="";
+              tdTotal.textContent="";
+              tdCantidad.appendChild(botonMenos);
+              tdCantidad.appendChild(document.createTextNode(`${cantidadProducto}`));
+              tdCantidad.appendChild(botonAgregar);
+              tdTotal.appendChild(document.createTextNode(`${Intl.NumberFormat().format(element.precio * cantidadProducto)}`));
+        });
+        
+        //Funcion de boton Menos
+        botonMenos.addEventListener('click', ()  => {
+          if(cantidadProducto > 1){
+              cantidadProducto--;
+              tdCantidad.textContent="";
+              tdTotal.textContent="";
+              tdCantidad.appendChild(botonMenos);
+              tdCantidad.appendChild(document.createTextNode(`${cantidadProducto}`));
+              tdCantidad.appendChild(botonAgregar)
+              tdTotal.appendChild(document.createTextNode(`${Intl.NumberFormat().format(element.precio * cantidadProducto)}`));
+          }
+        });
+      });
+      tabla.appendChild(tbody);
+    }
+
+    function pintarTabla() {
+      tabla_carrito.textContent="";
+      let carrito = JSON.parse(localStorage.getItem("carrito"));
+      let tabla = document.createElement("table");
+      let thead= document.createElement("thead");
+      let producto= document.createElement("td");
+      producto.appendChild(document.createTextNode("Producto"));
+      producto.className+="texto_50 texto_amarillo pl-5 "
+      let cantidad= document.createElement("td");
+      cantidad.appendChild(document.createTextNode("Cantidad"));
+      cantidad.className+="texto_50 texto_amarillo text-center"
+      let precio= document.createElement("td");
+      precio.appendChild(document.createTextNode("Precio"));
+      precio.className+="texto_50 texto_amarillo text-center"
+      let total= document.createElement("td");
+      total.appendChild(document.createTextNode("Total"));
+      total.className+="texto_50 texto_amarillo text-center";
+      let eliminar = document.createElement("td");
+      eliminar.appendChild(document.createTextNode("Eliminar"));
+      eliminar.className+="texto_50 texto_amarillo text-center";
+      let filaEncabezado=document.createElement("tr");
+      filaEncabezado.appendChild(producto);
+      filaEncabezado.appendChild(cantidad);
+      filaEncabezado.appendChild(precio);
+      filaEncabezado.appendChild(total);
+      filaEncabezado.appendChild(eliminar);
+      thead.appendChild(filaEncabezado);
+      tabla.appendChild(thead);
+      tabla_carrito.appendChild(tabla);
+      let tbody = document.createElement("tbody");
+      carrito.forEach((element) => {
+        let tr=document.createElement("tr");
+        let tdProducto=document.createElement("td");
+        tdProducto.className+=" font_footer_text"
+        tdProducto.setAttribute("style", "font-size:5vh;");
+        // Agregamos columna Producto
+        let imgProducto= document.createElement("img");
+        imgProducto.src = element.url;
+        imgProducto.alt = element.nombre;
+        imgProducto.setAttribute("style",
+        "width:200px;heigth:100px; padding:35px");
+        
+        tdProducto.appendChild(imgProducto);
+        tdProducto.appendChild(document.createTextNode(`${element.nombre}`));
+        // Agregamos columna Cantidad
+        let tdCantidad=document.createElement("td")
+        let botonAgregar = document.createElement("button");
+        let botonMenos = document.createElement("button");
+        let cantidadProducto = 1;
+        botonMenos.appendChild(document.createTextNode(`-`));
+        tdCantidad.appendChild(botonMenos);
+        botonMenos.className +="boton_amarillo";
+        botonMenos.setAttribute("style", "width:38%"  );
+        tdCantidad.appendChild(document.createTextNode(`${cantidadProducto}`));
+        tdCantidad.appendChild(botonAgregar);
+        botonAgregar.appendChild(document.createTextNode(`+`));
+        botonAgregar.className +="boton_amarillo text-center";
+        botonAgregar.setAttribute("style", "width:38%");
+        tdCantidad.className+="texto_30 font_footer_text text-center p-2"
+        botonAgregar.addEventListener('click', ()  => {
+          cantidadProducto++;
+        });
+        botonMenos.addEventListener('click', ()  => {
+          if(cantidadProducto > 1){
+              cantidadProducto--;
+          }
+        });
+
+        let tdPrecio=document.createElement("td");
+        tdPrecio.className+="texto_30 font_footer_text p-5 "
+        tdPrecio.appendChild(document.createTextNode(`${element.precio}`));
+        let tdTotal=document.createElement("td");
+        tdTotal.className+="texto_30 font_footer_text"
+        tdTotal.appendChild(document.createTextNode(`${element.precio * cantidadProducto}`));
+        
+        let tdEliminar = document.createElement("td");
+        tdEliminar.className+="texto_30 font_footer_text p-5";
+        let buttonEliminar = document.createElement('button');
+        buttonEliminar.className+="boton_amarillo";
+        buttonEliminar.appendChild(document.createTextNode(`X`));
+        buttonEliminar.addEventListener('click', () => {
+
+        });
+        tdEliminar.appendChild(buttonEliminar);
+        tr.appendChild(tdProducto);
+        tr.appendChild(tdCantidad);
+        tr.appendChild(tdPrecio);
+        tr.appendChild(tdTotal);
+        tr.appendChild(tdEliminar);
+        
         tbody.appendChild(tr);
       });
       tabla.appendChild(tbody);

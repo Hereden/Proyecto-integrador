@@ -5,7 +5,7 @@
 
 Rutas=[
     {
-        "img":"assets/images/Rodadas/1.jpg",
+        "url":"assets/images/Rodadas/1.jpg",
         "nombre":"Coyoacán-Bellas Artes",
         "descripcion":"Ninguna",
         "requisitos":"casco,cubrebocas",
@@ -25,7 +25,7 @@ Rutas=[
         "turno":0
     },
     {
-        "img":"assets/images/Rodadas/2.jpg",
+        "url":"assets/images/Rodadas/2.jpg",
         "nombre":"Taxqueña - Ciudad Universitaria",
         "descripcion":"Ninguna",
         "requisitos":"casco,cubrebocas",
@@ -45,7 +45,7 @@ Rutas=[
         "turno":0
     },
     {
-        "img":"assets/images/Rodadas/3.jpg",
+        "url":"assets/images/Rodadas/3.jpg",
         "nombre":"Benito Juárez - Zócalo",
         "descripcion":"Ninguna",
         "requisitos":"casco,cubrebocas",
@@ -65,7 +65,7 @@ Rutas=[
         "turno":2
     },
     {
-        "img":"assets/images/Rodadas/5.jpg",
+        "url":"assets/images/Rodadas/5.jpg",
         "nombre":"Eje central - La villa",
         "descripcion":"Ninguna",
         "requisitos":"casco,cubrebocas",
@@ -85,7 +85,7 @@ Rutas=[
         "turno":1
     },
     {
-        "img":"assets/images/Rodadas/6.jpg",
+        "url":"assets/images/Rodadas/6.jpg",
         "nombre":"La raza - Xochimilco",
         "descripcion":"Ninguna",
         "requisitos":"casco,cubrebocas",
@@ -105,7 +105,7 @@ Rutas=[
         "turno":0
     },
     {
-        "img":"assets/images/Rodadas/7.jpg",
+        "url":"assets/images/Rodadas/7.jpg",
         "nombre":"Tepito - Revolución",
         "descripcion":"Ninguna",
         "requisitos":"casco,cubrebocas, navaja propia",

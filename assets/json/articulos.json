@@ -23,7 +23,7 @@
     },
     {
         "nombre": "Bicicleta Infantil Unibike R12 con llanta de EVA Rojo",
-        "descripcion": "Apta para niños de 2 a 4 años o de 70 a 85 cm. Asiento amplio, pedales de plástico reforzado y freno de mano. Incluye dos ruedas entrenadoras traseras. Cubrecadenas completo y llantas de goma. Cuenta con una fuerte y duradera estructura. Rueditas de aprendizaje removibles. Cubre cadena. Protectores de goma espuma. Llantas de EVA de excelente calidad (Nunca se ponchan) Es ideal para comenzar a andar en bicicleta. Super divertida para andar y jugar.",
+        "descripcion": "Apta para niños de 2 a 4 años o de 70 a 85 cm. Asiento amplio, pedales de plástico reforzado y freno de mano. Incluye dos ruedas entrenadoras traseras. Cubrecadenas completo y llantas de goma. Cuenta con una fuerte y duradera estructura. Rueditas de aprendizaje removibles. Cubre cadena. Protectores de goma espuma. Llantas de EVA de excelente calidad (Nunca se ponchan) Es ideal para comenzar.",
         "talla": "",
         "colores": "",
         "categoria": 0,
@@ -34,7 +34,7 @@
     },
     {
         "nombre": "Bicicleta Infantil Unibike R14 con llantas de aire Azul",
-        "descripcion": "Apta para niñas de 3 a 6 años o de 85 a 100 cm. Cubrecadenas completo y llantas de aire. Rayos de acero salpicaderas de metal delanteros y traseros. Material de cuadro en acero. Apta para niñas de 3 a 6 años o de 85 a 100 cm Tamaño de llantas 14 R. Asiento amplio pedales de plástico reforzado y freno de mano delantero y trasero. Rines y rayos de acero. Salpicaderas de metal delanteros y traseros. Cubrecadenas completo y llantas de aire.",
+        "descripcion": "Apta para niñas de 3 a 6 años o de 85 a 100 cm. Cubrecadenas completo y llantas de aire. Rayos de acero salpicaderas de metal delanteros y traseros. Material de cuadro en acero. Apta para niñas de 3 a 6 años o de 85 a 100 cm Tamaño de llantas 14 R. Asiento amplio pedales de plástico reforzado y freno de mano delantero y trasero. Rines y rayos de acero. Salpicaderas de metal delanteros y traseros",
         "talla": "",
         "colores": "",
         "categoria": 0,
@@ -118,7 +118,7 @@
         "categoria": 1,
         "precio": 159900,
         "url": "assets/images/BicisPista/BP1.jpg",
-        "especificaciones": "Cuadro: Noah Fast Disc, 60T-40T-30T High Modulus Unidirectional Carbon, In-Mould F-Surface Technology, TA 12x142mm;Tijera: Noah Fast Disc, 60T-40T-30T High Modulus Unidirectional Carbon, In-Mould F-Surface Technology, TA 12x100mm;Rines: Forza R45_17CC, DT Swiss 350;Llantas: Vittoria Corsa 25mm;Multipliación: Rotor FLOW 52/36;Cassette: Shimano Ultegra 11-30;Frenos: Shimano Ultegra Flatmount;Manubrio: Ridley Fast Integrated Cockpit;Poste Manubrio: Ridley Fast Integrated Cockpit;Asiento: Selle Italia SLR;"
+        "especificaciones": "Cuadro: Noah Fast Disc, 60T-40T-30T High Modulus Unidirectional Carbon, In-Mould F-Surface Technology, TA 12x142mm;Tijera: Noah Fast Disc, 60T-40T-30T High Modulus Unidirectional Carbon, In-Mould F-Surface Technology, TA 12x100mm;Rines: Forza R45_17CC, DT Swiss 350;Llantas: Vittoria Corsa 25mm;Multipliación: Rotor FLOW 52/36;Cassette: Shimano Ultegra 11-30;Frenos: Shimano Ultegra"
     },
     {
         "nombre": "Cannondale Caad 13 Ultegra Candy",
@@ -129,7 +129,7 @@
         "precio": 62499,
         "url": "assets/images/BicisPista/BP2.jpg",
         "talla": "51,54",
-        "especificaciones": "Cuadro: SmartForm C1 Premium Alloy, 12x142 Speed Release thru-axle, flat-mount disc, integrated cable routing w/ Switchplate, SAVE, BB30a, Di2 ready;Tijera: BallisTec Carbon, SAVE, 1-1/8 to 1-1/4 steerer, integrated crown race, 12x100mm Speed Release thru-axle;Rines: Cannondale RD 2.0, double wall w/ eyelet, 28h;Llantas: Vittoria Zaffiro Pro Slick, 700 x 25c;Transmision: Shimano Ultegra, 11-speed;Multipliación: Cannondale 1, BB30a, FSA rings, 52/36;Cassette2: Shimano 105, 11-30, 11-speed;Frenos: Shimano Ultegra direct mount;Manubrio: Cannondale 3, 6061 alloy, Compact.;Poste Manubrio: Cannondale 3, 6061 Alloy, 31.8, 7°;Asiento: Prologo Nago RS STN"
+        "especificaciones": "Cuadro: SmartForm C1 Premium Alloy, 12x142 Speed Release thru-axle, flat-mount disc, integrated cable routing w/ Switchplate, SAVE, BB30a, Di2 ready;Tijera: BallisTec Carbon, SAVE, 1-1/8 to 1-1/4 steerer, integrated crown race, 12x100mm Speed Release thru-axle;Rines: Cannondale RD 2.0, double wall w/ eyelet, 28h;Llantas: Vittoria Zaffiro Pro Slick, 700 x 25c;Transmision: Shimano"
     },
     {
         "nombre": "Ridley Fenix Disc Ultegra Di2",
@@ -140,7 +140,7 @@
         "precio": 137990,
         "url": "assets/images/BicisPista/BP3.jpg",
         "talla": "48,51,54,57,60",
-        "especificaciones": "Cuadro: Fenix, 30T-24T HM UD Carbon, Diamond Shape, TA 12x142mm;Tijera: Fenix, 30T-24T HM UD Carbon, Straight Blade, F-Steerer, TA 12x100mm;Rines: DT Swiss ER1600 Spline DB;Llantas: Vittoria Rubino Pro, 700 x 25c;Transmision: Shimano Ultegra HDB Di2 11ps;Multipliación: Rotor Vegast 50/34T;Cassette: Shimano Ultegra, 11-speed;Frenos: Shimano Ultegra Flatmount;Manubrio: Forza N1 Integrated Handlebar;Poste Manubrio: Forza N1 Integrated Handlebar;Asiento: Forza Cirrus Pro"
+        "especificaciones": "Cuadro: Fenix, 30T-24T HM UD Carbon, Diamond Shape, TA 12x142mm;Tijera: Fenix, 30T-24T HM UD Carbon, Straight Blade, F-Steerer, TA 12x100mm;Rines: DT Swiss ER1600 Spline DB;Llantas: Vittoria Rubino Pro, 700 x 25c;Transmision: Shimano Ultegra HDB Di2 11ps;Multipliación: Rotor Vegast 50/34T;Cassette: Shimano Ultegra, 11-speed;Frenos: Shimano Ultegra Flatmount;Manubrio: Forza N1"
     },
     {
         "nombre": "Cannondale Synapse Meteor Gray",
@@ -151,7 +151,7 @@
         "precio": 36990,
         "url": "assets/images/BicisPista/BP4.jpg",
         "talla": "48,51,54,56,58",
-        "especificaciones": "Cuadro: SmartForm C2 Alloy, SAVE, BB30, internal cable routing, flat mount, 130x9mm QR;Tijera: BallisTec Full Carbon, integrated crown race, SAVE, 12x100mm thru-axle, internal routing;Rines: RD 3.0, 28h;Llantas: Vittoria Zaffiro, 700 x 30c;Transmision: Shimano Tiagra, 10-speed;Multipliación: FSA Omega ME Alloy, 50/34;Cassette: Shimano Tiagra, 11-34, 10-speed;Frenos: Promax Decoder R cable-actuated disc, 160/160mm;Manubrio: Cannondale 4, 6061 alloy, Compact;Poste Manubrio: Cannondale 4, 6061 Alloy, 31.8, 7°;Asiento: Cannondale Stage Ergo"
+        "especificaciones": "Cuadro: SmartForm C2 Alloy, SAVE, BB30, internal cable routing, flat mount, 130x9mm QR;Tijera: BallisTec Full Carbon, integrated crown race, SAVE, 12x100mm thru-axle, internal routing;Rines: RD 3.0, 28h;Llantas: Vittoria Zaffiro, 700 x 30c;Transmision: Shimano Tiagra, 10-speed;Multipliación: FSA Omega ME Alloy, 50/34;Cassette: Shimano Tiagra, 11-34, 10-speed;Frenos: Promax Decoder"
     },
     {
         "nombre": "Cannondale nueva CAAD Optimo 3 Highlighter",
@@ -162,7 +162,7 @@
         "precio": 27990,
         "url": "assets/images/BicisPista/BP5.jpg",
         "talla": "48,51,54,56",
-        "especificaciones": "Cuadro: All-New SmartForm C2 Alloy, SAVE, tapered headtube, fender mounts, 130x9mm QR;Tijera: BallisTec Full Carbon, 1-1/8 to 1-1/4 steerer, fender mounts, 100x9mm QR;Rines: RS 3.0, 24h front, 28h rear;Llantas: Vittoria Zaffiro, 700 x 25c;Transmision: Shimano Sora, 9-speed;Multipliación: FSA Vero Alloy, 50/34;Cassette: Shimano HG50, 11-30, 9-speed;Frenos: Promax RC-452, dual pivot calipers;Manubrio: 6061 alloy, Compact;Poste Manubrio: 6061 alloy, Compact;Asiento: Cannondale Stage CX"
+        "especificaciones": "Cuadro: All-New SmartForm C2 Alloy, SAVE, tapered headtube, fender mounts, 130x9mm QR;Tijera: BallisTec Full Carbon, 1-1/8 to 1-1/4 steerer, fender mounts, 100x9mm QR;Rines: RS 3.0, 24h front, 28h rear;Llantas: Vittoria Zaffiro, 700 x 25c;Transmision: Shimano Sora, 9-speed;Multipliación: FSA Vero Alloy, 50/34;Cassette: Shimano HG50, 11-30, 9-speed;Frenos: Promax RC-452, dual pivot"
     },
     {
         "nombre": "Cannondale System Six Carbon Ultegra",
@@ -173,7 +173,7 @@
         "categoria": 1,
         "url": "assets/images/BicisPista/BP6.jpg",
         "talla": "51,54,56",
-        "especificaciones": "Cuadro: BallisTec Carbon, integrated cable routing w/ Switchplate, SAVE, PF30a, flat mount disc, 12x142 Speed Release thru-axle;Tijera: BallisTec Carbon, 1-1/8” - 1-1/4” steerer, 12x100mm Speed Release thru-axle, flat mount disc;Rines: Vision SC55, carbon clincher disc, tubeless ready;Llantas: Vittoria Rubino Pro Bright Black, 700 x 25c, reflective strip;Transmision: Shimano Ultegra, 11-speed;Multipliación: HollowGram, BB30a, OPI SpideRing, 52/36;Cassette: Shimano HG601, 11-speed;Frenos: Shimano Ultegra hydraulic disc, 160/140mm RT800 rotors;Manubrio: HollowGram KNØT SystemBar, Carbon, 8 deg. pitch adjust;Poste Manubrio: HollowGram KNØT, Alloy w/ cable cover, -17°;Asiento: Prologo Dimension STN NDR, steel rails"
+        "especificaciones": "Cuadro: BallisTec Carbon, integrated cable routing w/ Switchplate, SAVE, PF30a, flat mount disc, 12x142 Speed Release thru-axle;Tijera: BallisTec Carbon, 1-1/8” - 1-1/4” steerer, 12x100mm Speed Release thru-axle, flat mount disc;Rines: Vision SC55, carbon clincher disc, tubeless ready;Llantas: Vittoria Rubino Pro Bright Black, 700 x 25c, reflective strip;Transmision: Shimano"
     },
     {
         "nombre": "Cannondale nueva CAAD Optimo 2 Green",
@@ -184,7 +184,7 @@
         "categoria": 1,
         "url": "assets/images/BicisPista/BP7.jpg",
         "talla": "48,51,54,58",
-        "especificaciones": "Cuadro: All-New SmartForm C2 Alloy, SAVE, tapered headtube, fender mounts, 130x9mm QR;Tijera: BallisTec Full Carbon, 1-1/8 to 1-1/4 steerer, fender mounts, 100x9mm QR;Rines: RS 3.0, 24h front, 28h rear;Llantas: Vittoria Zaffiro, 700 x 25c;Transmision: Shimano Tiagra, 2x10;Multipliación: FSA Omega ME Alloy, 50/34;Cassette: Shimano HG500, 11-32, 10-speed;Frenos: Promax RC-476, dual pivot calipers;Manubrio: 6061 alloy, Compact;Poste Manubrio: 6061 Alloy, 31.8, 7°;Asiento: Cannondale Stage CX"
+        "especificaciones": "Cuadro: All-New SmartForm C2 Alloy, SAVE, tapered headtube, fender mounts, 130x9mm QR;Tijera: BallisTec Full Carbon, 1-1/8 to 1-1/4 steerer, fender mounts, 100x9mm QR;Rines: RS 3.0, 24h front, 28h rear;Llantas: Vittoria Zaffiro, 700 x 25c;Transmision: Shimano Tiagra, 2x10;Multipliación: FSA Omega ME Alloy, 50/34;Cassette: Shimano HG500, 11-32, 10-speed;Frenos: Promax RC-476"
     },
     {
         "nombre": "Look 785 Huez Disc Ultegra",
@@ -195,7 +195,7 @@
         "categoria": 1,
         "url": "assets/images/BicisPista/BP8.jpg",
         "talla": "48,54,58,",
-        "especificaciones": "Cuadro: Look 785 Disc Carbon 990g 50% High Modulus y 50% High Resistance;Tijera: Look carbon Monoblock Super Light 350g;Rines: MAVIC Aksium Elite Disc UST;Llantas: Mavic Yksion Pro UST;Transmision: Shimano Ultegra R8000;Multipliación: Shimano Ultegra R8000;Cassette: Shimano Ultegra 11-28;Frenos: Shimano Ultegra R8000 Hydro Disc;Manubrio: Deda Zero 100 Alloy;Poste Manubrio: Deda Zero 100 Alloy 90/100/110 mm;Asiento: Selle Italia"
+        "especificaciones": "Cuadro: Look 785 Disc Carbon 990g 50% High Modulus y 50% High Resistance;Tijera: Look carbon Monoblock Super Light 350g;Rines: MAVIC Aksium Elite Disc UST;Llantas: Mavic Yksion Pro UST;Transmision: Shimano Ultegra R8000;Multipliación: Shimano Ultegra R8000;Cassette: Shimano Ultegra 11-28;Frenos: Shimano Ultegra R8000 Hydro Disc;Manubrio: Deda Zero 100 Alloy;"
     },
     {
         "nombre": "Eddy Merckx Lavaredo 68 Disc Ultegra",
@@ -217,7 +217,7 @@
         "categoria": 1,
         "url": "assets/images/BicisPista/BP10.jpg",
         "talla": "48,54,58",
-        "especificaciones": "Cuadro: Look 785 Carbon 990g 50% High Modulus y 50% High Resistance;Tijera: Look carbon Monoblock Super Light 350g;Rines: MAVIC Aksium Elite UST;Llantas: Mavic Yksion Pro UST;Transmision: SRAM Force AXS 12 vel inalámbrico;Multipliación: Sram Force AXS new X-range 46/33, 48/35;Cassette: SRAM XG-1270 10-28;Frenos: SRAM Froce HRD Brake System;Manubrio: Deda Zero 100 Alloy;Poste Manubrio: Deda Zero 100 Alloy 90/100/110 mm;Asiento: Selle Italia"
+        "especificaciones": "Cuadro: Look 785 Carbon 990g 50% High Modulus y 50% High Resistance;Tijera: Look carbon Monoblock Super Light 350g;Rines: MAVIC Aksium Elite UST;Llantas: Mavic Yksion Pro UST;Transmision: SRAM Force AXS 12 vel inalámbrico;Multipliación: Sram Force AXS new X-range 46/33, 48/35;Cassette: SRAM XG-1270 10-28;Frenos: SRAM Froce HRD Brake System;Manubrio: Deda Zero"
     },
     {
         "nombre": "Casco de bicicleta de montaña",
@@ -404,7 +404,7 @@
         "categoria": 4,
         "url": "assets/images/Guantes/g001_001.PNG",
         "talla": "S,M,L,XL",
-        "especificaciones": "Cálidos y cómodos: los guantes están hechos de algodón cálido, forro polar y tela compuesta en el exterior y la membrana interior de TPU impermeable para aislar eficazmente el viento frío y bloquear la temperatura interior. Los guantes térmicos son ideales para hombres y mujeres en invierno, adecuados para las actividades como ciclismo de invierno, correr, motociclismo, senderismo y desplazamiento.;Almohadilla de gel de 5 mm: la palma está equipada con una almohadilla de gel de 5 mm con la función antideslizante y antigolpes, protegiendo tus manos del impacto externo y el neumático durante el largo tiempo de conducción. Puede hacer que disfrutes de tu viaje.;Diseño reflectante: estos guantes de bicicleta están diseñados con rayas reflectantes que se vuelven coloridos por la noche, más frescos que los guantes comunes y también juegan un papel de precaución con la alta visibilidad, lo que lo hace más seguro por la noche.;Puños elásticos alargados: los guantes de ciclismo están alargados por el puño largo, lo que hace que sea más cálido en comparación con los guantes de como. El puño elástico puede bloquear la calidez y evitar que el aire frío del exterior. También puedes ajustar el gancho y bucle para adaptarse a tu tamaño.;visualización táctil: las cinco puntas de los dedos están hechas de piel sintética conductiva, lo que hace que sea más conveniente usar teléfonos inteligentes sin quitar los guantes de bicicleta para responder llamadas o responder a mensajes, lo que es realmente una cosa indeseable en invierno."
+        "especificaciones": "Cálidos y cómodos: los guantes están hechos de algodón cálido, forro polar y tela compuesta en el exterior y la membrana interior de TPU impermeable para aislar eficazmente el viento frío y bloquear la temperatura interior. Los guantes térmicos son ideales para hombres y mujeres en invierno, adecuados para las actividades como ciclismo de invierno, correr"
     },
     {
         "nombre": "Guantes de ciclismo de dedos completos para hombres",
@@ -415,7 +415,7 @@
         "talla": "S,M",
         "colores": "",
         "categoria": 4,
-        "especificaciones": "Descripcion: Tejido Transpirable y Ajuste Cómodo: Hecho de LYCRA de alta elasticidad y tejido de malla de punto, con gamuza antideslizante en la parte de la palma, puede hacer que sus manos estén completamente relajadas y cómodas en el deporte de la bicicleta.;Mejorada Choque-Absorber SBR Pad: Estos guantes de ciclismo están equipados con tres acolchados ergonómicos SBR de 5 mm en la parte de la palma. Te ayuda a mejorar el agarre, aliviar el dolor y la fatiga durante el ciclismo.;Paño de microfibra SUAVE RESISTENTE AL USO: PAÑO DE TERRY muy absorbente en la parte exterior del pulgar, que puede limpiar fácilmente el sudor. La malla que absorbe la humedad en el centro de la palma mantiene sus manos frescas y secas.;Pantalla Táctil: el pulgar y el índice adoptan microfibra para que puedas acceder a teléfonos inteligentes sin quitarte los guantes de carreras para responder llamadas o responder a mensajes, lo que es realmente algo indeseable en invierno.;Diseño Multiusos: Perfecto tanto para hombres como para mujeres, lavable en la lavadora. ideal para ciclismo, senderismo, escalada, camping, etc."
+        "especificaciones": "Descripcion: Tejido Transpirable y Ajuste Cómodo: Hecho de LYCRA de alta elasticidad y tejido de malla de punto, con gamuza antideslizante en la parte de la palma, puede hacer que sus manos estén completamente relajadas y cómodas en el deporte de la bicicleta.;Mejorada Choque-Absorber SBR Pad: Estos guantes de ciclismo están equipados con tres acolchados ergonómicos SBR de 5 mm"
     },
     {
         "nombre": "Guantes ESD",
@@ -437,7 +437,7 @@
         "talla": "",
         "colores": "",
         "categoria": 4,
-        "especificaciones": "Diseño elegante: los guantes de ciclismo NICEWIN están hechos de tela de malla elástica transpirable granular y cuero de microfibra, que son cómodos y resistentes al desgaste. El diseño de los guantes de bicicleta de medio dedo asegura que tus manos estén frescas y transpirables en primavera, verano y otoño. El logotipo reflectante en la parte posterior de los guantes de bicicleta añade un efecto de advertencia por la noche. Hay dos bucles en los dedos para ayudarte a quitar fácilmente los guantes de bicicleta de montaña.;Almohadillas SBR Shock: los guantes de moto de suciedad adoptan un grueso SBR, que absorbe los golpes y es transpirable y puede darte suficiente agarre para agarrar cualquier cosa. El acolchado mantiene la palma flexible, antideslizante y a prueba de golpes, reduce la fatiga de la conducción de larga distancia. Los guantes de bicicleta son la elección perfecta para ofrecerte suficiente protección en caídas."
+        "especificaciones": "Diseño elegante: los guantes de ciclismo NICEWIN están hechos de tela de malla elástica transpirable granular y cuero de microfibra, que son cómodos y resistentes al desgaste. El diseño de los guantes de bicicleta de medio dedo asegura que tus manos estén frescas y transpirables en primavera, verano y otoño. El logotipo reflectante en la parte posterior de los guantes de bicicleta añade un efecto"
     },
     {
         "nombre": "NICEWIN Guantes de motocicleta para hombre",
@@ -448,7 +448,7 @@
         "talla": "",
         "colores": "",
         "categoria": 4,
-        "especificaciones": "Protección avanzada: el material duro cubre completamente los nudillos, mientras que las palmas están protegidas por almohadillas acolchadas. En comparación con otros productos del mercado, la protección de la palma es un 30% mayor.Las costuras de alta calidad son más apretadas que otras marcas y no se rompen ni se deshacen fácilmente. Con el uso regular, durarán más de un año.;Adhesivo de muñeca: cómodo sin igual para un mejor ajuste. Tus manos se mantendrán frescas y sin sudor cuando se ponga duro. Esto garantiza que no evitarás la protección esencial de las manos durante actividades extremas bajo el sol ardiente. Se llevarán a cabo en cualquier deporte donde las caídas y choques sean comunes. ¡Ponte y mantente seguro!;Pantalla táctil altamente sensible: tanto el pulgar como el dedo índice se pueden utilizar con una pantalla táctil, por lo que puedes operar fácilmente tu teléfono sin quitarte los guantes. Por favor, póngase en contacto con nosotros, si los guantes de motocicleta están defectuosos, le daremos una solución mejor que el servicio de atención al cliente de Amazon."
+        "especificaciones": "Protección avanzada: el material duro cubre completamente los nudillos, mientras que las palmas están protegidas por almohadillas acolchadas. En comparación con otros productos del mercado, la protección de la palma es un 30% mayor.Las costuras de alta calidad son más apretadas que otras marcas y no se rompen ni se deshacen fácilmente. Con el uso regular, durarán más de un año.;Adhesivo de"
     },
     {
         "nombre": "NICEWIN Guantes de ciclismo de dedos completos",
@@ -459,7 +459,7 @@
         "talla": "",
         "colores": "",
         "categoria": 4,
-        "especificaciones": "Ajuste cómodo: los guantes de bicicleta NICEWIN están hechos de gamuza elástica y elastano transpirable en la parte posterior, cómodos de llevar, asegurando que tus manos frescas y frescas en primavera, verano y otoño. Los guantes de conducción con forro polar en el pulgar te ayudan a limpiar fácilmente el sudor. Muñeca alargada con cierre de gancho y bucle, elegante y fácil de poner, también mantiene los guantes de ciclismo calientes durante mucho tiempo.;SBR PAD: El acolchado SBR del guante de bicicleta de montaña es absorbente de golpes y transpirable, lo que te da suficiente agarre para agarrar cualquier cosa, cambiar de marcha. El acolchado es cómodo en tu mano, perfecto para viajes largos, que es la elección perfecta para ofrecerte suficiente protección en caídas. Los guantes de bicicleta de montar también mantienen las manos bastante calientes, en el frío proporciona suficiente calor para mantener los dedos calientes. Te proporcionarán algunos de sus fantásticos para el ciclismo.;Diseño de seguridad: las tiras reflectantes de precaución en el dorso de la mano aumentan el efecto de advertencia en la noche. Las almohadillas especiales para la palma pueden absorber eficazmente el impacto y reducir el entumecimiento en la carretera con baches. Alivia la fatiga de la palma y reduce la probabilidad de saltar.;Pantalla táctil: los guantes de bicicleta de carretera adoptan microfibra para que puedas acceder a teléfonos inteligentes sin quitarte los guantes de carreras para responder llamadas o responder a mensajes, lo que es realmente algo indeseable en invierno."
+        "especificaciones": "Ajuste cómodo: los guantes de bicicleta NICEWIN están hechos de gamuza elástica y elastano transpirable en la parte posterior, cómodos de llevar, asegurando que tus manos frescas y frescas en primavera, verano y otoño. Los guantes de conducción con forro polar en el pulgar te ayudan a limpiar fácilmente el sudor. Muñeca alargada con cierre de gancho y bucle, elegante y fácil de poner, también"
     },
     {
         "nombre": "Guantes de ciclismo para invierno",
@@ -470,7 +470,7 @@
         "talla": "",
         "colores": "",
         "categoria": 4,
-        "especificaciones": "Almohadilla de palma para reducir la fricción: los guantes de ciclismo para hombre están adoptados con un diseño de almohadilla de espuma en la palma para reducir la fricción entre la palma y el manubrio de la bicicleta. Llevar estos guantes de ciclismo con almohadilla reducirá el dolor de las palmas después de manejar de forma prolongada. Los guantes elásticos para bicicleta de montaña se ajustan perfectamente a las manos y los dedos de los ciclistas.;Material transpirable para un manejo fresco: los guantes de ciclismo de dedos completos son suaves y ligeros, lo que no causará ninguna presión en las manos. Como se utiliza material de microfibra transpirable de calidad que absorbe rápidamente el sudor producido durante un manejo prolongado, los guantes de ciclismo de dedos completos siempre se mantienen secos y dan a los hombres y mujeres una experiencia de manejo fresca.;Diseño de paño de rizo: los pulgares de los guantes de ciclismo de dedos completos están especialmente diseñados con tela de rizo que puede ayudar a los ciclistas a limpiar el sudor durante el manejo prolongado. Los ciclistas con los guantes de ciclismo de dedos completos no necesitan llevar toallas adicionales. Los guantes de ciclismo de color rojo también funcionan como guantes de moto de invierno para mantener a los hombres y mujeres calientes en climas fríos."
+        "especificaciones": "Almohadilla de palma para reducir la fricción: los guantes de ciclismo para hombre están adoptados con un diseño de almohadilla de espuma en la palma para reducir la fricción entre la palma y el manubrio de la bicicleta. Llevar estos guantes de ciclismo con almohadilla reducirá el dolor de las palmas después de manejar de forma prolongada. Los guantes elásticos para bicicleta de montaña"
     },
     {
         "nombre": "Cool Change Guantes de bicicleta unisex",
@@ -481,7 +481,7 @@
         "talla": "",
         "colores": "",
         "categoria": 4,
-        "especificaciones": "Tamaño: pequeño;transpirable: los guantes de ciclismo están hechos de malla transpirable que absorbe la humedad y absorbe la humedad en 4 direcciones, cómodos de llevar, que puede mantener tu mano cómoda incluso en días calurosos y se ajustan cómodamente sin estar apretada.;Almohadilla SBR y paño de rizo: los guantes de ciclismo especializados hechos de microfibra en la palma son antideslizantes y resistentes al desgaste. El acolchado SBR absorbe los golpes y es transpirable. El diseño de tela de rizo en los pulgares se utiliza principalmente para limpiar el sudor que gotea y distrae.;Pantalla táctil: utiliza estos guantes de ciclismo hace que sea fácil de usar al tacto tu teléfono inteligente y todo tipo de productos electrónicos de control táctil.;Multifuncional: ideal para hombres o mujeres en primavera, verano y otoño. equitación, correr, esquí, patineta, conducción, motocross, pesca, senderismo, escalada, camping y muchas otras actividades deportivas al aire libre para garantizar la seguridad de la palma, al mismo tiempo proteger tus dedos de daños.;Nota: hemos actualizado nuestra tabla de tallas. Es adecuado para la mayoría de los clientes, el tamaño se mide por circunferencia de la palma, si estás entre tamaños o tienes una palma más gruesa, elige una talla más grande."
+        "especificaciones": "Tamaño: pequeño;transpirable: los guantes de ciclismo están hechos de malla transpirable que absorbe la humedad y absorbe la humedad en 4 direcciones, cómodos de llevar, que puede mantener tu mano cómoda incluso en días calurosos y se ajustan cómodamente sin estar apretada.;Almohadilla SBR y paño de rizo: los guantes de ciclismo especializados hechos de microfibra en la palma son antideslizantes"
     },
     {
         "nombre": "Neugood Guantes Deportivos para Pesas",
@@ -507,7 +507,7 @@
     },
     {
         "nombre": "Zefal Mochila hidratacion Z Hydro 3L + 2L Roja",
-        "descripcion": "Con su bolsa de agua de 2L, su unos compartimentos, sus correas ventrales y pectorales, la Z Hydro L es una bolsa ligero gracias a su elegante diseño y los materiales utilizados. Un bolsillo de terciopelo con cremallera permite colocar objetos fragiles (teléfono, gafas). Inserciones de espuma proporcionan comodidad y los tirantes ajustables permiten adaptar la bolsa con la morfología del ciclista. Construida en PEVA, garantizada sin BPA, la bolsa de agua es fácil de limpiar y transportar",
+        "descripcion": "Con su bolsa de agua de 2L, su unos compartimentos, sus correas ventrales y pectorales, la Z Hydro L es una bolsa ligero gracias a su elegante diseño y los materiales utilizados. Un bolsillo de terciopelo con cremallera permite colocar objetos fragiles (teléfono, gafas). Inserciones de espuma proporcionan comodidad y los tirantes ajustables permiten adaptar la bolsa con la morfología del ciclista.",
         "marca": "",
         "colores": "",
         "categoria": 5,
@@ -518,7 +518,7 @@
     },
     {
         "nombre": "Camelbak Mochila Hydrobak 1.5lt",
-        "descripcion": "Una mochila de hidratación para bicicletas minimalista: suficiente agua para un viaje de 2 horas y un bolsillo con cremallera seguro para las llaves y los elementos esenciales. El nuevo Crux entrega un 20% más de agua por sorbo, con un mango ergonómico para facilitar el llenado y una palanca de encendido / apagado que facilita la prevención de fugas. Panel trasero de malla de aire transpirable para un ajuste cómodo y ligero. Acentos reflectantes para visibilidad en entornos con poca luz. Bolsillo con cremallera seguro para lo esencial. Arnés de malla ligera y ventilada.",
+        "descripcion": "Una mochila de hidratación para bicicletas minimalista: suficiente agua para un viaje de 2 horas y un bolsillo con cremallera seguro para las llaves y los elementos esenciales. El nuevo Crux entrega un 20% más de agua por sorbo, con un mango ergonómico para facilitar el llenado y una palanca de encendido / apagado que facilita la prevención de fugas. Panel trasero de malla de aire transpirable",
         "precio": 1249.00,
         "marca": "",
         "colores": "",
@@ -547,7 +547,7 @@
         "categoria": 5,
         "talla": "",
         "url": "assets/images/mochilas/mochila04.jpg",
-        "especificaciones": "Panel trasero de Air Director ™: : canaliza el flujo de aire para mantenerte fresco.;Cinturón de estabilidad extraíble:: para mayor ajuste y estabilidad.;Arnés ventilado: : ligero y transpirable;Correa de esternón ajustable: : ofrece una variedad de ajustes para un ajuste personalizado y una mayor estabilidad;Bolsillo seguro para el teléfono:: mantenga los elementos esenciales seguros y de fácil acceso;Gestión de Magnetic Tube Trap ™:: mantiene su tubo seguro y accesible cuando lo necesita;Transporte del casco: : Guarde y asegure el casco"
+        "especificaciones": "Panel trasero de Air Director ™: : canaliza el flujo de aire para mantenerte fresco.;Cinturón de estabilidad extraíble:: para mayor ajuste y estabilidad.;Arnés ventilado: : ligero y transpirable;Correa de esternón ajustable: : ofrece una variedad de ajustes para un ajuste personalizado y una mayor estabilidad;Bolsillo seguro para el teléfono:: mantenga los elementos esenciales seguros"
     },
     {
         "nombre": "Camelbak Mochila Classic 2.5lt",
@@ -569,7 +569,7 @@
         "categoria": 5,
         "talla": "",
         "url": "assets/images/mochilas/mochila06.jpg",
-        "especificaciones": "Depósito lumbar con compresión integrada:: desplaza el peso y el soporte a la región lumbar.;Cinturón de doble ala: : el cinturón interior transfiere el peso a las caderas, mientras que el cinturón exterior comprime la carga;Cinturón de cadera ventilado con carga:: Ligero y transpirable, mantiene lo esencial a mano;Correa de esternón ajustable: : ofrece una variedad de ajustes para un ajuste personalizado y una mayor estabilidad;Reflectividad:: para seguridad con poca luz;Gestión de Magnetic Tube Trap ™:: mantiene su tubo seguro y accesible cuando lo necesita"
+        "especificaciones": "Depósito lumbar con compresión integrada:: desplaza el peso y el soporte a la región lumbar.;Cinturón de doble ala: : el cinturón interior transfiere el peso a las caderas, mientras que el cinturón exterior comprime la carga;Cinturón de cadera ventilado con carga:: Ligero y transpirable, mantiene lo esencial a mano;Correa de esternón ajustable: : ofrece una variedad de ajustes para un ajuste"
     },
     {
         "nombre": "Camelbak Mochila Rouge 2.5lt",
@@ -602,7 +602,7 @@
         "categoria": 6,
         "url": "assets/images/Zapatillas/z001_001.PNG",
         "talla": "",
-        "especificaciones": "Suela de Sintético: La plataforma mide aproximadamente .25;Material: la parte superior está diseñada con malla sintética y la suela está diseñada de nailon resistente al desgaste con tacos, transpirable, ligero, antideslizante, cómodo para el uso durante todo el día.;Compatibilidad con pedales: los zapatos de ciclismo son unisex, y son compatibles con sistemas de tacos o pedales de 2 o 3 pernos incluyendo Look Delta, SPD, SPD-R&SPD-SL y bicicleta de ejercicio."
+        "especificaciones": "Suela de Sintético: La plataforma mide aproximadamente .25;Material: la parte superior está diseñada con malla sintética y la suela está diseñada de nailon resistente al desgaste con tacos, transpirable, ligero, antideslizante, cómodo para el uso durante todo el día.;Compatibilidad con pedales: los zapatos de ciclismo son unisex, y son compatibles con sistemas de tacos o pedales de 2 o 3 pernos"
     },
     {
         "nombre": "Zapatillas de montaña Sport",
@@ -624,7 +624,7 @@
         "talla": "",
         "colores": "",
         "categoria": 6,
-        "especificaciones": "Diseño de abultamiento en la suela del zapato: con el fin de aumentar el rendimiento mientras estás montando la bicicleta de montaña, la rigidez única de esos zapatos de ciclismo aumenta. Lo que es más, el diseño abultado que expulsa el barro se utiliza en la superficie de la suela, por lo tanto, incluso en la forma de lodo, también puedes disfrutar de la actividad de ciclismo.;Diseño abullonado en la suela del zapato: disfruta de tu rendimiento de ciclismo mientras estás montando la bicicleta de montaña, la rigidez única de esos zapatos de ciclismo aumenta. Lo que es más, el diseño abultado que expulsa el barro se utiliza en la superficie de la suela, por lo tanto, incluso en la forma de lodo, también puedes disfrutar de la actividad de ciclismo.;Velcro de velcro superior y cierre de bloqueo ajustable: con el fin de que tus pies siempre mantengan un buen estado, los ganchos superiores se utilizan para hacer que la dimensión de esos zapatos de bicicleta de montaña sea fácil de ajustar. Además, la cerradura (hebilla) es ajustable, que es adecuada para diferentes niveles y formas de empeine."
+        "especificaciones": "Diseño de abultamiento en la suela del zapato: con el fin de aumentar el rendimiento mientras estás montando la bicicleta de montaña, la rigidez única de esos zapatos de ciclismo aumenta. Lo que es más, el diseño abultado que expulsa el barro se utiliza en la superficie de la suela, por lo tanto, incluso en la forma de lodo, también puedes disfrutar de la actividad de ciclismo."
     },
     {
         "nombre": "WYUKN Zapatos de Ciclismo MTB,Calzado para Ciclismo Calzado para Bicicleta de Carretera para Hombre, Zapatillas de Senderismo al Aire Libre, Jogger Hombre,blackcolor-43EU",
@@ -635,7 +635,7 @@
         "talla": "",
         "colores": "",
         "categoria": 6,
-        "especificaciones": "Cómodo: Cuero + malla que crea un sistema de refrigeración y circulación de aire. Los viajes de larga distancia son más transpirables y más cómodos.;Estabilidad antideslizante: Hay un acolchado suave en el talón y el ajustador puede evitar una presión incómoda en el pie, lo que tiene un efecto positivo en la resistencia al deslizamiento y el desgaste estable.;Suela: Agregue material de goma dura, pavimento antideslizante y forma de diente para que la conducción ahorre más trabajo.;Un buen regalo para los ciclistas: Las zapatillas de ciclismo son un buen accesorio para los ciclistas, pueden corregir su postura de conducción para proteger sus rodillas y tobillos, son especialmente adecuadas para carreras de ciclismo, ciclismo de montaña, etc."
+        "especificaciones": "Cómodo: Cuero + malla que crea un sistema de refrigeración y circulación de aire. Los viajes de larga distancia son más transpirables y más cómodos.;Estabilidad antideslizante: Hay un acolchado suave en el talón y el ajustador puede evitar una presión incómoda en el pie, lo que tiene un efecto positivo en la resistencia al deslizamiento y el desgaste estable."
     },
     {
         "nombre": "Zapatos de Ciclismo sapatilha Ciclismo MTB Hombres",
@@ -646,7 +646,7 @@
         "talla": "",
         "colores": "",
         "categoria": 6,
-        "especificaciones": "Diseño de abultamiento en la suela del zapato: con el fin de aumentar el rendimiento mientras estás montando la bicicleta de montaña, la rigidez única de esos zapatos de ciclismo aumenta. Lo que es más, el diseño abultado que expulsa el barro se utiliza en la superficie de la suela, por lo tanto, incluso en la forma de lodo, también puedes disfrutar de la actividad de ciclismo.;Diseño abullonado en la suela del zapato: disfruta de tu rendimiento de ciclismo mientras estás montando la bicicleta de montaña, la rigidez única de esos zapatos de ciclismo aumenta. Lo que es más, el diseño abultado que expulsa el barro se utiliza en la superficie de la suela, por lo tanto, incluso en la forma de lodo, también puedes disfrutar de la actividad de ciclismo.;Velcro de velcro superior y cierre de bloqueo ajustable: con el fin de que tus pies siempre mantengan un buen estado, los ganchos superiores se utilizan para hacer que la dimensión de esos zapatos de bicicleta de montaña sea fácil de ajustar. Además, la cerradura (hebilla) es ajustable, que es adecuada para diferentes niveles y formas de empeine."
+        "especificaciones": "Diseño de abultamiento en la suela del zapato: con el fin de aumentar el rendimiento mientras estás montando la bicicleta de montaña, la rigidez única de esos zapatos de ciclismo aumenta. Lo que es más, el diseño abultado que expulsa el barro se utiliza en la superficie de la suela, por lo tanto, incluso en la forma de lodo, también puedes disfrutar de la actividad de ciclismo."
     },
     {
         "nombre": "Govoland Zapatos De Bicicleta Profesionales",
@@ -657,7 +657,7 @@
         "talla": "",
         "colores": "",
         "categoria": 6,
-        "especificaciones": "Comodidad: la malla altamente transpirable y la parte superior sintética ayudan a enfriar los pies fácilmente. Plantilla removible para facilitar la limpieza.;Ligero: la parte superior adopta una parte superior liviana y de alta resistencia, que es cómoda y transpirable, y se siente relajada.;Transpirabilidad: la perforación en la parte superior aumenta la transpirabilidad, lo que es adecuado para montar en climas cálidos o ejercicio extenuante.;Multifuncional: los zapatos de bicicleta para hombre son muy adecuados para el ciclismo de carretera, los desplazamientos y los viajes.;Durable: la suela está hecha de nailon resistente al desgaste, que es antideslizante y resistente al desgaste."
+        "especificaciones": "Comodidad: la malla altamente transpirable y la parte superior sintética ayudan a enfriar los pies fácilmente. Plantilla removible para facilitar la limpieza.;Ligero: la parte superior adopta una parte superior liviana y de alta resistencia, que es cómoda y transpirable, y se siente relajada.;Transpirabilidad: la perforación en la parte superior aumenta la transpirabilidad"
     },
     {
         "nombre": "SANDUGO Zapatillas de Bicicleta de montaña MTB para Hombre",
@@ -668,7 +668,7 @@
         "talla": "",
         "colores": "",
         "categoria": 6,
-        "especificaciones": "Características: no es fácil decirles a tus amigos que se trata de un par de zapatillas de ciclismo, pero no te dejes engañar por su estilo.;Sensación cómoda con durabilidad: un zapato de bicicleta de montaña exclusivo y moderno (sin clip) para ciclistas de gravel o aventureros. Parte superior exterior de malla duradera con revestimiento de poliuretano con calcetín interior tejido de una pieza de corte alto que acuna el pie cómodamente para montar todo el día. El revestimiento resistente a la abrasión en las punteras y el talón agrega durabilidad donde más se necesita para prolongar la vida útil de sus zapatos.;Diseñado para el rendimiento: una suela exterior con lengüetas de alta tracción de goma fuerte moldeada de longitud completa para agarre y durabilidad. Entresuela de Eva moldeada por compresión con placa de plantilla de nailon mejorada lo suficientemente rígida para la transferencia de energía más eficiente cuando pedaleas. Además, este diseño especial hace que sea mucho más fácil caminar después de andar en bicicleta.;Fácil deslizamiento y máxima compatibilidad: no importa qué tipo de pedales de velocidad tenga su bicicleta, esta zapatilla de ciclismo es su elección correcta. Diseñado para ser compatible con todos los pedales de velocidad, ya sea que conduzca por carretera sin pavimentar o montaña. Compatible con Shimano Spd, Time Atac, Crank Brothers, etc.;Garantía de fabricación: Sandugo Factory Direct Value ofrece un nivel de calidad que otros competidores no pueden alcanzar. Se proporciona una garantía de 2 años. En caso de que surja algún problema después de su compra, comuníquese con nuestro vendedor sin dudarlo para resolver el problema hasta su satisfacción."
+        "especificaciones": "Características: no es fácil decirles a tus amigos que se trata de un par de zapatillas de ciclismo, pero no te dejes engañar por su estilo.;Sensación cómoda con durabilidad: un zapato de bicicleta de montaña exclusivo y moderno (sin clip) para ciclistas de gravel o aventureros. Parte superior exterior de malla duradera con revestimiento de poliuretano con calcetín interior"
     },
     {
         "nombre": "Zapatos de Ciclismo sapatilha Ciclismo MTB Hombres",
@@ -679,7 +679,7 @@
         "talla": "",
         "colores": "",
         "categoria": 6,
-        "especificaciones": "Nuevo poliuretano altamente resistente a la deformación: el material superior del zapato es un tipo de nuevo nanómetro de poliuretano mejorado que es distintivo y hace que los zapatos de ciclismo no sean fáciles de humedecer por el agua exterior.;Diseño de abultamiento en la suela del zapato: con el fin de aumentar el rendimiento mientras estás montando la bicicleta de montaña, la rigidez única de esos zapatos de ciclismo aumenta. Lo que es más, el diseño abultado que expulsa el barro se utiliza en la superficie de la suela, por lo tanto, incluso en la forma de lodo, también puedes disfrutar de la actividad de ciclismo.;Diseño abullonado en la suela del zapato: disfruta de tu rendimiento de ciclismo mientras estás montando la bicicleta de montaña, la rigidez única de esos zapatos de ciclismo aumenta. Lo que es más, el diseño abultado que expulsa el barro se utiliza en la superficie de la suela, por lo tanto, incluso en la forma de lodo, también puedes disfrutar de la actividad de ciclismo.;Velcro de velcro superior y cierre de bloqueo ajustable: con el fin de que tus pies siempre mantengan un buen estado, los ganchos superiores se utilizan para hacer que la dimensión de esos zapatos de bicicleta de montaña sea fácil de ajustar. Además, la cerradura (hebilla) es ajustable, que es adecuada para diferentes niveles y formas de empeine."
+        "especificaciones": "Nuevo poliuretano altamente resistente a la deformación: el material superior del zapato es un tipo de nuevo nanómetro de poliuretano mejorado que es distintivo y hace que los zapatos de ciclismo no sean fáciles de humedecer por el agua exterior.;Diseño de abultamiento en la suela del zapato: con el fin de aumentar el rendimiento mientras estás montando la bicicleta de montaña, la rigidez"
     },
     {
         "nombre": "WYUKN Zapatos de Ciclismo MTB",
@@ -690,7 +690,7 @@
         "talla": "",
         "colores": "",
         "categoria": 6,
-        "especificaciones": "Cómodo: Cuero + malla que crea un sistema de refrigeración y circulación de aire. Los viajes de larga distancia son más transpirables y más cómodos.;Estabilidad antideslizante: Hay un acolchado suave en el talón y el ajustador puede evitar una presión incómoda en el pie, lo que tiene un efecto positivo en la resistencia al deslizamiento y el desgaste estable.;Suela: Agregue material de goma dura, pavimento antideslizante y forma de diente para que la conducción ahorre más trabajo.;Un buen regalo para los ciclistas: Las zapatillas de ciclismo son un buen accesorio para los ciclistas, pueden corregir su postura de conducción para proteger sus rodillas y tobillos, son especialmente adecuadas para carreras de ciclismo, ciclismo de montaña, etc."
+        "especificaciones": "Cómodo: Cuero + malla que crea un sistema de refrigeración y circulación de aire. Los viajes de larga distancia son más transpirables y más cómodos.;Estabilidad antideslizante: Hay un acolchado suave en el talón y el ajustador puede evitar una presión incómoda en el pie, lo que tiene un efecto positivo en la resistencia al deslizamiento y el desgaste estable.;Suela: Agregue material."
     },
     {
         "nombre": "Shoes Zapatillas de Bicicleta de montaña",
@@ -701,6 +701,6 @@
         "talla": "",
         "colores": "",
         "categoria": 6,
-        "especificaciones": "Diseño cómodo y transpirable: sistema de ventilación de circulación 3D, que utiliza una estructura geométricamente estable, malla de secado rápido y transpirable, convección de aire, mantiene los pies frescos, más transpirables y cómodos, proporcionando una mejor solución de ventilación para la conducción.;Diseño anticolisión: talón anticolisión engrosado, talón envuelto en goma gruesa, evita colisiones accidentales y causa dolor, protege el pie;Diseño antideslizante y duradero: suela resistente al desgaste, lámina de goma para apoyar el talón, soporte para la estabilidad del tobillo, ayuda a mantener el talón estable y ayuda rápidamente durante el ejercicio;Fácil de poner y quitar: el diseño de la correa de apriete, que se usa en deportes al aire libre, le permite usarlo rápidamente cuando viaja, mientras usa de manera cómoda la conducción a larga distancia, mejora la estabilidad y la durabilidad de los zapatos.;Calzado deportivo al aire libre: cuanto más ligero sea el peso del calzado, menor es la carga corporal, el calzado deportivo de ciclismo multifuncional, muy adecuado para bicicletas de montaña, ciclismo de carretera, montañismo, entrenamiento de aventura y viajes. Unisex, elija los zapatos que más le convengan de acuerdo con la longitud de los pies en la tabla de tallas."
+        "especificaciones": "Diseño cómodo y transpirable: sistema de ventilación de circulación 3D, que utiliza una estructura geométricamente estable, malla de secado rápido y transpirable, convección de aire, mantiene los pies frescos, más transpirables y cómodos, proporcionando una mejor solución de ventilación para la conducción.;Diseño anticolisión: talón anticolisión engrosado, talón envuelto en goma gruesa."
     }
 ]

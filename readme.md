@@ -5,7 +5,8 @@
  - Mónica Tamara Morales Cano <a href=https://www.linkedin.com/in/tamara-mc/>LinkedIn</a>
 <br>
 <p align="center">
-<img src="assets/images/equipo/equipo.png" align="center" height="300" width="500">
+ <a href="" target="_blank"><img src="assets/images/equipo/equipo.png" align="center" height="300" width="500"></a>
+
 </p>
 <br>
 

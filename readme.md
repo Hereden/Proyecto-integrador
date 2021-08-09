@@ -1,0 +1,197 @@
+# Integrantes
+ - César Eduardo Juárez Fonseca  <a href=https://www.linkedin.com/in/cesare-ar/>LinkedIn</a>
+ - Gabriela Itsel Medrano Hernández <a href=https://www.linkedin.com/in/gabriela-medranoh/>LinkedIn</a>
+ - Emmanuel Reyna Cruz <a href=https://www.linkedin.com/in/emmanuelreynac/>LinkedIn</a>
+ - Mónica Tamara Morales Cano <a href=https://www.linkedin.com/in/tamara-mc/>LinkedIn</a>
+<br>
+<p align="center">
+<img src="assets/images/equipo/equipo.png" align="center" height="300" width="500">
+</p>
+<br>
+
+# Integrante que no esta mientras hacemos el README
+ - Santiago García Arellano
+
+# Introducción
+
+El proyecto comienza con la necesidad y el crecimiento de la comunidad de ciclismo, ejemlplo: ecobicis, ciclovias
+nosotros pensamos en la comunidad y en donde hay una area de crecimiento como lo es en las Rodadas:
+Las rodadas son rutas de un punto a otro, donde los ciclistas se reúnen, conviven y pasan un buen momento 
+compartiendo sus gustos e intereses, estas pueden depender de la distancia o el lugar, ya sea ciudad, carretera o montañismo.
+Justo entendiendo la complejidad y lo que esto indica, comenzamos con un e-commerce.
+
+
+# Links
+
+<a href=https://www.canva.com/design/DAEkO0-0KY4/Kq5z7wMLaiBtaz8LmcSX9w/edit>Presentación  </a>
+<br>
+<a href= https://hereden.github.io/Proyecto-integrador/>Página</a>
+
+# Código interesante
+
+## Rellenado dinámico del footer y del navbar
+
+ - En el html
+```HTML
+<div id="nav-placeholder"></div>
+<div id="footer"></div>
+```
+ - En el JavaScript
+```JS
+ jQuery.get("./navbar.html", function (data) {
+  $("#nav-placeholder").replaceWith(data);
+ });
+
+ jQuery.get("./footer.html", function (data) {
+  $("#footer").replaceWith(data);
+ })
+```
+
+
+## Rellenado dinámico de las cards
+
+ - En el html
+```HTML
+<div class="col-9" id="columnaDerecha">
+      </div>
+```
+ - En el JavaScript
+```JS
+function generarCardsDinamicamente(array1) {
+      /*Obtenemos div de columna derecha*/
+      var columnaDerecha = document.querySelector("#columnaDerecha");
+      /*Generamos la fila donde iran todos los articulos de la página*/
+      let row1 = document.createElement("div");
+      row1.className += "row";
+      /*Generamos otra fila donde separamos en 3 articulos por fila*/
+      let row2 = document.createElement("div");
+      row2.className += "row row-cols-3 row-cols-md-3 m-2";
+      /*Agarramos nuestro Array con lista de json*/
+      /*Por cada elemento vamos a*/
+      array1.forEach((element) => {
+        /*Generar el marco de la card*/
+        let marcoCard = document.createElement("div");
+        marcoCard.className += "col mb-4";
+        /*Generamos la card con fondo negro*/
+        let card = document.createElement("div");
+        card.className += "card bg-dark";
+        /*Generamos la forma de la card*/
+        let cardLayout = document.createElement("div");
+        cardLayout.className += "card-body";
+        /*Generamos en donde va a ponerse la imagen*/
+        let imagenCard = document.createElement("img");
+        imagenCard.className += "card-img-top";
+        /*Generamos donde se va a poner el titulo del articulo*/
+        let tituloCard = document.createElement("h5");
+        tituloCard.className += "card-title texto_white font_footer_text text-overflow-cards-1";
+        /*Generamos donde se va poner la descripcion del articulo*/
+        let descCard = document.createElement("p");
+        descCard.className +=
+          "card-text text-overflow-cards texto_white texto_50 font_footer";
+        /*Generamos donde se va a poner el precio*/
+        let precioCard = document.createElement("p");
+        precioCard.className +=
+          "texto_white font_footer_text align-self-center";
+        precioCard.setAttribute("style",
+        "font-size:23px;text-align: center;");
+        /*Generamos el boton de compra*/
+        let botonCard = document.createElement("button");
+        botonCard.className+="font_footer_text"
+        botonCard.setAttribute(
+          "style",
+          "border-color: #FFD103;background-color: black;color: #FFD103;border: 1px;width=100%;font-size:20px"
+        );
+        /*Generamos el div donde se pondrian las tallas*/
+        let tallas1 = document.createElement("div");
+        tallas1.className += "";
+
+        /*Obtenemos el url del json para la imagen*/
+        imagenCard.src = element.url;
+        /*Obtenemos el titulo para el texto alternativo*/
+        imagenCard.alt = element.nombre;
+        /*Obtenemos el titulo del json*/
+        tituloCard.appendChild(document.createTextNode(element.nombre));
+        /*Obtenemos la descripcion del json*/
+        descCard.appendChild(document.createTextNode(element.descripcion));
+        /*Obtenemos el precio del json*/
+        precioCard.appendChild(document.createTextNode(`$ ${Intl.NumberFormat().format(element.precio)}`));
+        /*Terminamos de generar el texto del boton para comprar*/
+        botonCard.appendChild(document.createTextNode(`Comprar`));
+       /*Aqui agregaremos funcionalidad del boton comprar*/
+       botonCard.addEventListener("click", function () {
+          console.log(element);
+          let carrito=localStorage.getItem("carrito");
+          if(carrito){
+            let carrito2=[];
+            carrito2=JSON.parse(carrito);
+            let agregarCarrito=true;
+            carrito2.forEach(function (task) {
+              if(task.nombre==element.nombre){
+                agregarCarrito=false;
+              }
+            });
+            if(agregarCarrito){
+              carrito2.push(element);
+            }
+            localStorage.setItem("carrito",JSON.stringify(carrito2));
+          }else{
+            let carrito = [];
+            carrito.push(element);
+            localStorage.setItem("carrito",JSON.stringify(carrito));
+          }
+          
+        });
+        /*Checamos si hay tallas definidas en el json*/
+        if (typeof element.talla != typeof undefined) {
+          /*Obtenemos las tallas y las separamos: S,M,L,XL*/
+          let tallas3 = element.talla.split(",");
+          /*["S","M","L","XL"]*/
+          /*Por cada talla generamos*/
+          tallas3.forEach((talla2) => {
+            /*Boton de la talla*/
+            let botonTalla = document.createElement("button");
+            botonTalla.className += "botonesTallas";
+            /*Lo agregamos a la lista*/
+            botonTalla.appendChild(document.createTextNode(talla2));
+            /*Agregamos un poco de funcionalidad para saber cual esta activo*/
+            botonTalla.addEventListener("click", () => {
+              var current = document.querySelector(".active");
+              if (current != null) {
+                current.className = "botonesTallas";
+              }
+              botonTalla.className = "active";
+              /* Aqui haremos lo pertinente para saber la talla del articulo definido
+              *console.log(talla2);*/
+            });
+            /*Si no hubo tallas no se agrega a la card*/
+            if (botonTalla.innerHTML != "") {
+              tallas1.appendChild(botonTalla);
+            }
+          });
+        }
+        /*Agregamos las tallas, el boton de compra, titulo y descripcion 
+        * al layout que es la parte que veremos cuando nos posicionemos 
+        * encima de la card*/
+        
+        cardLayout.appendChild(tituloCard);
+        
+
+        /*Agregamos a la card la imagen, el precio y la parte de encima de la card*/
+        card.appendChild(imagenCard);
+        card.appendChild(cardLayout);
+        card.appendChild(precioCard);
+        card.appendChild(tallas1);
+        card.appendChild(botonCard);
+
+        /*Agregar la card al marco*/
+        marcoCard.appendChild(card);
+        /*Agregar el marco a nuestra filas de cards*/
+        row2.appendChild(marcoCard);
+      });
+      /*Agregamos nuestra segunda fila a la primera*/
+      row1.appendChild(row2);
+      /*Agregamos la primer fila a nuestra columna derecha*/
+      columnaDerecha.appendChild(row1);
+    }
+```
+

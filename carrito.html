@@ -184,7 +184,7 @@
           cantidadTotalPrecio+=element.precio * cantidadProducto;
         });
 
-        //Funcion de boton Menos
+        //Función de boton Menos
         botonMenos.addEventListener('click', () => {
           if (cantidadProducto > 1) {
             cantidadProducto--;
@@ -210,7 +210,7 @@
       pagarBoton.className+="btn btn-outline-secondary my-2 my-sm-0 texto_50 boton_amarillo align-self-center"
       pagarBoton.setAttribute(
         "onclick",
-        "CheckBox.html"
+        "window.open('CheckBox.html')"
       );
       pagarBoton.appendChild(document.createTextNode("Pagar"));
       pagarTableData.appendChild(pagarBoton);

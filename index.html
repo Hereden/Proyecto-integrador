@@ -356,7 +356,7 @@
                         precioCard.appendChild(document.createTextNode(`$ ${Intl.NumberFormat().format(val.precio)}`));
                         /*Terminamos de generar el texto del boton para comprar*/
                         botonCard.appendChild(document.createTextNode(`Comprar`));
-                        /*Aqui agregaremos funcionalidad del boton comprar*/
+                        /*Aquí agregaremos funcionalidad del boton comprar*/
                         botonCard.addEventListener("click", function () {
                             let carrito = localStorage.getItem("carrito");
                             if (carrito) {

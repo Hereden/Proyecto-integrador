@@ -1,4 +1,7 @@
-<a href="registro.html"><p class="Tienda" style="text-align: center; background:#FFD103; font-size:45px; color: black;">  Regístrate y aprovecha nuestros productos</p></a>
+<a href="registro.html">
+    <p class="Tienda" style="text-align: center; background:#FFD103; font-size:45px; color: black;"> Regístrate y
+        aprovecha nuestros productos</p>
+</a>
 
 <nav class="navbar navbar-expand-lg" style="background-color: black;">
     <p class="Bienvenido" style="margin-left: 50px; text-align:center; font-size: 40px;"> Conócenos <br>#TlacuaRiders
@@ -42,29 +45,30 @@
 
                 <ul class="dropdown-menu dropdown-menu-right mt-1 bg_black align-content-end">
                     <li class="px-2 py-2" style="width: 100%;">
-                        <!-- <form class="form" role="form"> -->
-                        <div class="form-group ">
-                            <input id="emailInput" placeholder="Correo"
-                                class="form-control form-control-sm texto_amarillo texto_50 boton_amarillo" type="text"
-                                required="">
-                        </div>
-                        <div class="form-group">
-                            <input id="passwordInput" placeholder="Contraseña"
-                                class="form-control form-control-sm texto_amarillo texto_50 boton_amarillo"
-                                type="password" required="">
-                        </div>
-                        <div class="form-group">
-                            <button onclick="comprobar()"
-                                class="btn btn-primary btn-block texto_amarillo texto_50 boton_amarillo " type="submit">
-                                Ingresar
-                            </button>
-                        </div>
-                        <div class="form-group text-center texto_50">
-                            <a href="registro.html" class="bg_dark texto_white">
-                                ¿Aún sin cuenta?, Regístrate!!
-                            </a>
-                        </div>
-                        <!-- </form> -->
+                        <form class="form" role="form" id="formLogin">
+                            <div class="form-group ">
+                                <input id="emailLogin" placeholder="Correo"
+                                    class="form-control form-control-sm texto_amarillo texto_50 boton_amarillo"
+                                    type="text" required="">
+                            </div>
+                            <div class="form-group">
+                                <input id="passwordLogin" placeholder="Contraseña"
+                                    class="form-control form-control-sm texto_amarillo texto_50 boton_amarillo"
+                                    type="password" required="">
+                            </div>
+                            <div class="form-group">
+                                <button
+                                    class="btn btn-primary btn-block texto_amarillo texto_50 boton_amarillo "
+                                    type="submit">
+                                    Ingresar
+                                </button>
+                            </div>
+                            <div class="form-group text-center texto_50">
+                                <a href="registro.html" class="bg_dark texto_white">
+                                    ¿Aún sin cuenta?, Regístrate!!
+                                </a>
+                            </div>
+                        </form>
                     </li>
                 </ul>
 
@@ -91,8 +95,8 @@
                         <!-- cambiarCards(0) -->
                         <!-- <a class="dropdown-item" style="color:#FFD103;" href="bicisInfantiles.html">Infantiles</a> -->
                         <a class="dropdown-item" style="color:#FFD103;" onclick="cambiarCards(0)">Infantiles</a>
-                        <a class="dropdown-item" style="color:#FFD103;" href="BicisPista.html">Pista</a>
-                        <a class="dropdown-item" style="color:#FFD103;" href="montanas.html">Montañas</a>
+                        <a class="dropdown-item" style="color:#FFD103;" onclick="cambiarCards(1)">Pista</a>
+                        <a class="dropdown-item" style="color:#FFD103;" onclick="cambiarCards(1)">Montañas</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown bg_black texto_50 texto_white">
@@ -101,11 +105,11 @@
                         Accesorios
                     </a>
                     <div class="dropdown-menu bg_black texto_50 texto_white" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item"  style="color:#FFD103;" href="cascos.html">Cascos</a>
-                        <a class="dropdown-item" style="color:#FFD103;" href="mochilas.html">Mochilas</a>
-                        <a class="dropdown-item" style="color:#FFD103;" href="guantes.html">Guantes</a>
-                        <a class="dropdown-item" style="color:#FFD103;" href="zapatillas.html">Zapatillas</a>
-                        <a class="dropdown-item" style="color:#FFD103;" href="gafas.html">Lentes</a>
+                        <a class="dropdown-item" style="color:#FFD103;" onclick="cambiarCards(2)">Cascos</a>
+                        <a class="dropdown-item" style="color:#FFD103;" onclick="cambiarCards(5)">Mochilas</a>
+                        <a class="dropdown-item" style="color:#FFD103;" onclick="cambiarCards(4)">Guantes</a>
+                        <a class="dropdown-item" style="color:#FFD103;" onclick="cambiarCards(6)">Zapatillas</a>
+                        <a class="dropdown-item" style="color:#FFD103;" onclick="cambiarCards(3)">Lentes</a>
                     </div>
                 </li>
             </ul>
@@ -119,7 +123,7 @@
                     <a class="nav-link" href="noticias01.html" style="color: #d0d0d0;">Noticias</a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link" href="nosotros.html" style="color: #FFD103;">Sobre nosotros</a>
+                    <a class="nav-link" onclick="IrANosotros()" style="color: #FFD103;">Sobre nosotros</a>
                 </li>
             </ul>
             <!-- <form class="form-inline my-2 my-lg-0">

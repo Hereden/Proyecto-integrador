@@ -146,7 +146,7 @@
           "id",
           "btnCar"
           );
-        /*Generamos el div donde se pondrian las tallas*/
+        /*Generamos el div donde se pondrían las tallas*/
         let tallas1 = document.createElement("div");
         tallas1.className += "";
 
@@ -156,7 +156,7 @@
         imagenCard.alt = element.nombre;
         /*Obtenemos el titulo del json*/
         tituloCard.appendChild(document.createTextNode(element.nombre));
-        /*Obtenemos la descripcion del json*/
+        /*Obtenemos la descripción del json*/
         descCard.appendChild(document.createTextNode(element.descripcion));
         /*Obtenemos el precio del json*/
         precioCard.appendChild(document.createTextNode(`$ ${Intl.NumberFormat().format(element.precio)}`));
@@ -187,14 +187,14 @@
           
         });
 
-        /*Checamos si hay tallas definidas en el json*/
+        /*Revisamos si hay tallas definidas en el json*/
         if (typeof element.talla != typeof undefined) {
           /*Obtenemos las tallas y las separamos: S,M,L,XL*/
           let tallas3 = element.talla.split(",");
           /*["S","M","L","XL"]*/
           /*Por cada talla generamos*/
           tallas3.forEach((talla2) => {
-            /*Boton de la talla*/
+            /*Botón de la talla*/
             let botonTalla = document.createElement("button");
             botonTalla.className += "botonesTallas";
             /*Lo agregamos a la lista*/
@@ -206,7 +206,7 @@
                 current.className = "botonesTallas";
               }
               botonTalla.className = "active";
-              /* Aqui haremos lo pertinente para saber la talla del articulo definido
+              /* Aquí haremos lo pertinente para saber la talla del articulo definido
               *console.log(talla2);*/
             });
             /*Si no hubo tallas no se agrega a la card*/

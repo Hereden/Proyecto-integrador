@@ -16,7 +16,7 @@
 </head>
 
 <body>
-  <!--Creamos un div para jalar el navbar dinamicamente-->
+  <!--Creamos un div para jalar el navbar dinámicamente-->
   <div id="nav-placeholder">
 
   </div>
@@ -36,7 +36,7 @@
         <h6 class="pl-4 texto_50">Tallas</h6>
         <div class="pl-3">
           <div class="form-check p-3 texto_50">
-            <!-- p-3 es pading -->
+            <!-- p-3 es padding -->
             <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
             <label class="form-check-label" for="defaultCheck1">
               Pequeño
@@ -128,7 +128,7 @@
         /*Generamos donde se va a poner el titulo del articulo*/
         let tituloCard = document.createElement("h5");
         tituloCard.className += "card-title texto_white font_footer_text text-overflow-cards-1";
-        /*Generamos donde se va poner la descripcion del articulo*/
+        /*Generamos donde se va poner la descripción del articulo*/
         let descCard = document.createElement("p");
         descCard.className +=
           "card-text text-overflow-cards texto_white texto_50 font_footer";
@@ -138,14 +138,14 @@
           "texto_white font_footer_text align-self-center";
         precioCard.setAttribute("style",
         "font-size:23px;text-align: center;");
-          /*Generamos el boton de compra*/
+          /*Generamos el botón de compra*/
         let botonCard = document.createElement("button");
         botonCard.className+="font_footer_text"
         botonCard.setAttribute(
           "style",
           "border-color: #FFD103;background-color: black;color: #FFD103;border: 1px;width=100%;font-size:20px"
         );
-        /*Generamos el div donde se pondrian las tallas*/
+        /*Generamos el div donde se pondrían las tallas*/
         let tallas1 = document.createElement("div");
         tallas1.className += "";
 
@@ -155,7 +155,7 @@
         imagenCard.alt = element.nombre;
         /*Obtenemos el titulo del json*/
         tituloCard.appendChild(document.createTextNode(element.nombre));
-        /*Obtenemos la descripcion del json*/
+        /*Obtenemos la descripción del json*/
         descCard.appendChild(document.createTextNode(element.descripcion));
         /*Obtenemos el precio del json*/
         precioCard.appendChild(document.createTextNode(`$ ${Intl.NumberFormat().format(element.precio)}`));
@@ -295,7 +295,7 @@
             "style",
             "border-color: #FFD103;background-color: black;color: #FFD103;border: 1px;width=100%;font-size:20px"
           );
-          /*Generamos el div donde se pondrian las tallas*/
+          /*Generamos el div donde se pondrían las tallas*/
           let tallas1 = document.createElement("div");
           tallas1.className += "";
 
@@ -305,7 +305,7 @@
           imagenCard.alt = val.nombre;
           /*Obtenemos el titulo del json*/
           tituloCard.appendChild(document.createTextNode(val.nombre));
-          /*Obtenemos la descripcion del json*/
+          /*Obtenemos la descripción del json*/
           descCard.appendChild(document.createTextNode(val.descripcion));
           /*Obtenemos el precio del json*/
           precioCard.appendChild(document.createTextNode(`$ ${Intl.NumberFormat().format(val.precio)}`));
@@ -392,7 +392,7 @@
       columnaDerecha.appendChild(row1);
       //output += '</div>';
       //$('#columnaDerecha').html(output);
-      //generarCardsDinamicamente(output);
+      //generarCardsDinámicamente(output);
     });
 
 

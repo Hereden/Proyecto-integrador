@@ -17,20 +17,37 @@
     </div>
     <div class="container texto_70">
         <p class="text-center">Crea una cuenta</p>
-        <form class="texto_70">
+        <!--
+	        String name;
+	        String alias;
+	        String apellidos;
+            String email;
+            (String username;)
+            String password:
+	        String direccion;
+	        String telefono;
+	        int genero;
+        -->
+        <form class="texto_70" id="formR">
             <input id="nombreR" class="form-control texto_70 boton_amarillo bg_black texto_white"
-                placeholder="Como quieres que te llamemos" type="text">
-            <input id="correoR" class="form-control texto_70 boton_amarillo bg_black texto_white"
-                placeholder="Correo electronico" type="email">
+                placeholder="Cómo te llamas" type="text">
+            <input id="aliasR" class="form-control texto_70 boton_amarillo bg_black texto_white"
+                placeholder="Cómo quieres llamarte" type="text">
+            <input id="apellidosR" class="form-control texto_70 boton_amarillo bg_black texto_white"
+                placeholder="Tus apellidos son" type="text">
+            <input id="emailR" class="form-control texto_70 boton_amarillo bg_black texto_white"
+                placeholder="Correo electrónico" type="email">
             <input id="passR" class="form-control texto_70 boton_amarillo bg_black texto_white" placeholder="Contraseña"
                 type="password">
+            <input id="direccionR" class="form-control texto_70 boton_amarillo bg_black texto_white"
+                placeholder="Escribe tu dirección" type="text">
+            <input id="telefonoR" class="form-control texto_70 boton_amarillo bg_black texto_white"
+                placeholder="Tu teléfono" type="number">
             <select class="form-control texto_70 boton_amarillo bg_black texto_white" id="generoR">
                 <option class="boton_amarillo bg_black texto_white">Hombre</option>
                 <option class="boton_amarillo bg_black texto_white">Mujer</option>
                 <option class="boton_amarillo bg_black texto_white" selected>Otro</option>
             </select>
-            <input id="edadR" class="form-control texto_70 boton_amarillo bg_black texto_white" placeholder="Edad"
-                type="number">
             <button type="submit" class="btn btn-primary btn-block texto_70 boton_amarillo"> Regístrate </button>
 
         </form>
@@ -49,7 +66,7 @@
 
 
 
-    <script src="assets/texto/formato2.js"></script>
+    
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -59,6 +76,7 @@
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/scriptRegistrarte.js"></script>
     <script>
         jQuery.get("./navbar.html", function (data) {
             $("#nav-placeholder").replaceWith(data);

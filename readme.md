@@ -1,8 +1,9 @@
 # Integrantes
  - César Eduardo Juárez Fonseca  <a href=https://www.linkedin.com/in/cesare-ar target="_blank"/>LinkedIn</a>
- - Gabriela Itsel Medrano Hernández <a href=https://www.linkedin.com/in/gabriela-medranoh target="_blank"/>LinkedIn</a>
+ - Gabriela Itsel Medrano Hernández <a href=https://www.linkedin.com/in/gabriela-mh target="_blank"/>LinkedIn</a>
  - Emmanuel Reyna Cruz <a href=https://www.linkedin.com/in/emmanuelreynac target="_blank"/>LinkedIn</a>
  - Mónica Tamara Morales Cano <a href=https://www.linkedin.com/in/tamara-mc target="_blank"/>LinkedIn</a>
+ - Santiago García Arellano <a href=https://www.linkedin.com/in/tamara-mc target="_blank"/>LinkedIn</a>
 <br>
 <p align="center">
  <a href="" target="_blank"><img src="assets/images/equipo/equipo.png" align="center" height="300" width="500"></a>
@@ -10,8 +11,8 @@
 </p>
 <br>
 
-# Integrante que no esta mientras hacemos el README
- - Santiago García Arellano
+<!--# Integrante que no esta mientras hacemos el README
+ - Santiago García Arellano-->
 
 # Introducción
 

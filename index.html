@@ -62,9 +62,18 @@
                 $("#precarga").replaceWith(data);
             });
         }
+        function IrANosotros() {
+            let columnaIzquierda= document.querySelector("#columnaIzquierda").textContent="";
+            let columnaDerecha= document.querySelector("#columnaDerecha").textContent="";
+            jQuery.get("./nosotros2.html", function (data) {
+                $("#precarga").replaceWith(data);
+            });
+        }
+
         let TODOS_LOS_ARTICULOS;
         let array1;
         cargarArticulos();
+
         function cargarArticulos() {
             fetch(URLBACKEND + 'articulos', {
                 method: 'GET',
@@ -74,17 +83,13 @@
                 }
             })
                 .then(resp => resp.json()).then(data => {
-                    console.log(data);
+                   // console.log(data);
                     TODOS_LOS_ARTICULOS = data;
                 });
         }
 
         function cambiarCards(num) {
-            /* jQuery.get("./precarga.html", function (data) {
-                $("#precarga").replaceWith(data);
-            }); */
             let precarga = document.querySelector("#precarga").textContent = "";
-            //array1 = ;
             generarCardsDinamicamente(num);
 
         }
@@ -92,7 +97,7 @@
         function generarCardsDinamicamente(numeroCategoria) {
             /*Obtenemos div de columna derecha*/
             var columnaDerecha = document.querySelector("#columnaDerecha");
-            //columnaDerecha.textContent = "";
+            columnaDerecha.textContent = "";
             /*Generamos la fila donde iran todos los articulos de la página*/
             let row1 = document.createElement("div");
             row1.className += "row";

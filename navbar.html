@@ -3,8 +3,8 @@
 <nav class="navbar navbar-expand-lg" style="background-color: black;">
     <p class="Bienvenido" style="margin-left: 50px; text-align:center; font-size: 40px;"> Conócenos <br>#TlacuaRiders
     </p>
-    <a class="navbar-brand" href="index.html" style="color: #d0d0d0;position: absolute;left: 40%;top: 10px;">
-        <img src="assets/images/logo.png" alt="TlacuaRiders" class="">
+    <a class="navbar-brand" onclick="volverAlIndex()" style="color: #d0d0d0;position: absolute;left: 40%;top: 10px;">
+        <img onclick="volverAlIndex()" src="assets/images/logo.png" alt="TlacuaRiders" class="">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -88,7 +88,9 @@
                         Bicicletas
                     </a>
                     <div class="dropdown-menu bg_black texto_50 " aria-labelledby="navbarDropdownMenuLink ">
-                        <a class="dropdown-item" style="color:#FFD103;" href="bicisInfantiles.html">Infantiles</a>
+                        <!-- cambiarCards(0) -->
+                        <!-- <a class="dropdown-item" style="color:#FFD103;" href="bicisInfantiles.html">Infantiles</a> -->
+                        <a class="dropdown-item" style="color:#FFD103;" onclick="cambiarCards(0)">Infantiles</a>
                         <a class="dropdown-item" style="color:#FFD103;" href="BicisPista.html">Pista</a>
                         <a class="dropdown-item" style="color:#FFD103;" href="montanas.html">Montañas</a>
                     </div>

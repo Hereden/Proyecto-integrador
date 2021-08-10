@@ -66,7 +66,7 @@ formLogin.addEventListener("submit", (e) => {
         }else{
             genero2=2;
         }
-        let req = fetch("http://localhost:8080/usuarios/", {
+        let req = fetch(URLBACKEND+ "usuarios/", {
             method: 'POST',
             body: JSON.stringify({
                 username: email.value,

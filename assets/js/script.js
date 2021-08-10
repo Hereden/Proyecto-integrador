@@ -1,11 +1,6 @@
-let montana= document.querySelector("#montana");
-
-montana.addEventListener("click", ()=>{
-    window.open("../montana.html", "_blank");
-});
+const URLBACKEND="http://localhost:8080/";
 
 let carrito={};
-
 
 function registrarme() {
     localStorage.setItem('email', document.querySelector("#correo").value);

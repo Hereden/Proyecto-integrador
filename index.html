@@ -44,54 +44,130 @@
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="assets/js/script.js"></script>
     <script>
+        /* Obtenemos nuestro navbar del html y lo ponemos 
+         * en el div con ese id*/
         jQuery.get("./navbar.html", function (data) {
             $("#nav-placeholder").replaceWith(data);
         });
 
+        /* Obtenemos nuestro footer del html y lo ponemos 
+         * en el div con ese id*/
         jQuery.get("./footer.html", function (data) {
             $("#footer").replaceWith(data);
         });
+
+        /* Obtenemos nuestro slider y tres imagenes 
+         * del html y lo ponemos en el div con ese id*/
         jQuery.get("./precarga.html", function (data) {
             $("#precarga").replaceWith(data);
         });
 
+        /*Declaramos variables para guardar todos los articulos
+         * y la categoria donde estamos actualmente*/
+        let TODOS_LOS_ARTICULOS;
+        let categoriaNumero = 0;
+
+        /* Funcion para repintar el div de index y borrar los otros dos divs*/
         function volverAlIndex() {
-            let columnaIzquierda= document.querySelector("#columnaIzquierda").textContent="";
-            let columnaDerecha= document.querySelector("#columnaDerecha").textContent="";
+            let columnaIzquierda = document.querySelector("#columnaIzquierda").textContent = "";
+            let columnaDerecha = document.querySelector("#columnaDerecha").textContent = "";
             jQuery.get("./precarga.html", function (data) {
                 $("#precarga").replaceWith(data);
             });
         }
+
+        /* Funcion para repintar el div con el contenido de
+         * nosotros y borrar el contenido de los otros dos divs*/
         function IrANosotros() {
-            let columnaIzquierda= document.querySelector("#columnaIzquierda").textContent="";
-            let columnaDerecha= document.querySelector("#columnaDerecha").textContent="";
+            let columnaIzquierda = document.querySelector("#columnaIzquierda").textContent = "";
+            let columnaDerecha = document.querySelector("#columnaDerecha").textContent = "";
             jQuery.get("./nosotros2.html", function (data) {
                 $("#precarga").replaceWith(data);
             });
         }
 
-        let TODOS_LOS_ARTICULOS;
-        let array1;
+        /* Buscamos cargar los articulos */
         cargarArticulos();
 
+        /* Función para hacer la petición por medio de fetch
+         * en la url donde esta el backend y la ruta de articulos
+         * al finalizar guardamos la respuesta en la variable previamente declarada*/
         function cargarArticulos() {
             fetch(URLBACKEND + 'articulos', {
                 method: 'GET',
                 headers: {
-                    /*"Authorization": token,*/
                     "Content-Type": "application/json"
                 }
             })
                 .then(resp => resp.json()).then(data => {
-                   // console.log(data);
                     TODOS_LOS_ARTICULOS = data;
                 });
         }
 
+        /* Si nos piden repintar las cards, vamos a 
+         * generar la columna izquierda y derecha
+         * para que al finalizar se muestren */
         function cambiarCards(num) {
             let precarga = document.querySelector("#precarga").textContent = "";
+            categoriaNumero = num;
             generarCardsDinamicamente(num);
+            generarColumnaIzquierda();
 
+        }
+
+        /* Generamos la columna de filtros*/
+        function generarColumnaIzquierda() {
+            /*Obtenemos div de columna izquierda*/
+            let columnaIzquierda = document.querySelector("#columnaIzquierda");
+            /*Vaciamos el div para evitar generar varios divs*/
+            columnaIzquierda.textContent = "";
+            /* Creamos el titulo como un h5
+             * Agregamos su clase y 
+             * Agregamos el texto
+             * */
+            let buscarNombre = document.createElement("h5");
+            buscarNombre.className += "ml-4 texto_50";
+            buscarNombre.appendChild(document.createTextNode("Buscar por nombre"));
+            /* Creamos el input donde buscaremos por nombre de artículo
+             * Ponemos un placeholder
+             * Ponemos un id para saber el contenido
+             * Generamos la función donde escucha cada vez que soltamos una tecla*/
+            let inputBuscarNombre = document.createElement("input");
+            inputBuscarNombre.placeholder = "Buscar artículo";
+            inputBuscarNombre.id = "buscarNombre"
+            inputBuscarNombre.type = "search";
+            inputBuscarNombre.className += "mr-sm-2 texto_50 bg_black texto_amarillo";
+            inputBuscarNombre.addEventListener("keyup", () => {
+                buscar("buscarNombre", "nombre")
+            });
+
+            /* Creamos el titulo como un h5
+             * Agregamos su clase y 
+             * Agregamos el texto
+             * */
+            let buscarPrecio = document.createElement("h5");
+            buscarPrecio.className += "ml-4 texto_50";
+            buscarPrecio.appendChild(document.createTextNode("Buscar por precio"));
+            let inputBuscarPrecio = document.createElement("input");
+            /* Creamos el input donde buscaremos por precio del artículo
+             * Ponemos un placeholder
+             * Ponemos un id para saber el contenido
+             * Generamos la función donde escucha cada vez que soltamos una tecla*/
+            inputBuscarPrecio.placeholder = "Buscar por precio";
+            inputBuscarPrecio.id = "buscarPrecio"
+            inputBuscarPrecio.type = "search";
+            inputBuscarPrecio.className += "mr-sm-2 texto_50 bg_black texto_amarillo";
+            inputBuscarPrecio.addEventListener("keyup", () => {
+                buscar("buscarPrecio", "precio")
+            });
+
+            /* Agregamos los títulos "Buscar por nombre" y "Buscar por precio"
+             * Agregamos los inputs despues de los títulos 
+             * Para que se vean en nuestra columna izquierda*/
+            columnaIzquierda.appendChild(buscarNombre);
+            columnaIzquierda.appendChild(inputBuscarNombre);
+            columnaIzquierda.appendChild(buscarPrecio);
+            columnaIzquierda.appendChild(inputBuscarPrecio);
         }
 
         function generarCardsDinamicamente(numeroCategoria) {
@@ -184,9 +260,7 @@
                     /*Agregamos las tallas, el boton de compra, titulo y descripcion 
                     * al layout que es la parte que veremos cuando nos posicionemos 
                     * encima de la card*/
-
                     cardLayout.appendChild(tituloCard);
-
 
                     /*Agregamos a la card la imagen, el precio y la parte de encima de la card*/
                     card.appendChild(imagenCard);
@@ -207,9 +281,9 @@
             columnaDerecha.appendChild(row1);
         }
 
-        let buscarNombre = document.querySelector("#searchNombre");
-        $('#searchNombre').keyup(function () {
-            var searchField = $(this).val();
+
+        function buscar(idForm, parametro) {
+            var searchField = $(`#${idForm}`).val();
             if (searchField === '') {
                 $('#columnaDerecha').html('');
                 return;
@@ -218,8 +292,9 @@
             var regex = new RegExp(searchField, "i");
             var output = "";
             var count = 1;
+            /*Obtenemos div de columna derecha*/
             var columnaDerecha = document.querySelector("#columnaDerecha");
-            columnaDerecha.innerHTML = "";
+            columnaDerecha.textContent = "";
             /*Generamos la fila donde iran todos los articulos de la página*/
             let row1 = document.createElement("div");
             row1.className += "row";
@@ -228,141 +303,112 @@
             row2.className += "row row-cols-3 row-cols-md-3 m-2";
             /*Agarramos nuestro Array con lista de json*/
             /*Por cada elemento vamos a*/
-            $.each(array1, function (key, val) {
-                if ((val.nombre.search(regex) != -1) || (val.nombre.search(regex) != -1)) {
+            $.each(TODOS_LOS_ARTICULOS, function (key, val) {
+                if (val.categoria == categoriaNumero) {
+                    if ((val[parametro].toString().search(regex) != -1) || (val[parametro].toString().search(regex) != -1)) {
 
+                        /*Generar el marco de la card*/
+                        let marcoCard = document.createElement("div");
+                        marcoCard.className += "col mb-4";
+                        /*Generamos la card con fondo negro*/
+                        let card = document.createElement("div");
+                        card.className += "card bg-dark";
+                        /*Generamos la forma de la card*/
+                        let cardLayout = document.createElement("div");
+                        cardLayout.className += "card-body";
+                        /*Generamos en donde va a ponerse la imagen*/
+                        let imagenCard = document.createElement("img");
+                        imagenCard.className += "card-img-top";
+                        /*Generamos donde se va a poner el titulo del articulo*/
+                        let tituloCard = document.createElement("h5");
+                        tituloCard.className += "card-title texto_white font_footer_text text-overflow-cards-1";
+                        /*Generamos donde se va poner la descripcion del articulo*/
+                        let descCard = document.createElement("p");
+                        descCard.className +=
+                            "card-text text-overflow-cards texto_white texto_50 font_footer";
+                        /*Generamos donde se va a poner el precio*/
+                        let precioCard = document.createElement("p");
+                        precioCard.className +=
+                            "texto_white font_footer_text align-self-center";
+                        precioCard.setAttribute("style",
+                            "font-size:23px;text-align: center;");
+                        /*Generamos el boton de compra*/
+                        let botonCard = document.createElement("button");
+                        botonCard.className += "font_footer_text"
+                        botonCard.setAttribute(
+                            "style",
+                            "border-color: #FFD103;background-color: black;color: #FFD103;border: 1px;width=100%;font-size:20px"
+                        );
+                        /*Generamos el div donde se pondrian las tallas*/
+                        let tallas1 = document.createElement("div");
+                        tallas1.className += "";
 
-                    let marcoCard = document.createElement("div");
-                    marcoCard.className += "col mb-4";
-                    /*Generamos la card con fondo negro*/
-                    let card = document.createElement("div");
-                    card.className += "card bg-dark text-dark";
-                    /*Generamos la forma de la card*/
-                    let cardLayout = document.createElement("div");
-                    cardLayout.className += "card-body";
-                    /*Generamos en donde va a ponerse la imagen*/
-                    let imagenCard = document.createElement("img");
-                    imagenCard.className += "card-img-top";
-                    /*Generamos donde se va a poner el titulo del articulo*/
-                    let tituloCard = document.createElement("h5");
-                    tituloCard.className += "card-title texto_white font_footer_text text-overflow-cards-1";
-                    /*Generamos donde se va poner la descripcion del articulo*/
-                    let descCard = document.createElement("p");
-                    descCard.className +=
-                        "card-text text-overflow-cards texto_white texto_50 font_footer";
-                    /*Generamos donde se va a poner el precio*/
-                    let precioCard = document.createElement("p");
-                    precioCard.className +=
-                        "texto_white font_footer_text align-self-center";
-                    precioCard.setAttribute("style", "font-size:23px;text-align: center;");
-                    /*Generamos el boton de compra*/
-                    let botonCard = document.createElement("button");
-                    botonCard.className += "font_footer_text";
-                    botonCard.setAttribute(
-                        "style",
-                        "border-color: #FFD103;background-color: black;color: #FFD103;border: 1px;width=100%;font-size:20px"
-                    );
-                    /*Generamos el div donde se pondrian las tallas*/
-                    let tallas1 = document.createElement("div");
-                    tallas1.className += "";
-
-                    /*Obtenemos el url del json para la imagen*/
-                    imagenCard.src = val.url;
-                    /*Obtenemos el titulo para el texto alternativo*/
-                    imagenCard.alt = val.nombre;
-                    /*Obtenemos el titulo del json*/
-                    tituloCard.appendChild(document.createTextNode(val.nombre));
-                    /*Obtenemos la descripcion del json*/
-                    descCard.appendChild(document.createTextNode(val.descripcion));
-                    /*Obtenemos el precio del json*/
-                    precioCard.appendChild(document.createTextNode(`$ ${Intl.NumberFormat().format(val.precio)}`));
-                    /*Terminamos de generar el texto del boton para comprar*/
-                    botonCard.appendChild(document.createTextNode(`Comprar`));
-                    /*Aqui agregaremos funcionalidad del boton comprar*/
-                    botonCard.addEventListener("click", function () {
-                        console.log(element);
-                        let carrito = localStorage.getItem("carrito");
-                        if (carrito) {
-                            let carrito2 = [];
-                            carrito2 = JSON.parse(carrito);
-                            let agregarCarrito = true;
-                            carrito2.forEach(function (task) {
-                                if (task.nombre == element.nombre) {
-                                    agregarCarrito = false;
+                        /*Obtenemos el url del json para la imagen*/
+                        imagenCard.src = val.url;
+                        /*Obtenemos el titulo para el texto alternativo*/
+                        imagenCard.alt = val.nombre;
+                        /*Obtenemos el titulo del json*/
+                        tituloCard.appendChild(document.createTextNode(val.nombre));
+                        /*Obtenemos la descripcion del json*/
+                        descCard.appendChild(document.createTextNode(val.descripcion));
+                        /*Obtenemos el precio del json*/
+                        precioCard.appendChild(document.createTextNode(`$ ${Intl.NumberFormat().format(val.precio)}`));
+                        /*Terminamos de generar el texto del boton para comprar*/
+                        botonCard.appendChild(document.createTextNode(`Comprar`));
+                        /*Aqui agregaremos funcionalidad del boton comprar*/
+                        botonCard.addEventListener("click", function () {
+                            let carrito = localStorage.getItem("carrito");
+                            if (carrito) {
+                                let carrito2 = [];
+                                carrito2 = JSON.parse(carrito);
+                                let agregarCarrito = true;
+                                carrito2.forEach(function (task) {
+                                    if (task.nombre == val.nombre) {
+                                        agregarCarrito = false;
+                                    }
+                                });
+                                if (agregarCarrito) {
+                                    carrito2.push(val);
                                 }
-                            });
-                            if (agregarCarrito) {
-                                carrito2.push(element);
+                                localStorage.setItem("carrito", JSON.stringify(carrito2));
+                            } else {
+                                let carrito = [];
+                                carrito.push(val);
+                                localStorage.setItem("carrito", JSON.stringify(carrito));
                             }
-                            localStorage.setItem("carrito", JSON.stringify(carrito2));
-                        } else {
-                            let carrito = [];
-                            carrito.push(element);
-                            localStorage.setItem("carrito", JSON.stringify(carrito));
-                        }
 
-                    });
-                    /*Checamos si hay tallas definidas en el json*/
-                    if (typeof val.talla != typeof undefined) {
-                        /*Obtenemos las tallas y las separamos: S,M,L,XL*/
-                        let tallas3 = val.talla.split(",");
-                        /*["S","M","L","XL"]*/
-                        /*Por cada talla generamos*/
-                        tallas3.forEach((talla2) => {
-                            /*Boton de la talla*/
-                            let botonTalla = document.createElement("button");
-                            botonTalla.className += "botonesTallas";
-                            /*Lo agregamos a la lista*/
-                            botonTalla.appendChild(document.createTextNode(talla2));
-                            /*Agregamos un poco de funcionalidad para saber cual esta activo*/
-                            botonTalla.addEventListener("click", () => {
-                                var current = document.querySelector(".active");
-                                if (current != null) {
-                                    current.className = "botonesTallas";
-                                }
-                                botonTalla.className = "active";
-                                /* Aqui haremos lo pertinente para saber la talla del articulo definido
-                                *console.log(talla2);*/
-                            });
-                            /*Si no hubo tallas no se agrega a la card*/
-                            if (botonTalla.innerHTML != "") {
-                                tallas1.appendChild(botonTalla);
-                            }
                         });
+
+                        /*Agregamos las tallas, el boton de compra, titulo y descripcion 
+                        * al layout que es la parte que veremos cuando nos posicionemos 
+                        * encima de la card*/
+
+                        cardLayout.appendChild(tituloCard);
+
+
+                        /*Agregamos a la card la imagen, el precio y la parte de encima de la card*/
+                        card.appendChild(imagenCard);
+                        card.appendChild(cardLayout);
+                        card.appendChild(precioCard);
+                        card.appendChild(tallas1);
+                        card.appendChild(botonCard);
+
+                        /*Agregar la card al marco*/
+                        marcoCard.appendChild(card);
+                        /*Agregar el marco a nuestra filas de cards*/
+                        row2.appendChild(marcoCard);
                     }
-                    /*Agregamos las tallas, el boton de compra, titulo y descripcion 
-                    * al layout que es la parte que veremos cuando nos posicionemos 
-                    * encima de la card*/
-                    cardLayout.appendChild(tituloCard);
-                    cardLayout.appendChild(precioCard);
-
-                    /*Agregamos a la card la imagen, el precio y la parte de encima de la card*/
-                    card.appendChild(imagenCard);
-                    card.appendChild(cardLayout);
-                    card.appendChild(tallas1);
-                    card.appendChild(botonCard);
-
-                    /*Agregar la card al marco*/
-                    marcoCard.appendChild(card);
-                    /*Agregar el marco a nuestra filas de cards*/
-                    row2.appendChild(marcoCard);
-
-
-                    count++;
                 }
             });
             /*Agregamos nuestra segunda fila a la primera*/
             row1.appendChild(row2);
             /*Agregamos la primer fila a nuestra columna derecha*/
             columnaDerecha.appendChild(row1);
-            //output += '</div>';
-            //$('#columnaDerecha').html(output);
-            //generarCardsDinamicamente(output);
-        });
 
+
+            count++;
+        }
     </script>
-    <script src="assets/js/slider.js"></script>
-
 </body>
 
 </html>

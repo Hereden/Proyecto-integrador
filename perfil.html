@@ -33,10 +33,10 @@
 
                 <!-- Foto de perfil -->
                 <div class="text-center">
-                    <img src="assets/images/perfiles/Perfil01.png" class=" img-thumbnail"
-                        alt="foto perfil">
+                    <img src="assets/images/perfiles/TamPerfil.png" class=" img-thumbnail" alt="foto perfil" id="foto_perfil">
                     <h6 class="font_footer">Foto de perfil</h6>
-                    <input type="file" class="text-center font_footer center-block file-upload" style="font-size: 13px;">
+                    <input type="file" class="text-center font_footer center-block file-upload"
+                        style="font-size: 13px;">
                 </div>
                 </hr><br>
 
@@ -48,12 +48,16 @@
 
                 <!-- Actividades del usuario -->
                 <ul class="list-group ">
-                    <li class="list-group-item font_footer bg_black texto_amarillo"> <a href="">Actividad</a>  </li>
-                    <li class="list-group-item font_footer bg_black texto_amarillo"><span > <a href="index.html">Compras</a> </span> 
+                    <li class="list-group-item font_footer bg_black texto_amarillo"> <a href="">Actividad</a> </li>
+                    <li class="list-group-item font_footer bg_black texto_amarillo"><span> <a
+                                href="index.html">Compras</a> </span>
                     </li>
-                    <li class="list-group-item font_footer bg_black texto_amarillo"><span > <a href="carrito.html">Mi carrito</a> </span> </li>
-                    <li class="list-group-item font_footer bg_black texto_amarillo"><span > <a href="rutas.html">Rutas</a> </span> </li>
-                    <li class="list-group-item font_footer bg_black texto_amarillo"><span ></span> <a href="">Cerrar sesión</a> </span> 
+                    <li class="list-group-item font_footer bg_black texto_amarillo"><span> <a href="carrito.html">Mi
+                                carrito</a> </span> </li>
+                    <li class="list-group-item font_footer bg_black texto_amarillo"><span> <a
+                                href="rutas.html">Rutas</a> </span> </li>
+                    <li class="list-group-item font_footer bg_black texto_amarillo"><span></span> <a
+                            onclick="logOut()">Cerrar sesión</a> </span>
                     </li>
                 </ul>
 
@@ -63,7 +67,8 @@
             <!-- Inicio de datos del usuario -->
             <div class="col-sm-9">
 
-                <h5 class="font_footer texto_amarillo" style="font-size: 30px;"> <strong>Perfil del Usuario</strong> </h5>
+                <h5 class="font_footer texto_amarillo" style="font-size: 30px;"> <strong>Perfil del Usuario</strong>
+                </h5>
 
                 <div class=" bg_black">
                     <div class=" bg_black font_footer" id="home">
@@ -76,8 +81,9 @@
                                         <p class="texto_amarillo" style="font-size: 20px;">Nombre(s)</p>
                                         <!-- <h4 class="texto_amarillo" style="font-size: 20px;">Nombre(s)</h4> -->
                                     </label>
-                                    <input type="text" class="form-control bg_black  boton_amarillo texto_white " name="first_name" id="first_name"
-                                        placeholder="Ingresa tu nombre(s)" title="Ingresa tu nombre(s)">
+                                    <input type="text" class="form-control bg_black  boton_amarillo texto_white "
+                                        name="first_name" id="first_name" placeholder="Ingresa tu nombre(s)"
+                                        title="Ingresa tu nombre(s)">
                                 </div>
                             </div>
                             <div class="form-group">
@@ -86,8 +92,9 @@
                                     <label for="last_name">
                                         <p style="font-size: 20px;">Apellidos</p>
                                     </label>
-                                    <input type="text" class="form-control  boton_amarillo bg_black texto_white" name="last_name" id="last_name"
-                                        placeholder="Ingresa tus apellidos" title="Ingresa tus apellidos">
+                                    <input type="text" class="form-control  boton_amarillo bg_black texto_white"
+                                        name="last_name" id="last_name" placeholder="Ingresa tus apellidos"
+                                        title="Ingresa tus apellidos">
                                 </div>
                             </div>
 
@@ -97,18 +104,21 @@
                                     <label for="phone">
                                         <p style="font-size: 20px;">Teléfono </p>
                                     </label>
-                                    <input type="text" class="form-control  boton_amarillo bg_black texto_white" name="phone" id="phone"
-                                        placeholder="Ingresa tu número telefónico" title="Ingresa tu número telefónico">
+                                    <input type="text" class="form-control  boton_amarillo bg_black texto_white"
+                                        name="phone" id="phone" placeholder="Ingresa tu número telefónico"
+                                        title="Ingresa tu número telefónico">
                                 </div>
                             </div>
 
                             <div class="form-group">
                                 <div class="col-xs-6">
-                                    <label for="mobile">
+                                    <label for="alias">
                                         <p style="font-size: 20px;"> Alias</p>
                                     </label>
-                                    <input type="text" class="form-control   boton_amarillo bg_black texto_white" name="mobile" id="mobile"
-                                        placeholder="Ingresa tu alias o como quieres que te llamemos" title="Ingresa tu alias">
+                                    <input type="text" class="form-control   boton_amarillo bg_black texto_white"
+                                        name="alias" id="alias"
+                                        placeholder="Ingresa tu alias o como quieres que te llamemos"
+                                        title="Ingresa tu alias">
                                 </div>
                             </div>
                             <div class="form-group">
@@ -117,18 +127,19 @@
                                     <label for="email">
                                         <p style="font-size: 20px;">Email</p>
                                     </label>
-                                    <input type="email" class="form-control  boton_amarillo bg_black texto_white" name="email" id="email"
-                                        placeholder="Ingresa tu correo ejemplo@email.com" title="Ingresa tu correo">
+                                    <input type="email" class="form-control  boton_amarillo bg_black texto_white"
+                                        name="email" id="email" placeholder="Ingresa tu correo ejemplo@email.com"
+                                        title="Ingresa tu correo">
                                 </div>
                             </div>
                             <div class="form-group">
 
                                 <div class="col-xs-6">
-                                    <label for="email">
+                                    <label for="location">
                                         <p style="font-size: 20px;">DIrección</p>
                                     </label>
-                                    <input type="email" class="form-control  boton_amarillo bg_black texto_white" id="location" placeholder="Ingresa tu dIrección"
-                                        title="Ingresa tu dIrección">
+                                    <input type="location" class="form-control  boton_amarillo bg_black texto_white"
+                                        id="location" placeholder="Ingresa tu dIrección" title="Ingresa tu dIrección">
                                 </div>
                             </div>
                             <div class="form-group">
@@ -137,8 +148,9 @@
                                     <label for="password">
                                         <p style="font-size: 20px;">Contraseña</p>
                                     </label>
-                                    <input type="password" class="form-control  boton_amarillo bg_black texto_white" name="password" id="password"
-                                        placeholder="Ingresa tu contraseña" title="Ingresa tu contraseña">
+                                    <input type="password" class="form-control  boton_amarillo bg_black texto_white"
+                                        name="password" id="password" placeholder="Ingresa tu contraseña"
+                                        title="Ingresa tu contraseña">
                                 </div>
                             </div>
                             <div class="form-group">
@@ -147,8 +159,9 @@
                                     <label for="password2">
                                         <p style="font-size: 20px;">Confirma tu contraseña</p>
                                     </label>
-                                    <input type="password" class="form-control  boton_amarillo bg_black texto_white" name="password2" id="password2"
-                                        placeholder="Confirma tu contraseña" title="Confirma tu contraseña">
+                                    <input type="password" class="form-control  boton_amarillo bg_black texto_white"
+                                        name="password2" id="password2" placeholder="Confirma tu contraseña"
+                                        title="Confirma tu contraseña">
                                 </div>
                             </div>
                             <div class="form-group">
@@ -156,7 +169,8 @@
                                     <br>
                                     <button class="btn btn-lg btn-success" type="submit"><i
                                             class="glyphicon  boton_amarillo glyphicon-ok-sign"></i> Guardar</button>
-                                    <button class="btn btn-lg boton_amarillo" type="reset"><i class="glyphicon glyphicon-repeat"></i>
+                                    <button class="btn btn-lg boton_amarillo" type="reset"><i
+                                            class="glyphicon glyphicon-repeat"></i>
                                         No guardar cambios</button>
                                 </div>
                             </div>
@@ -177,7 +191,6 @@
 
     <div id="footer"></div>
 
-    <script src="assets/texto/formato2.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -188,14 +201,47 @@
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="assets/js/script.js"></script>
     <script>
-        jQuery.get("./navbar.html", function (data) {
+        jQuery.get("./navbar2.html", function (data) {
             $("#nav-placeholder").replaceWith(data);
         });
         jQuery.get("./footer.html", function (data) {
             $("#footer").replaceWith(data);
         });
+        token = localStorage.getItem("token");
+
+        if (token) {
+            let nombre = document.querySelector("#first_name");
+            let apellido = document.querySelector("#last_name");
+            let telefono = document.querySelector("#phone");
+            let alias = document.querySelector("#alias");
+            let email = document.querySelector("#email");
+            let dIreccion = document.querySelector("#location");
+            let foto_perfil= document.querySelector("#foto_perfil");
+
+            let req = fetch(URLBACKEND + "usuarios/" + localStorage.getItem("username"), {
+                method: 'GET',
+                headers: {
+                    "Authorization": token,
+                    'Content-Type': 'application/json'
+                }
+            })
+                .then(resp => resp.json())
+                .then(data => {
+                    console.log(data);
+                    nombre.placeholder=data.name;
+                    apellido.placeholder=data.apellidos;
+                    telefono.placeholder=data.telefono;
+                    alias.placeholder=data.alias;
+                    email.placeholder=data.email;
+                    dIreccion.placeholder=data.direccion;
+                    if(nombre.placeholder=="Santiago"){
+                        foto_perfil.setAttribute("src",
+                        "assets/images/perfiles/img_perfil.png");
+                    }
+                });
+        }
+
     </script>
-    <script src="assets/js/slider.js"></script>
 
 </body>
 

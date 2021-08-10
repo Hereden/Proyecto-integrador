@@ -32,9 +32,10 @@ formLogin2.addEventListener("submit", (e) => {
                 if (token && token.includes('Bearer')) {
                     console.log(token);
                     localStorage.setItem("token", token);
+                    localStorage.setItem("username", email.value);
                     url = window.location;
                     console.log(url);
-
+                    logeame();
                     /*const path = url.pathname.substring(0, url.pathname.lastIndexOf("/") + 1)
                     location.href = path + 'success.html';*/
                 }
@@ -45,3 +46,26 @@ formLogin2.addEventListener("submit", (e) => {
         email.textContent = "Usuario o contraseña incorrecto";
     }
 });
+
+function logeame() {
+    token = localStorage.getItem("token");
+
+    if (token) {
+        let Nomostrar = document.querySelector("#loginMenu");
+        Nomostrar.setAttribute("style",
+            "display:none;")
+        let mostrar = document.querySelector("#perfilLogin");
+        mostrar.setAttribute("style",
+            "display:inherit");
+    }
+}
+
+logeame();
+
+function logOut() {
+    localStorage.clear();
+    url = window.location;
+    console.log(url);
+    const path = url.pathname.substring(0, url.pathname.lastIndexOf('/') + 1);
+    location.href = path + 'index.html';
+}

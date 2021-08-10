@@ -14,14 +14,7 @@ formLogin.addEventListener("submit", (e) => {
     const direccion = document.querySelector("#direccionR");
     const telefono = document.querySelector("#telefonoR");
     const genero = document.querySelector("#generoR");
-    
-    //const username;
 
-    /*const emailError = document.querySelector("#emailError");
-    const passwordError = document.querySelector("#passwordError");
-    emailError.textContent = "";
-    passwordError.textContent = "";
-    */
     if (nombre.value == "") {
         nombre.placeholder = "Favor de ingresar un nombre";
     }
@@ -44,7 +37,7 @@ formLogin.addEventListener("submit", (e) => {
 
     }
     if (genero.value == "") {
-        
+
     }
 
     console.log(email.value);
@@ -58,15 +51,15 @@ formLogin.addEventListener("submit", (e) => {
     console.log(genero.value);
     if (nombre.value != "" && email.value != "" && password.value != "" && alias.value != "" && apellidos.value != "" && direccion.value != "" && telefono.value != "" && genero.value != "") {
         console.log("Holi");
-        let genero2=0;
-        if(genero=="Hombre"){
-            genero2=0;
-        }else if(genero=="Mujer"){
-            genero2=1;
-        }else{
-            genero2=2;
+        let genero2 = 0;
+        if (genero == "Hombre") {
+            genero2 = 0;
+        } else if (genero == "Mujer") {
+            genero2 = 1;
+        } else {
+            genero2 = 2;
         }
-        let req = fetch(URLBACKEND+ "usuarios/", {
+        let req = fetch(URLBACKEND + "usuarios/", {
             method: 'POST',
             body: JSON.stringify({
                 username: email.value,
@@ -94,8 +87,8 @@ formLogin.addEventListener("submit", (e) => {
                     url = window.location;
                     console.log(url);
 
-                    /*const path = url.pathname.substring(0, url.pathname.lastIndexOf("/") + 1)
-                    location.href = path + 'success.html';*/
+                    const path = url.pathname.substring(0, url.pathname.lastIndexOf("/") + 1)
+                    location.href = path + 'success.html';
                 }
             })
 

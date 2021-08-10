@@ -33,11 +33,14 @@
         </form>  -->
     <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="background-color: #693535;border-color: #693535; color: white;">Registrate</button> -->
     <div class="collapse navbar-collapse Login w-100 " id="exCollapsingNavbar ">
-        <ul class="nav navbar-nav flex-row  ml-auto " id="loginMenu">
+        <ul class="nav navbar-nav flex-row  ml-auto " >
             <a href="carrito.html">
                 <img src="assets/images/carrito_.png" alt="Carrito" class="" height="75px" width="100px">
             </a>
-            <li class="dropdown order-1 ">
+            <a href="perfil.html" id="perfilLogin" style="display:none;">
+                <img src="assets/images/2.png" alt="Perfil" class="" height="75px" width="100px" >
+            </a>
+            <li class="dropdown order-1 " id="loginMenu">
                 <button type="button" id="dropdownMenu1" data-toggle="dropdown"
                     class="btn btn-outline-secondary dropdown-toggle texto_50 boton_amarillo">
                     Login
@@ -134,3 +137,4 @@
         </div>
     </nav>
 </div>
+<script src="assets/js/scriptLogin.js"></script>
